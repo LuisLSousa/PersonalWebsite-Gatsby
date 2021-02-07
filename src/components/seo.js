@@ -74,6 +74,7 @@ function SEO({ description, lang, meta, title }) {
 }
 
 SEO.defaultProps = {
+  title: '',
   lang: `en`,
   meta: [],
   description: ``,
@@ -86,4 +87,4 @@ SEO.propTypes = {
   title: PropTypes.string.isRequired,
 }
 
-export default SEO
+export default SEO;
