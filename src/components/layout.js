@@ -16,6 +16,7 @@ const StyledLayout = styled.div`
     flex-direction: column;
     align-items: stretch;
     @media (max-width: 562px) {
+      
     }
 `
 

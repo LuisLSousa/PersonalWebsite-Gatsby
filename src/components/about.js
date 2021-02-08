@@ -3,30 +3,51 @@ import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby";
 import GatsbyImage from "gatsby-image";
 
-
+// ###### CSS #########
 const StyledSection = styled.section`
-    padding-top: 10vh;
+    padding-top: 5vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 80vw;
+    height: 100vh;
+    border-top: 2px solid rgba(255,255,255, 0.8);
+
     @media (max-width: 562px) {
-        width: 90vw;
+        flex-direction: column;
     }
 `
 
 const StyledImage = styled(GatsbyImage)`
-    height: 20vh;
-    width: 15vw;
-    width: auto;
+    height: 400px;
+    width: 300px;
+    box-shadow: 5px 5px rgba(255,255,255, 0.8);
+    margin: 0;
+
+    @media (max-width: 562px) {
+        margin-left: auto;
+        margin-right:auto;
+        width: 250px;
+        min-width: 250px;
+    }
+    
 `
 
+const StyledText = styled.div`
+    padding-left: 5vw;
+    width: 80vw;
+    font-size: 1rem;
+    text-align: justify;
+`
+
+// ###### ABOUT #######
+
 const About = () => {
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     {
       photo: file(relativePath: { eq: "about/profile.png" }) {
         childImageSharp {
-          fluid(maxWidth: 512) {
+          fluid(maxWidth: 512, quality: 90) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -37,23 +58,15 @@ const About = () => {
     }
   `);
 
-    return (
-        <StyledSection>
-            <section id="about">
-                {/* <Heading icon={MdPerson} title="About" /> */}
-                <StyledImage fluid={data.photo.childImageSharp.fluid} />
-
-                <div
-                    className="what"
-                    dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-                >
-
-                </div>
-
-
-            </section>
-        </StyledSection >
-    );
+  return (
+    <StyledSection id="about">
+      {/* <Heading icon={MdPerson} title="About" /> */}
+      <StyledImage fluid={data.photo.childImageSharp.fluid} />
+      <StyledText
+        dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+      ></StyledText>
+    </StyledSection>
+  );
 }
 
 export default About;

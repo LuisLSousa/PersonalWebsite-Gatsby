@@ -41,8 +41,9 @@ const StyledSection = styled.section`
 
 @media (max-width: 800px) {
     .navigation {
-        backdrop-filter: opacity(0.8) blur(1px);
-        background-color: rgba(56, 69, 77, 0.4);
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.3);
+        box-shadow: 5px rgba(0, 0, 0);
         padding-top: 1.5em;
         padding-bottom: 1.5em;
         justify-content: space-evenly;
