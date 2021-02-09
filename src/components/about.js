@@ -15,6 +15,8 @@ const StyledSection = styled.section`
 
     @media (max-width: 562px) {
         flex-direction: column;
+        justify-content: flex-start;
+
     }
 `
 
@@ -27,8 +29,11 @@ const StyledImage = styled(GatsbyImage)`
     @media (max-width: 562px) {
         margin-left: auto;
         margin-right:auto;
+        height: 330px;
         width: 250px;
         min-width: 250px;
+        margin-bottom: 5vh;
+        
     }
     
 `

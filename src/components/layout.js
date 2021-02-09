@@ -16,12 +16,13 @@ const StyledLayout = styled.div`
     flex-direction: column;
     align-items: stretch;
     @media (max-width: 562px) {
-      
+
     }
 `
 
 const StyledTheme = styled.div`
     background-color: #121212;
+    width: 100vw;
     color: white;
 `
 
