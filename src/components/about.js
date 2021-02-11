@@ -10,8 +10,8 @@ const StyledSection = styled.section`
     flex-direction: row;
     justify-content: space-between;
     width: 80vw;
-    height: 100vh;
     border-top: 2px solid rgba(255,255,255, 0.8);
+    margin-bottom: 5vh;
 
     @media (max-width: 562px) {
         flex-direction: column;
@@ -45,7 +45,7 @@ const StyledText = styled.div`
     text-align: justify;
 `
 
-// ###### ABOUT #######
+// ####################
 
 const About = () => {
   const data = useStaticQuery(graphql`
