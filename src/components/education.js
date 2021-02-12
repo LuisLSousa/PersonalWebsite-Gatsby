@@ -75,37 +75,36 @@ const Content = styled.div`
 `
 
 const StyledImage = styled(GatsbyImage)`
-    width: 2rem;
-    height: 2rem;  
-    
-   `
+    max-width: 20rem;
+    max-height: 2.5rem;
+    `
+
 // ####################
 
 
 const Education = () => {
     const data = useStaticQuery(graphql`
-    {
-      allEducationJson {
+{
+    allEducationJson {
         edges {
-          node {
-            id
-            degree
-            university
-            location
-            period
-            icon {
-                childImageSharp {
-                    fixed(width: 120, height: 48) {
-                      ...GatsbyImageSharpFixed
+            node {
+                id
+                degree
+                university
+                location
+                period
+                icon {
+                    childImageSharp {
+                        fluid(maxHeight: 40, quality: 90) {
+                            ...GatsbyImageSharpFluid_withWebp
+                          }
                     }
-              }
+                }
             }
-          }
         }
-      }
     }
-  `);
-
+}
+`);
     return (
         <StyledSection id="education">
             <Bar />
@@ -115,7 +114,10 @@ const Education = () => {
                         <Entry key={node.id}>
                             <Dot />
                             <Content>
-                                <StyledImage {...node.icon.childImageSharp} />
+                                <StyledImage fluid={node.icon.childImageSharp.fluid} imgStyle={{
+                                    objectFit: "contain",
+                                    objectPosition: "left",
+                                }} />
                                 <h6 className="degree">{node.degree}</h6>
                                 <h6 className="university">{node.university}</h6>
                                 <h6 className="location">{node.location}</h6>
