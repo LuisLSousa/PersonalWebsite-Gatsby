@@ -46,6 +46,19 @@ const Entry = styled.div`
     flex-direction: row;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    animation: fadeIn;
+    
+    @keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -100%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
 `
 
 const Content = styled.div`
@@ -64,13 +77,13 @@ const Content = styled.div`
         font-size: 1rem;
     }
     .university{
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
     .location, .period {
-        font-size: 0.75rem;
+        font-size: 0.875rem;
     }
     .period {
-        margin-top: 0.5rem;
+        margin-top: 0.75rem;
     }
 `
 
@@ -111,7 +124,7 @@ const Education = () => {
             <Container >
                 {data.allEducationJson.edges.map(({ node }, index) => {
                     return (
-                        <Entry key={node.id}>
+                        <Entry key={node.id} style={{ animationDuration: `${index * 300 + 500}ms` }} >
                             <Dot />
                             <Content>
                                 <StyledImage fluid={node.icon.childImageSharp.fluid} imgStyle={{

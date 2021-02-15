@@ -16,7 +16,7 @@ const particlesParams = {
             },
             onHover: {
                 enable: true,
-                mode: "repulse", // repulse, grab, bubble
+                mode: "grab", // repulse, grab, bubble
             },
             resize: true,
         },
