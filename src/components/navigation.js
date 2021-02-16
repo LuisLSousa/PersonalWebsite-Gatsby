@@ -78,46 +78,47 @@ const MenuButton = {
         position: fixed;
         z-index: 1;
         font-size: 12px;
-        right: 7.5vw;
-        top: 2vh ;
+        right: 7.5%;
+        top: 2vh;
         display: none;
         margin: 0;
+        cursor: pointer;  
+        border: none;
+        background: transparent;
+        outline: none;
   
       @media only screen and (max-width: 800px) {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
       }
-  
-      /* Remove default button styles */
-      border: none;
-      background: transparent;
-      outline: none;
-      cursor: pointer;  
-      
-    `,
-    Lines: styled.div`
 
-      &,
-      &:after,
-      &:before {
-        /* Create lines */
-        height: 2px;
-        pointer-events: none;
-        display: block;
-        content: "";
-        width: 100%;
-        background-color: white;
-        position: absolute;
+      &:focus {
+            outline: none;
       }
   
-      &:after {
-        /* Move bottom line below center line */
-        top: -0.5rem;
-      }
-  
-      &:before {
-        /* Move top line on top of center line */
-        top: 0.5rem;
-      }
+      div {
+        width: 2rem;
+        height: 0.25rem;
+        background: white;
+        border-radius: 10px;
+        transition: all 0.3s linear;
+        position: relative;
+        transform-origin: 1px;
+
+        :first-child {
+        transform: ${({ openMenu }) => openMenu ? 'rotate(45deg)' : 'rotate(0)'};
+        }
+
+        :nth-child(2) {
+        opacity: ${({ openMenu }) => openMenu ? '0' : '1'};
+        transform: ${({ openMenu }) => openMenu ? 'translateX(20px)' : 'translateX(0)'};
+        }
+
+        :nth-child(3) {
+        transform: ${({ openMenu }) => openMenu ? 'rotate(-45deg)' : 'rotate(0)'};
+        }
+    }      
     `
 };
 
@@ -133,9 +134,7 @@ const Navigation = () => {
             if (menuRef.current && menuRef.current.contains(event.target)) {
                 return;
             }
-            else if (buttonRef.current!==event.target) {
-                toggleMenu(false);
-            }
+            toggleMenu(false);
         };
 
         document.addEventListener("mousedown", closeMenu);
@@ -163,11 +162,13 @@ const Navigation = () => {
 
     return (
 
-        <Navbar.Wrapper>
+        <Navbar.Wrapper ref={menuRef}>
             <MenuButton.Wrapper openMenu={openMenu} onClick={() => toggleMenu(!openMenu)} ref={buttonRef}>
-                <MenuButton.Lines />
+                <div />
+                <div />
+                <div />
             </MenuButton.Wrapper>
-            <Navbar.Items className={navigation ? 'navigation active' : 'navigation'} ref={menuRef} openMenu={openMenu}>
+            <Navbar.Items className={navigation ? 'navigation active' : 'navigation'} openMenu={openMenu}>
                 <Navbar.Item>
                     <Link activeClass="active" to="home" spy={true} smooth={true} offset={-50} duration={600}>Home</Link>
                 </Navbar.Item>
