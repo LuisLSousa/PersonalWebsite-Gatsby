@@ -1,18 +1,21 @@
 import React from 'react';
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby";
+import Heading from "../components/heading";
 import GatsbyImage from "gatsby-image";
 
 
 // ###### CSS #########
-const StyledSection = styled.section`
-    padding-top: 5vh;
+
+const Wrapper = styled.section`
+  border-top: 2px solid rgba(255,255,255, 0.8);
+`
+
+const StyledDiv = styled.div`
     display: flex;
     align-content: center;
     justify-content: center;
     width: 80vw;
-    border-top: 2px solid rgba(255,255,255, 0.8);
-
 `
 
 const Container = styled.div`
@@ -116,29 +119,31 @@ const Education = () => {
 }
 `);
     return (
-        <StyledSection id="education">
-            {/* <Heading title="Education" /> */}
-            <Bar />
-            <Container >
-                {data.allEducationJson.edges.map(({ node }, index) => {
-                    return (
-                        <Entry key={node.id} style={{ animationDuration: `${index * 300 + 500}ms` }} >
-                            <Dot />
-                            <Content>
-                                <StyledImage fluid={node.icon.childImageSharp.fluid} imgStyle={{
-                                    objectFit: "contain",
-                                    objectPosition: "left",
-                                }} />
-                                <h6 className="degree">{node.degree}</h6>
-                                <h6 className="university">{node.university}</h6>
-                                <h6 className="location">{node.location}</h6>
-                                <h6 className="period">({node.period})</h6>
-                            </Content>
-                        </Entry>
-                    );
-                })}
-            </Container>
-        </StyledSection>
+        <Wrapper id="education">
+            <Heading title="Education" />
+            <StyledDiv>
+                <Bar />
+                <Container >
+                    {data.allEducationJson.edges.map(({ node }, index) => {
+                        return (
+                            <Entry key={node.id} style={{ animationDuration: `${index * 300 + 500}ms` }} >
+                                <Dot />
+                                <Content>
+                                    <StyledImage fluid={node.icon.childImageSharp.fluid} imgStyle={{
+                                        objectFit: "contain",
+                                        objectPosition: "left",
+                                    }} />
+                                    <h6 className="degree">{node.degree}</h6>
+                                    <h6 className="university">{node.university}</h6>
+                                    <h6 className="location">{node.location}</h6>
+                                    <h6 className="period">({node.period})</h6>
+                                </Content>
+                            </Entry>
+                        );
+                    })}
+                </Container>
+            </StyledDiv>
+        </Wrapper>
     )
 }
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby";
+import Heading from "../components/heading";
+
 import GatsbyImage from "gatsby-image";
 
 // ###### CSS #########
@@ -12,7 +14,7 @@ const Projects = () => {
 
   return (
     <StyledSection id="about">
-      {/* <Heading title="Projects" /> */}
+      <Heading title="Projects" />
     </StyledSection>
   );
 }

@@ -1,16 +1,20 @@
 import React from 'react';
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby";
+import Heading from "../components/heading";
 import GatsbyImage from "gatsby-image";
 
 // ###### CSS #########
-const StyledSection = styled.section`
+
+const Wrapper = styled.section`
+  border-top: 2px solid rgba(255,255,255, 0.8);
+`
+const StyledDiv = styled.div`
     padding-top: 5vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 80vw;
-    border-top: 2px solid rgba(255,255,255, 0.8);
     margin-bottom: 5vh;
 
     @media (max-width: 562px) {
@@ -64,13 +68,15 @@ const About = () => {
   `);
 
   return (
-    <StyledSection id="about">
-      {/* <Heading title="About" /> */}
-      <StyledImage fluid={data.photo.childImageSharp.fluid} />
-      <StyledText
-        dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-      ></StyledText>
-    </StyledSection>
+    <Wrapper id="about">
+      <Heading title="About" />
+      <StyledDiv >
+        <StyledImage fluid={data.photo.childImageSharp.fluid} />
+        <StyledText
+          dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
+        ></StyledText>Z
+      </StyledDiv>
+    </Wrapper>
   );
 }
 
