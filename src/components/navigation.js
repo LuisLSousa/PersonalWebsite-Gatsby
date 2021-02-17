@@ -23,9 +23,6 @@ const Navbar = {
     }
 
       @media only screen and (max-width: 800px) {
-        position: fixed;
-        width: 100vw;
-        bottom: 0;
 
         .navigation.active {
             width: auto;
@@ -71,17 +68,37 @@ const Navbar = {
     `
 };
 
+const StyledDiv = styled.div`
+    position: fixed;
+    z-index: 1;
+    display: none;
+    width: 100vw;
+    background-color: #121212;
+    border-bottom: 2px solid rgba(255,255,255, 0.8);
+
+    .logo { 
+        padding-top:0.5vh;
+        margin: 0.75rem;
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+    @media only screen and (max-width: 800px) {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+
+}
+
+`
+
 const MenuButton = {
     Wrapper: styled.button`
         height: 2rem;
-        width: 2rem;
-        position: fixed;
-        z-index: 1;
         font-size: 12px;
-        right: 7.5%;
-        top: 2vh;
         display: none;
-        margin: 0;
+        margin: 0.75rem;
         cursor: pointer;  
         border: none;
         background: transparent;
@@ -94,7 +111,7 @@ const MenuButton = {
       }
 
       &:focus {
-            outline: none;
+        outline: none;
       }
   
       div {
@@ -163,11 +180,14 @@ const Navigation = () => {
     return (
 
         <Navbar.Wrapper ref={menuRef}>
-            <MenuButton.Wrapper openMenu={openMenu} onClick={() => toggleMenu(!openMenu)} ref={buttonRef}>
-                <div />
-                <div />
-                <div />
-            </MenuButton.Wrapper>
+            <StyledDiv>
+                <Link className="logo" activeClass="active" to="home" spy={true} smooth={true} offset={-50} duration={600}>Luís Sousa</Link>
+                <MenuButton.Wrapper openMenu={openMenu} onClick={() => toggleMenu(!openMenu)} ref={buttonRef}>
+                    <div />
+                    <div />
+                    <div />
+                </MenuButton.Wrapper>
+            </StyledDiv>
             <Navbar.Items className={navigation ? 'navigation active' : 'navigation'} openMenu={openMenu}>
                 <Navbar.Item>
                     <Link activeClass="active" to="home" spy={true} smooth={true} offset={-50} duration={600}>Home</Link>
