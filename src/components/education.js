@@ -13,8 +13,6 @@ const StyledSection = styled.section`
     width: 80vw;
     border-top: 2px solid rgba(255,255,255, 0.8);
 
-    @media (max-width: 562px) {
-    }
 `
 
 const Container = styled.div`
@@ -94,7 +92,6 @@ const StyledImage = styled(GatsbyImage)`
 
 // ####################
 
-
 const Education = () => {
     const data = useStaticQuery(graphql`
 {
@@ -120,6 +117,7 @@ const Education = () => {
 `);
     return (
         <StyledSection id="education">
+            {/* <Heading title="Education" /> */}
             <Bar />
             <Container >
                 {data.allEducationJson.edges.map(({ node }, index) => {

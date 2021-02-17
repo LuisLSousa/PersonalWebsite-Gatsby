@@ -4,6 +4,7 @@ import styled from "styled-components"
 import particlesParams from "../components/particles";
 import Particles from 'react-tsparticles';
 
+// ###### CSS #########
 const StyledSection = styled.section`
     .particles {
         z-index: 0;
@@ -43,6 +44,8 @@ const StyledSection = styled.section`
         }
     }
 `
+// ####################
+
 
 const Home = () => {
 

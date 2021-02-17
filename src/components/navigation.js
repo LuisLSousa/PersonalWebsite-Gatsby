@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import styled from "styled-components"
 import { Link } from 'react-scroll';
 
-// CSS
+// ###### CSS #########
 const Navbar = {
     Wrapper: styled.nav`
         position: fixed;
@@ -16,6 +16,7 @@ const Navbar = {
 
     ${'' /* Blur the entire navbar on scroll */}
     .navigation.active {
+        -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         background-color: rgba(10, 10, 10, 0.3);
         width: 100vw;
@@ -23,7 +24,7 @@ const Navbar = {
     }
 
       @media only screen and (max-width: 800px) {
-
+        -webkit-transform: translateZ(0);
         .navigation.active {
             width: auto;
             justify-content: flex-start;
@@ -41,6 +42,7 @@ const Navbar = {
         height: 100%;
         flex-direction: column;
         justify-content: flex-start !important;
+        -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         background-color: rgba(10, 10, 10, 0.3);
         padding: 0.5rem;
@@ -67,7 +69,6 @@ const Navbar = {
       }
     `
 };
-
 const StyledDiv = styled.div`
     position: fixed;
     z-index: 1;
@@ -88,11 +89,8 @@ const StyledDiv = styled.div`
         flex-wrap: nowrap;
         flex-direction: row;
         justify-content: space-between;
-
 }
-
 `
-
 const MenuButton = {
     Wrapper: styled.button`
         height: 2rem;
@@ -138,6 +136,8 @@ const MenuButton = {
     }      
     `
 };
+
+// ####################
 
 const Navigation = () => {
     const [navigation, setNavigation] = useState(false);

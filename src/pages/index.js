@@ -6,6 +6,7 @@ import SEO from "../components/seo";
 import Home from '../components/home';
 import About from '../components/about';
 import Education from '../components/education';
+import Projects from '../components/projects';
 
 
 const IndexPage = () => {
@@ -14,7 +15,7 @@ const IndexPage = () => {
       <Home />
       <About />
       <Education />
-      {/* <Projects />  */}
+      <Projects /> 
       {/* <Footer /> */}
     </Layout>
   )

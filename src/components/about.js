@@ -65,7 +65,7 @@ const About = () => {
 
   return (
     <StyledSection id="about">
-      {/* <Heading icon={MdPerson} title="About" /> */}
+      {/* <Heading title="About" /> */}
       <StyledImage fluid={data.photo.childImageSharp.fluid} />
       <StyledText
         dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
