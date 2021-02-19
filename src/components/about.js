@@ -2,8 +2,8 @@ import React from 'react';
 import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby";
 import Heading from "../components/heading";
+import Button from "../components/button";
 import GatsbyImage from "gatsby-image";
-import { Button } from 'react-scroll';
 
 // ###### CSS #########
 
@@ -21,7 +21,7 @@ const StyledDiv = styled.div`
     @media (max-width: 562px) {
         flex-direction: column;
         justify-content: flex-start;
-
+        margin-bottom: 0;
     }
 `
 
@@ -37,22 +37,17 @@ const StyledImage = styled(GatsbyImage)`
         height: 330px;
         width: 250px;
         min-width: 250px;
-        margin-bottom: 5vh;
-        
+        margin-bottom: 5vh;  
     }
     
 `
 
 const StyledButtons = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
-    button {
-      width: 200px;
-        margin: 5vh 2vw;
-    }
-    `
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+`
 
 const StyledText = styled.div`
     padding-left: 5vw;
@@ -89,8 +84,8 @@ const About = () => {
         ></StyledText>
       </StyledDiv>
       <StyledButtons>
-        <button onClick={() => window.open("https://www.linkedin.com/in/luis-srl-sousa/", "_blank")}>LinkedIn</button>
-        <button onClick={() => window.open("http://web.tecnico.ulisboa.pt/ist425417/Download/Luis_Sousa_CV.pdf", "_blank")}>Resume</button>
+        <Button title="LinkedIn" targetWebsite="https://www.linkedin.com/in/luis-srl-sousa/" />
+        <Button title="Resume" targetWebsite="http://web.tecnico.ulisboa.pt/ist425417/Download/Luis_Sousa_CV.pdf" />
       </StyledButtons>
     </Wrapper>
   );
