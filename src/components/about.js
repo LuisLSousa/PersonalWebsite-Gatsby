@@ -10,12 +10,11 @@ const Wrapper = styled.section`
   border-top: 2px solid rgba(255,255,255, 0.8);
 `
 const StyledDiv = styled.div`
-    padding-top: 5vh;
+    padding-top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 80vw;
-    margin-bottom: 5vh;
 
     @media (max-width: 562px) {
         flex-direction: column;
@@ -26,8 +25,13 @@ const StyledDiv = styled.div`
 const StyledImage = styled(GatsbyImage)`
     height: 400px;
     width: 300px;
-    box-shadow: 5px 5px rgba(255,255,255, 0.8);
     margin: 0;
+    transition: 0.5s ease-in-out;
+
+    :hover {
+      box-shadow: 5px 5px rgba(255,255,255, 0.8);
+      transform: translateY(-0.3em);
+    }
 
     @media (max-width: 562px) {
         margin-left: auto;
@@ -36,6 +40,8 @@ const StyledImage = styled(GatsbyImage)`
         width: 250px;
         min-width: 250px;
         margin-bottom: 5vh;  
+        box-shadow: 5px 5px rgba(255,255,255, 0.8);
+        transform: translateY(-0.3em);
     } 
 `
 const StyledButtons = styled.div`

@@ -52,7 +52,7 @@ const StyledButton = styled.div`
   .btn:active {
     box-shadow: 3px 3px rgba(100,100,100, 0.8);
     transition: 0.1s;
-    transform: translateY(-0.1em);
+    transform: translateY(-0.15em);
 
   }
 
