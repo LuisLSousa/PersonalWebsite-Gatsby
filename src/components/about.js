@@ -6,7 +6,6 @@ import Button from "../components/button";
 import GatsbyImage from "gatsby-image";
 
 // ###### CSS #########
-
 const Wrapper = styled.section`
   border-top: 2px solid rgba(255,255,255, 0.8);
 `
@@ -24,7 +23,6 @@ const StyledDiv = styled.div`
         margin-bottom: 0;
     }
 `
-
 const StyledImage = styled(GatsbyImage)`
     height: 400px;
     width: 300px;
@@ -38,10 +36,8 @@ const StyledImage = styled(GatsbyImage)`
         width: 250px;
         min-width: 250px;
         margin-bottom: 5vh;  
-    }
-    
+    } 
 `
-
 const StyledButtons = styled.div`
   display: flex;
   flex-direction: row;
@@ -49,14 +45,12 @@ const StyledButtons = styled.div`
   margin-bottom: 2vh;
 
 `
-
 const StyledText = styled.div`
     padding-left: 5vw;
     width: 80vw;
     font-size: 1rem;
     text-align: justify;
 `
-
 // ####################
 
 const About = () => {

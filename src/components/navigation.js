@@ -51,9 +51,6 @@ const Navbar = {
         transition: 0.2s ease-out;
         transform: ${({ openMenu }) => openMenu ? `translateX(0)` : `translateX(100%)`};
 
-        .navigation.active {
-            
-    }
       }
     `,
     Item: styled.li`
