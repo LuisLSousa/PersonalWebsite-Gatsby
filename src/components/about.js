@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { graphql, useStaticQuery } from "gatsby";
 import Heading from "../components/heading";
 import GatsbyImage from "gatsby-image";
+import { Button } from 'react-scroll';
 
 // ###### CSS #########
 
@@ -42,6 +43,17 @@ const StyledImage = styled(GatsbyImage)`
     
 `
 
+const StyledButtons = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    button {
+      width: 200px;
+        margin: 5vh 2vw;
+    }
+    `
+
 const StyledText = styled.div`
     padding-left: 5vw;
     width: 80vw;
@@ -74,8 +86,12 @@ const About = () => {
         <StyledImage fluid={data.photo.childImageSharp.fluid} />
         <StyledText
           dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}
-        ></StyledText>Z
+        ></StyledText>
       </StyledDiv>
+      <StyledButtons>
+        <button onClick={() => window.open("https://www.linkedin.com/in/luis-srl-sousa/", "_blank")}>LinkedIn</button>
+        <button onClick={() => window.open("http://web.tecnico.ulisboa.pt/ist425417/Download/Luis_Sousa_CV.pdf", "_blank")}>Resume</button>
+      </StyledButtons>
     </Wrapper>
   );
 }
