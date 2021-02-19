@@ -18,7 +18,7 @@ const Navbar = {
     .navigation.active {
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
-        background-color: rgba(10, 10, 10, 0.3);
+        background-color: rgba(18, 18, 18, 0.3);
         width: 100vw;
         justify-content: flex-end;
     }
@@ -43,7 +43,7 @@ const Navbar = {
         justify-content: flex-start !important;
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
-        background-color: rgba(10, 10, 10, 0.3);
+        background-color: rgba(18, 18, 18, 0.3);
         border-left: 2px solid rgba(255,255,255, 0.8);
         backdrop-filter: blur(0);
         padding: 0.5rem;
