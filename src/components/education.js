@@ -9,6 +9,7 @@ import GatsbyImage from "gatsby-image";
 
 const Wrapper = styled.section`
   border-top: 2px solid rgba(255,255,255, 0.8);
+  margin-bottom: 3vh;
 `
 
 const StyledDiv = styled.div`

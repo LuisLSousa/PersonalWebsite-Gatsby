@@ -12,7 +12,7 @@ const StyledSection = styled.section`
         left: 0;
         height: 100vh;
         width: 100vw;
-
+        max-width: 100%;
     }
     .home {
         display: flex;

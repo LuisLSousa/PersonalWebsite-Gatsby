@@ -12,6 +12,12 @@ const StyledHeading = styled.div `
         font-weight: 550;
         font-family: 'Montserrat',sans-serif;
     }
+    @media (max-width: 562px) {
+      h1 {
+        font-size: 1.6rem;
+
+      }
+  }
 `
 
 const Heading = ({title }) => {

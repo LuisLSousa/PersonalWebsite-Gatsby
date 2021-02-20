@@ -37,7 +37,7 @@ const StyledButton = styled.div`
     stroke: #EFFFFA;
     stroke-dasharray: 150 480;
     stroke-dashoffset: 150;
-    transition: 0.5s ease-in-out;
+    transition: 0.6s ease-in-out;
   }
 
   .btn:hover svg {

@@ -20,8 +20,9 @@ const StyledLayout = styled.div`
 
 const StyledTheme = styled.div`
     background-color: #121212;
-    width: 100vw;
     color: #EFFFFA;
+    width: 100vw;
+    max-width: 100%;
 `
 
 const Layout = ({ children }) => {
@@ -32,9 +33,7 @@ const Layout = ({ children }) => {
       <SEO />
       <Navigation />
       <StyledLayout>
-        {/* <Header /> */}
         <main id="main-content">{children}</main>
-        {/* <Footer /> */}
       </StyledLayout>
     </StyledTheme>
   )
