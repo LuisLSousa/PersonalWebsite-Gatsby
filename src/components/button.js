@@ -2,7 +2,8 @@ import React from "react";
 import styled from 'styled-components';
 
 const StyledButton = styled.div`
-    margin: 2rem;
+    margin: 1rem;
+    margin-top: 2vh;
     --width: 180px;
     --height: 60px;
     width: var(--width);
@@ -57,7 +58,7 @@ const StyledButton = styled.div`
 
   .btn span {
     color: white;
-    font-weight: 100;
+    font-weight: 550;
   }
 
   @media (max-width: 562px) {

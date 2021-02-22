@@ -1,12 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { useStaticQuery, graphql } from "gatsby";
 import Navigation from './navigation';
 
 import SEO from "./seo";
-
-
 import "./layout.css"
 
 // Global CSS
@@ -26,7 +23,6 @@ const StyledTheme = styled.div`
 `
 
 const Layout = ({ children }) => {
-  const [open, setOpen] = useState(false);
 
   return (
     <StyledTheme>

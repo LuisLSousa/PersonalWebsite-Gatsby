@@ -4,17 +4,16 @@ import { graphql, useStaticQuery } from "gatsby";
 import Heading from "../components/heading";
 import Project from "../components/project";
 
-import GatsbyImage from "gatsby-image";
-
 // ###### CSS #########
 const Wrapper = styled.section`
   border-top: 2px solid rgba(255, 255, 255, 0.8);
 `;
 
 const ProjectsDiv = styled.div`
+  margin: 0;
   display: flex;
   justify-content: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 `;
 
 // ####################
@@ -22,53 +21,25 @@ const ProjectsDiv = styled.div`
 const Projects = () => {
   const data = useStaticQuery(graphql`
     {
-      FR1: file(relativePath: { eq: "projects/FRMain.png" }) {
+      faceRecognition: file(relativePath: { eq: "projects/FRMain.png" }) {
         childImageSharp {
-          fluid(maxWidth: 512, quality: 90) {
+          fluid(maxWidth: 400, quality: 90) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-      FR2: file(relativePath: { eq: "projects/FRSignIn.png" }) {
+      robofriends: file(relativePath: { eq: "projects/robofriends.png" }) {
         childImageSharp {
-          fluid(maxWidth: 512, quality: 90) {
+          fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-      robofriends1: file(relativePath: { eq: "projects/robofriends.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 512, quality: 90) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      robofriends2: file(
-        relativePath: { eq: "projects/robofriendsSearch.png" }
+      challengeGame: file(
+        relativePath: { eq: "projects/challengeGame.png" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 512, quality: 90) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      challengeApp1: file(relativePath: { eq: "projects/challengeApp1.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 512, quality: 90) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      challengeApp2: file(relativePath: { eq: "projects/challengeApp2.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 512, quality: 90) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      challengeApp3: file(relativePath: { eq: "projects/challengeApp3.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 512, quality: 90) {
+          fluid (maxWidth: 400){
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -81,6 +52,7 @@ const Projects = () => {
       <Heading title="Projects" />
       <ProjectsDiv>
         <Project
+          img={data.faceRecognition.childImageSharp.fluid}
           title="Face Recognition"
           description="Just to see how  it looks"
           technologies="React, Gatsby, Hooks, Node.js, PostgreSQL "
@@ -88,12 +60,14 @@ const Projects = () => {
           sourceCode="https://github.com/LuisLSousa/faceRecognition"
         />
         <Project
+          img={data.challengeGame.childImageSharp.fluid}
           title="Challenge Game"
-          description=""
+          description="This is a description"
           technologies="Android Studio, Kotlin"
           sourceCode="https://github.com/LuisLSousa/ChallengeGame"
         />
         <Project
+          img={data.robofriends.childImageSharp.fluid}
           title="Robofriends"
           description=""
           technologies="React, Redux, Hooks"
