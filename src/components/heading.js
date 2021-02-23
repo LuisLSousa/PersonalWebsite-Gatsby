@@ -7,9 +7,9 @@ const StyledHeading = styled.div `
     text-transform: uppercase;
 
     h1 {
-        font-size: 2.4rem;
-        margin-bottom: 3vh;
-        font-weight: 550;
+        font-size: 2.5rem;
+        margin-bottom: 2vh;
+        font-weight: 600;
         font-family: 'Montserrat',sans-serif;
     }
     @media (max-width: 562px) {

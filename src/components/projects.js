@@ -69,7 +69,7 @@ const Projects = () => {
         <Project
           img={data.robofriends.childImageSharp.fluid}
           title="Robofriends"
-          description=""
+          description="Look at my description"
           technologies="React, Redux, Hooks"
           liveWebsite="https://luislsousa.github.io/robofriends/"
           sourceCode="https://github.com/LuisLSousa/robofriends"

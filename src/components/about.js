@@ -26,13 +26,9 @@ const StyledImage = styled(GatsbyImage)`
     height: 400px;
     width: 300px;
     margin: 0;
-    transition: 0.5s ease-in-out;
-
-    :hover {
-      box-shadow: 5px 5px rgba(255,255,255, 0.8);
-      transform: translateY(-0.3em);
-    }
-
+    box-shadow: 5px 5px rgba(255,255,255, 0.8);
+    transform: translateY(-0.3em);
+    
     @media (max-width: 562px) {
         margin-left: auto;
         margin-right:auto;

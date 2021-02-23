@@ -73,11 +73,11 @@ const Button = ({ title, targetWebsite }) => {
 
     return (
         <StyledButton onClick={() => window.open(targetWebsite, "_blank")}>
-            <div class="center">
-                <button class="btn">
-                    <svg viewBox="0 0 180 60" class="border">
-                        <polyline points="179,1 179,59 1,59 1,1 179,1" stroke-width="3" class="bg-line" />
-                        <polyline points="179,1 179,59 1,59 1,1 179,1" stroke-width="3" class="hl-line" />
+            <div className="center">
+                <button className="btn">
+                    <svg viewBox="0 0 180 60" className="border">
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" strokeWidth="3" className="bg-line" />
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" strokeWidth="3" className="hl-line" />
                     </svg>
                     <span>{title}</span>
                 </button>

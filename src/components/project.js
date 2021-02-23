@@ -1,12 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "../components/button";
 import GatsbyImage from "gatsby-image";
+import { FaGithub, FaLink } from "react-icons/fa";
 
 const StyledProject = styled.div`
-  min-width: 280px;
-  max-width: 280px;
-  padding: 1rem;
+  min-width: 300px;
+  max-width: 300px;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 2vh;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   display: flex;
   overflow-x: auto;
   flex-direction: column;
@@ -18,7 +22,7 @@ const StyledProject = styled.div`
   /* backdrop-filter: opacity(0.8) blur(1px);
   background-color: rgba(47, 204, 165, 0.4); */
   background-color: #121212;
-
+  text-align: justify;
   transition: 0.6s ease-in-out;
 
   :hover {
@@ -26,19 +30,25 @@ const StyledProject = styled.div`
   }
 
   h1 {
-    font-size: 1.4em;
-    margin-bottom: 1vh;
+    font-size: 1.25em;
+    margin-bottom: 0.75rem;
     font-weight: 500;
   }
   h2 {
-    font-size: 1rem;
+    font-size: 0.875rem;
     margin-bottom: 1rem;
     font-weight: 500;
   }
 
   h3 {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     font-weight: 500;
+  }
+
+  .icon {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    color: white;
   }
 `;
 
@@ -49,20 +59,15 @@ const StyledButtons = styled.div`
 `;
 
 const StyledImage = styled(GatsbyImage)`
-  margin: 2rem;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin-top: 0.5vh;
+  margin-bottom: 1vh;
   height: 100%;
   width: 100%;
   border-radius: 7.5%;
 
   @media (max-width: 562px) {
-    margin-left: auto;
-    margin-right: auto;
-    height: 330px;
-    width: 250px;
-    min-width: 250px;
-    margin-bottom: 5vh;
+    height: 280px;
+    width: 280px;
   }
 `;
 const Project = ({
@@ -81,12 +86,16 @@ const Project = ({
       <h3>{technologies}</h3>
       <StyledButtons>
         {liveWebsite /* Only display the button if a liveWebsite is given */ ? (
-          <Button title="Live" targetWebsite={liveWebsite} />
+          <a href={liveWebsite} target="_blank">
+            <FaLink className="icon" size="20" />
+          </a>
         ) : (
           <></>
         )}
         {sourceCode /* Only display the button if a sourceCode is given */ ? (
-          <Button title="Code" targetWebsite={sourceCode} />
+          <a href={sourceCode} target="_blank">
+            <FaGithub className="icon" size="20" />
+          </a>
         ) : (
           <></>
         )}
