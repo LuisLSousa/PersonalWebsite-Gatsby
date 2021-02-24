@@ -10,22 +10,24 @@ const Wrapper = styled.section`
 `;
 
 const SkillsDiv = styled.div`
-  position: relative;
-  left: 25%;
-  margin: 0;
-  width: 40vw;
+  margin: auto;
+  width: 45vw;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 
   @media (max-width: 562px) {
         width: 80vw;
-        position: static;
     } 
 `;
 
 const StyledImage = styled(GatsbyImage)`
   margin: 2rem;
+  transition: 0.4s ease-in-out;
+
+  :hover{
+    transform: scale(1.20);
+  }
 `;
 
 // ####################
@@ -39,7 +41,7 @@ const Skills = () => {
             title
             icon {
               childImageSharp {
-                fixed(width: 50, height: 50, quality: 100) {
+                fixed(width: 70, height: 70, quality: 100) {
                   ...GatsbyImageSharpFixed_withWebp
                 }
               }
