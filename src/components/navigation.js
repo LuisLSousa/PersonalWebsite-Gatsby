@@ -204,6 +204,9 @@ const Navigation = () => {
                     <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-50} duration={600}>Projects</Link>
                 </Navbar.Item>
                 <Navbar.Item>
+                    <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-50} duration={600}>Skills</Link>
+                </Navbar.Item>
+                <Navbar.Item>
                     <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-50} duration={600}>Contact</Link>
                 </Navbar.Item>
             </Navbar.Items>

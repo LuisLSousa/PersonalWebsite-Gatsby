@@ -56,6 +56,18 @@ const StyledButtons = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+
+  span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
 `;
 
 const StyledImage = styled(GatsbyImage)`
@@ -87,14 +99,16 @@ const Project = ({
       <StyledButtons>
         {liveWebsite /* Only display the button if a liveWebsite is given */ ? (
           <a href={liveWebsite} target="_blank">
-            <FaLink className="icon" size="20" />
+            <FaLink className="icon" title="Go to Website" size="20" />
+            <span>Go to Website</span>
           </a>
         ) : (
           <></>
         )}
         {sourceCode /* Only display the button if a sourceCode is given */ ? (
           <a href={sourceCode} target="_blank">
-            <FaGithub className="icon" size="20" />
+            <FaGithub className="icon" title="Go to Github" size="20" />
+            <span>Go to Github</span>
           </a>
         ) : (
           <></>
