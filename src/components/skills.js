@@ -17,8 +17,7 @@ const SkillsDiv = styled.div`
 `;
 
 const StyledImage = styled(GatsbyImage)`
-  max-width: 20rem;
-  max-height: 2.5rem;
+  margin: 2rem;
 `;
 
 // ####################
@@ -32,7 +31,7 @@ const Skills = () => {
             title
             icon {
               childImageSharp {
-                fixed(width: 200, height: 200) {
+                fixed(width: 50, height: 50) {
                   ...GatsbyImageSharpFixed_withWebp
                 }
               }
@@ -61,3 +60,38 @@ const Skills = () => {
 };
 
 export default Skills;
+
+/*{
+        "icon": "../images/skills/css.png",
+        "title": "CSS3"
+    },
+    {
+        "icon": "../images/skills/javascript.png",
+        "title": "JavaScript"
+    },
+    {
+        "icon": "../images/skills/react.png",
+        "title": "React"
+    },
+    {
+        "icon": "../images/skills/nodejs.png",
+        "title": "Node.js"
+    },
+    {
+        "icon": "../images/skills/python.png",
+        "title": "Python"
+    },
+    {
+        "icon": "../images/skills/postgresql.png",
+        "title": "PostgreSQL"
+    },
+    {
+        "icon": "../images/skills/kotlin.png",
+        "title": "Kotlin"
+    },
+    {
+        "icon": "../images/skills/androidStudio.png",
+        "title": "Android Studio"
+    }
+    
+    */
