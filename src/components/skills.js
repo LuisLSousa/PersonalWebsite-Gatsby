@@ -10,10 +10,18 @@ const Wrapper = styled.section`
 `;
 
 const SkillsDiv = styled.div`
+  position: relative;
+  left: 25%;
   margin: 0;
+  width: 40vw;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
+  @media (max-width: 562px) {
+        width: 80vw;
+        position: static;
+    } 
 `;
 
 const StyledImage = styled(GatsbyImage)`
@@ -31,7 +39,7 @@ const Skills = () => {
             title
             icon {
               childImageSharp {
-                fixed(width: 50, height: 50) {
+                fixed(width: 50, height: 50, quality: 100) {
                   ...GatsbyImageSharpFixed_withWebp
                 }
               }
@@ -45,7 +53,7 @@ const Skills = () => {
     <Wrapper id="skills">
       <Heading title="Skills" />
       <SkillsDiv>
-        {data.allSkillsJson.edges.map(({ node }, index) => {
+        {data.allSkillsJson.edges.map(({ node }) => {
           return (
             <StyledImage
               key={node.id}
@@ -60,38 +68,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
-/*{
-        "icon": "../images/skills/css.png",
-        "title": "CSS3"
-    },
-    {
-        "icon": "../images/skills/javascript.png",
-        "title": "JavaScript"
-    },
-    {
-        "icon": "../images/skills/react.png",
-        "title": "React"
-    },
-    {
-        "icon": "../images/skills/nodejs.png",
-        "title": "Node.js"
-    },
-    {
-        "icon": "../images/skills/python.png",
-        "title": "Python"
-    },
-    {
-        "icon": "../images/skills/postgresql.png",
-        "title": "PostgreSQL"
-    },
-    {
-        "icon": "../images/skills/kotlin.png",
-        "title": "Kotlin"
-    },
-    {
-        "icon": "../images/skills/androidStudio.png",
-        "title": "Android Studio"
-    }
-    
-    */
