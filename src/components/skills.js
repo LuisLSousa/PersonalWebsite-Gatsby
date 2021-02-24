@@ -1,4 +1,6 @@
 import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import GatsbyImage from "gatsby-image";
 import styled from "styled-components";
 import Heading from "../components/heading";
 
@@ -14,13 +16,45 @@ const SkillsDiv = styled.div`
   flex-wrap: wrap;
 `;
 
+const StyledImage = styled(GatsbyImage)`
+  max-width: 20rem;
+  max-height: 2.5rem;
+`;
+
 // ####################
 
 const Skills = () => {
-    return (
+  const data = useStaticQuery(graphql`
+    {
+      allSkillsJson {
+        edges {
+          node {
+            title
+            icon {
+              childImageSharp {
+                fixed(width: 200, height: 200) {
+                  ...GatsbyImageSharpFixed_withWebp
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+  return (
     <Wrapper id="skills">
       <Heading title="Skills" />
       <SkillsDiv>
+        {data.allSkillsJson.edges.map(({ node }, index) => {
+          return (
+            <StyledImage
+              key={node.id}
+              title={node.title}
+              {...node.icon.childImageSharp}
+            />
+          );
+        })}
       </SkillsDiv>
     </Wrapper>
   );

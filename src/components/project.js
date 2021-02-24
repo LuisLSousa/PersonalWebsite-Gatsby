@@ -98,7 +98,7 @@ const Project = ({
       <h3>{technologies}</h3>
       <StyledButtons>
         {liveWebsite /* Only display the button if a liveWebsite is given */ ? (
-          <a href={liveWebsite} target="_blank">
+          <a href={liveWebsite} target="_blank" rel="noreferrer">
             <FaLink className="icon" title="Go to Website" size="20" />
             <span>Go to Website</span>
           </a>
@@ -106,7 +106,7 @@ const Project = ({
           <></>
         )}
         {sourceCode /* Only display the button if a sourceCode is given */ ? (
-          <a href={sourceCode} target="_blank">
+          <a href={sourceCode} target="_blank" rel="noreferrer">
             <FaGithub className="icon" title="Go to Github" size="20" />
             <span>Go to Github</span>
           </a>
