@@ -2,9 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledButton = styled.div`
-  margin: 1rem;
-  margin-top: 2vh;
-  --width: 180px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1vh;
+  --width: 160px;
   --height: 60px;
   width: var(--width);
   height: var(--height);
@@ -35,10 +36,11 @@ const StyledButton = styled.div`
     left: 0;
     top: 0;
     fill: none;
-    stroke: #effffa;
+    stroke: #EFFFFA;
     stroke-dasharray: 150 480;
     stroke-dashoffset: 150;
     transition: 0.6s ease-in-out;
+    
   }
 
   .btn:hover svg {
@@ -61,6 +63,8 @@ const StyledButton = styled.div`
   }
 
   @media (max-width: 562px) {
+    margin-left: 0;
+    margin-right: 0;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     --width: 100px;
@@ -75,14 +79,14 @@ const Button = ({ title, targetWebsite }) => {
         <StyledButton onClick={() => window.open(targetWebsite, "_blank")}>
           <div className="center">
             <button className="btn">
-              <svg viewBox="0 0 180 60" className="border">
+              <svg viewBox="0 0 160 60" className="border">
                 <polyline
-                  points="179,1 179,59 1,59 1,1 179,1"
+                  points="159,1 159,59 1,59 1,1 159,1"
                   strokeWidth="3"
                   className="bg-line"
                 />
                 <polyline
-                  points="179,1 179,59 1,59 1,1 179,1"
+                  points="159,1 159,59 1,59 1,1 159,1"
                   strokeWidth="3"
                   className="hl-line"
                 />
@@ -95,9 +99,9 @@ const Button = ({ title, targetWebsite }) => {
         <StyledButton>
           <div className="center">
             <button className="btn">
-              <svg viewBox="0 0 180 60" className="border">
+              <svg viewBox="0 0 160 60" className="border">
                 <polyline
-                  points="179,1 179,59 1,59 1,1 179,1"
+                  points="159,1 159,59 1,59 1,1 159,1"
                   strokeWidth="3"
                   className="bg-line"
                 />

@@ -11,22 +11,27 @@ const Wrapper = styled.section`
 
 const SkillsDiv = styled.div`
   margin: auto;
-  width: 45vw;
+  width: 800px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 
   @media (max-width: 562px) {
-        width: 80vw;
-    } 
+    width: 80vw;
+    margin-bottom: 2vh;
+  }
 `;
 
 const StyledImage = styled(GatsbyImage)`
   margin: 2rem;
   transition: 0.4s ease-in-out;
 
-  :hover{
-    transform: scale(1.20);
+  :hover {
+    transform: scale(1.2);
+  }
+
+  @media (max-width: 562px) {
+    margin: 0.75rem;
   }
 `;
 
