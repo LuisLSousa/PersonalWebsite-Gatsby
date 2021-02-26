@@ -5,7 +5,6 @@ import Button from "../components/button";
 
 // ###### CSS #########
 const Wrapper = styled.section`
-  height: 94vh;
   border-top: 2px solid rgba(255, 255, 255, 0.8);
 `;
 
@@ -23,6 +22,8 @@ const StyledDiv = styled.div`
     font-size: 1.125rem;
     line-height: 1.75rem;
     transition-duration: 0.3s;
+    margin-bottom: 3vh;
+
   }
 
   .field:focus {
@@ -32,14 +33,17 @@ const StyledDiv = styled.div`
   }
 
   .name {
+    min-width: 240px;
     width: 20vw;
   }
 
   .email {
+    min-width: 300px;
     width: 25vw;
   }
 
   .message {
+    min-width: 420px;
     width: 35vw;
   }
 
@@ -88,12 +92,15 @@ const StyledDiv = styled.div`
       margin-left: 0;
     }
     .name {
+      min-width: 180px;
       width: 60vw;
     }
     .email {
+      min-width: 240px;
       width: 70vw;
     }
     .message {
+      min-width: 240px;
       width: 80vw;
     }
   }

@@ -45,7 +45,6 @@ const Navbar = {
       backdrop-filter: blur(10px);
       background-color: rgba(18, 18, 18, 0.3);
       border-left: 2px solid rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(0);
       padding: 0.5rem;
       padding-top: 3rem;
       transition: 0.2s ease-out;
@@ -96,6 +95,7 @@ const StyledDiv = styled.div`
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
+
   }
 `;
 const MenuButton = {

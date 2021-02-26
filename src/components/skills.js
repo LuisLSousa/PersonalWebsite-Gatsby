@@ -16,9 +16,13 @@ const SkillsDiv = styled.div`
   justify-content: center;
   flex-wrap: wrap;
 
-  @media (max-width: 562px) {
-    width: 80vw;
+  @media (max-width: 900px) {
+    width: 300px;
     margin-bottom: 2vh;
+  }
+
+  @media (max-width: 380px) {
+    width: 260px;
   }
 `;
 
@@ -30,8 +34,12 @@ const StyledImage = styled(GatsbyImage)`
     transform: scale(1.2);
   }
 
-  @media (max-width: 562px) {
+  @media (max-width: 900px) {
     margin: 0.75rem;
+  }
+
+  @media (max-width: 380px) {
+    margin: 0.5rem;
   }
 `;
 

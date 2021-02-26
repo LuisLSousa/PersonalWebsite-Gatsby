@@ -5,6 +5,7 @@ const StyledButton = styled.div`
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 1vh;
+  margin-bottom: 1vh;
   --width: 160px;
   --height: 60px;
   width: var(--width);
