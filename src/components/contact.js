@@ -114,8 +114,37 @@ const Contact = () => {
   const [buttonText, setButtonText] = useState("Send");
 
   const onSubmit = (e) => {
+    let valid = true;
     e.preventDefault();
-    setButtonText("Done!");
+
+    // check if there are any empty fields
+    if (!name) {
+      valid = false;
+      nameRef.current.classList.add("error");
+      setTimeout(() => {
+        nameRef.current.classList.remove("error");
+      }, 1000);
+    }
+
+    if (!email) {
+      valid = false;
+      emailRef.current.classList.add("error");
+      setTimeout(() => {
+        emailRef.current.classList.remove("error");
+      }, 1000);
+    }
+
+    if (!message) {
+      valid = false;
+      messageRef.current.classList.add("error");
+      setTimeout(() => {
+        messageRef.current.classList.remove("error");
+      }, 1000);
+    }
+
+    if (valid) {
+      setButtonText("Done!");
+    }
   };
 
   return (
@@ -140,11 +169,11 @@ const Contact = () => {
               placeholder="Michael Scott"
               id="name"
               ref={nameRef}
-              onChange={e => setName(e.target.value)}
+              onChange={(e) => setName(e.target.value)}
             />
           </label>
           <label>
-            <h2>Your Email Address</h2>
+            <h2>Email Address</h2>
             <input
               className="email field"
               type="email"
@@ -152,7 +181,7 @@ const Contact = () => {
               placeholder="michael.scott@example.com"
               id="email"
               ref={emailRef}
-              onChange={e => setEmail(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </label>
           <label>
@@ -161,10 +190,10 @@ const Contact = () => {
               className="message field"
               name="message"
               id="message"
-              placeholder="Your message"
+              placeholder="Type your message..."
               rows="5"
               ref={messageRef}
-              onChange={e => setMessage(e.target.value)}
+              onChange={(e) => setMessage(e.target.value)}
             />
           </label>
           <Button title={buttonText} />
