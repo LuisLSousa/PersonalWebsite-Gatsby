@@ -87,8 +87,8 @@ const Project = ({
   title,
   description,
   technologies,
-  liveWebsite,
-  sourceCode,
+  website,
+  github,
 }) => {
   return (
     <StyledProject>
@@ -97,16 +97,16 @@ const Project = ({
       <h2>{description}</h2>
       <h3>{technologies}</h3>
       <StyledButtons>
-        {liveWebsite /* Only display the button if a liveWebsite is given */ ? (
-          <a href={liveWebsite} target="_blank" rel="noreferrer">
+        {website /* Only display the button if a website is given */ ? (
+          <a href={website} target="_blank" rel="noreferrer">
             <FaLink className="icon" title="Go to Website" size="20" />
             <span>Go to Website</span>
           </a>
         ) : (
           <></>
         )}
-        {sourceCode /* Only display the button if a sourceCode is given */ ? (
-          <a href={sourceCode} target="_blank" rel="noreferrer">
+        {github /* Only display the button if a github is given */ ? (
+          <a href={github} target="_blank" rel="noreferrer">
             <FaGithub className="icon" title="Go to Github" size="20" />
             <span>Go to Github</span>
           </a>

@@ -69,6 +69,7 @@ const StyledButton = styled.div`
     margin-bottom: 0.5em;
     --width: 100px;
     --height: 40px;
+    
   }
 `;
 

@@ -43,6 +43,7 @@ const Skills = () => {
       allSkillsJson {
         edges {
           node {
+            id
             title
             icon {
               childImageSharp {
@@ -65,7 +66,7 @@ const Skills = () => {
             <StyledImage
               key={node.id}
               title={node.title}
-              {...node.icon.childImageSharp}
+              fixed={node.icon.childImageSharp.fixed}
             />
           );
         })}
