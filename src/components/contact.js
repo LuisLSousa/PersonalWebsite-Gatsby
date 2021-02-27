@@ -7,6 +7,7 @@ import Button from "../components/button";
 const Wrapper = styled.section`
   border-top: 2px solid rgba(255, 255, 255, 0.8);
   height: 90vh;
+  min-height: 600px;
 
   /* mobile */
   @media only screen and (max-height: 900px) {
@@ -21,6 +22,10 @@ const Wrapper = styled.section`
 const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
+
+  form {
+    margin-bottom: 0;
+  }
 
   .field {
     margin-left: 1rem;
