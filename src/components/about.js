@@ -26,6 +26,7 @@ const StyledImage = styled(GatsbyImage)`
   height: 400px;
   width: 300px;
   margin: 0;
+  margin-bottom: 1rem;
   box-shadow: 5px 5px rgba(255, 255, 255, 0.8);
   transform: translateY(-0.3em);
 

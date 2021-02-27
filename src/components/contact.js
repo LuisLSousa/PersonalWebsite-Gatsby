@@ -6,6 +6,16 @@ import Button from "../components/button";
 // ###### CSS #########
 const Wrapper = styled.section`
   border-top: 2px solid rgba(255, 255, 255, 0.8);
+  height: 90vh;
+
+  /* mobile */
+  @media only screen and (max-height: 900px) {
+    height: 85vh;
+  }
+  /* vertical ultrawide monitors */
+  @media only screen and (min-height: 1400px) {
+    height: 95vh;
+  }
 `;
 
 const StyledDiv = styled.div`
