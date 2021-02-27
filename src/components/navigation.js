@@ -195,7 +195,7 @@ const Navigation = () => {
           to="home"
           spy={true}
           smooth={true}
-          offset={-50}
+          offset={-60}
           duration={600}
         >
           Luís Sousa
@@ -221,7 +221,7 @@ const Navigation = () => {
             to="home"
             spy={true}
             smooth={true}
-            offset={-50}
+            offset={-60}
             duration={600}
           >
             Home
@@ -234,7 +234,7 @@ const Navigation = () => {
             to="about"
             spy={true}
             smooth={true}
-            offset={-50}
+            offset={-60}
             duration={600}
           >
             About
@@ -247,7 +247,7 @@ const Navigation = () => {
             to="education"
             spy={true}
             smooth={true}
-            offset={-50}
+            offset={-60}
             duration={600}
           >
             Education
@@ -260,7 +260,7 @@ const Navigation = () => {
             to="projects"
             spy={true}
             smooth={true}
-            offset={-50}
+            offset={-60}
             duration={600}
           >
             Projects
@@ -273,7 +273,7 @@ const Navigation = () => {
             to="skills"
             spy={true}
             smooth={true}
-            offset={-50}
+            offset={-60}
             duration={600}
           >
             Skills
@@ -286,7 +286,7 @@ const Navigation = () => {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-50}
+            offset={-60}
             duration={600}
           >
             Contact
