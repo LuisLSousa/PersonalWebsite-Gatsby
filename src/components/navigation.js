@@ -33,6 +33,7 @@ const Navbar = {
   Items: styled.ul`
     display: flex;
     list-style: none;
+    margin-left: 0;
 
     @media only screen and (max-width: 800px) {
       position: fixed;
@@ -57,7 +58,7 @@ const Navbar = {
     font-weight: 550;
     color: white;
     padding: 0;
-    margin: 1.5em;
+    margin: 1em;
     text-transform: uppercase;
 
     .link {
@@ -195,7 +196,7 @@ const Navigation = () => {
           to="home"
           spy={true}
           smooth={true}
-          offset={-60}
+          offset={-55}
           duration={600}
         >
           Luís Sousa
@@ -221,7 +222,7 @@ const Navigation = () => {
             to="home"
             spy={true}
             smooth={true}
-            offset={-60}
+            offset={-55}
             duration={600}
           >
             Home
@@ -234,7 +235,7 @@ const Navigation = () => {
             to="about"
             spy={true}
             smooth={true}
-            offset={-60}
+            offset={-55}
             duration={600}
           >
             About
@@ -247,7 +248,7 @@ const Navigation = () => {
             to="education"
             spy={true}
             smooth={true}
-            offset={-60}
+            offset={-55}
             duration={600}
           >
             Education
@@ -260,7 +261,7 @@ const Navigation = () => {
             to="projects"
             spy={true}
             smooth={true}
-            offset={-60}
+            offset={-55}
             duration={600}
           >
             Projects
@@ -273,7 +274,7 @@ const Navigation = () => {
             to="skills"
             spy={true}
             smooth={true}
-            offset={-60}
+            offset={-55}
             duration={600}
           >
             Skills
@@ -286,7 +287,7 @@ const Navigation = () => {
             to="contact"
             spy={true}
             smooth={true}
-            offset={-60}
+            offset={-55}
             duration={600}
           >
             Contact
