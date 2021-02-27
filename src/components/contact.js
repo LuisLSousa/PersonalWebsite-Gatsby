@@ -23,7 +23,6 @@ const StyledDiv = styled.div`
     line-height: 1.75rem;
     transition-duration: 0.3s;
     margin-bottom: 3vh;
-
   }
 
   .field:focus {
@@ -108,6 +107,12 @@ const StyledDiv = styled.div`
 
 // ####################
 
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
 const Contact = () => {
   const nameRef = useRef(null);
   const [name, setName] = useState("");
@@ -123,6 +128,7 @@ const Contact = () => {
   const onSubmit = (e) => {
     let valid = true;
     e.preventDefault();
+    const form = e.target;
 
     // check if there are any empty fields
     if (!name) {
@@ -150,7 +156,23 @@ const Contact = () => {
     }
 
     if (valid) {
-      setButtonText("Done!");
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({
+          "form-name": form.getAttribute("name"),
+          name: name,
+          email: email,
+          message: message,
+        }),
+      })
+        .then(() => {
+          setButtonText("Done!");
+          setName("");
+          setEmail("");
+          setMessage("");
+        })
+        .catch(() => setButtonText("Error!"));
     }
   };
 
