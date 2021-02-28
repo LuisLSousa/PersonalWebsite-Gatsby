@@ -37,11 +37,10 @@ const StyledButton = styled.div`
     left: 0;
     top: 0;
     fill: none;
-    stroke: #EFFFFA;
+    stroke: #effffa;
     stroke-dasharray: 150 480;
     stroke-dashoffset: 150;
     transition: 0.6s ease-in-out;
-    
   }
 
   .btn:hover svg {
@@ -68,15 +67,15 @@ const StyledButton = styled.div`
     margin-right: 0;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    --width: 100px;
+    --width: 110px;
     --height: 40px;
-    
+
   }
 `;
 
 const Button = ({ title, targetWebsite }) => {
   return (
-    <> 
+    <>
       {targetWebsite /* Only open a new window onClick if targetWebsite is provided*/ ? (
         <StyledButton onClick={() => window.open(targetWebsite, "_blank")}>
           <div className="center">
