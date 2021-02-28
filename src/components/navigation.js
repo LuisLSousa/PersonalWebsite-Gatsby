@@ -34,6 +34,7 @@ const Navbar = {
     display: flex;
     list-style: none;
     margin-left: 0;
+    margin-bottom: 0;
 
     @media only screen and (max-width: 800px) {
       position: fixed;
@@ -56,17 +57,18 @@ const Navbar = {
   Item: styled.li`
     font-size: 1em;
     font-weight: 550;
-    color: white;
+    color: rgb(150, 150, 150);
     padding: 0;
     margin: 1em;
     text-transform: uppercase;
 
-    .link {
-      cursor: pointer;
+    .selected {
+      /* border-bottom: 3px solid rgb(1, 164, 240); */
+      color: white;
     }
 
-    .active {
-      border-bottom: 3px solid rgb(1, 164, 240);
+    .link {
+      cursor: pointer;
     }
 
     @media only screen and (max-width: 800px) {
@@ -96,7 +98,6 @@ const StyledDiv = styled.div`
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
-
   }
 `;
 const MenuButton = {
@@ -192,12 +193,13 @@ const Navigation = () => {
       <StyledDiv>
         <Link
           className="logo"
-          activeClass="active"
+          activeClass="selected"
           to="home"
           spy={true}
           smooth={true}
           offset={-55}
           duration={600}
+          isDynamic={true}
         >
           Luís Sousa
         </Link>
@@ -218,12 +220,13 @@ const Navigation = () => {
         <Navbar.Item>
           <Link
             className="link"
-            activeClass="active"
+            activeClass="selected"
             to="home"
             spy={true}
             smooth={true}
             offset={-55}
             duration={600}
+            isDynamic={true}
           >
             Home
           </Link>
@@ -231,12 +234,13 @@ const Navigation = () => {
         <Navbar.Item>
           <Link
             className="link"
-            activeClass="active"
+            activeClass="selected"
             to="about"
             spy={true}
             smooth={true}
             offset={-55}
             duration={600}
+            isDynamic={true}
           >
             About
           </Link>
@@ -244,12 +248,13 @@ const Navigation = () => {
         <Navbar.Item>
           <Link
             className="link"
-            activeClass="active"
+            activeClass="selected"
             to="education"
             spy={true}
             smooth={true}
             offset={-55}
             duration={600}
+            isDynamic={true}
           >
             Education
           </Link>
@@ -257,12 +262,13 @@ const Navigation = () => {
         <Navbar.Item>
           <Link
             className="link"
-            activeClass="active"
+            activeClass="selected"
             to="projects"
             spy={true}
             smooth={true}
             offset={-55}
             duration={600}
+            isDynamic={true}
           >
             Projects
           </Link>
@@ -270,12 +276,13 @@ const Navigation = () => {
         <Navbar.Item>
           <Link
             className="link"
-            activeClass="active"
+            activeClass="selected"
             to="skills"
             spy={true}
             smooth={true}
             offset={-55}
             duration={600}
+            isDynamic={true}
           >
             Skills
           </Link>
@@ -283,12 +290,13 @@ const Navigation = () => {
         <Navbar.Item>
           <Link
             className="link"
-            activeClass="active"
+            activeClass="selected"
             to="contact"
             spy={true}
             smooth={true}
             offset={-55}
             duration={600}
+            isDynamic={true}
           >
             Contact
           </Link>
