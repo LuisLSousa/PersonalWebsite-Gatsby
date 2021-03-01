@@ -33,7 +33,7 @@ Start the development server with:
 gatsby develop
 ```
 
-And, finally, if you want to build the application, use
+And, finally, if you want to build the application, use:
 
 ```console
 gatsby build
