@@ -8,33 +8,42 @@ Feel free to edit the code to make your own version of the website.
 
 ## Build
 Since this project was built with Gatsby, the first thing you'll need is the Gatsby client.
-Make sure you have Node.js/npm installed in your computer, and run:
+1. Make sure you have Node.js/npm installed in your computer, and run:
 
 ```console
 npm install -g gatsby-cli
 ```
 
-Then, clone the repository and change into the working directory:
+2. Then, clone the repository and change into the working directory:
 
 ```console
 git clone https://github.com/LuisLSousa/PersonalWebsite-Gatsby
 cd PersonalWebsite-Gatsby
 ```
 
-Install all the necessary dependencies:
+3. Install all the necessary dependencies:
 
 ```console
 npm install
 ```
 
-Start the development server with:
+4. Start the development server with:
 
 ```console
 gatsby develop
 ```
+Your site is now running at `http://localhost:8000`!
 
-And, finally, if you want to build the application, use:
+5. Finally, if you want to build the application, use:
 
 ```console
 gatsby build
 ```
+
+## Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+
+## Learning Gatsby
+
+If you are unfamiliar with Gatsby, follow their [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).
