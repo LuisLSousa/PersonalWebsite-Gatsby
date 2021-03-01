@@ -7,6 +7,7 @@ import Project from "../components/project";
 // ###### CSS #########
 const Wrapper = styled.section`
   border-top: 2px solid rgba(255, 255, 255, 0.8);
+  padding-bottom: 2vh;
 `;
 
 const ProjectsDiv = styled.div`

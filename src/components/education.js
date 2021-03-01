@@ -8,7 +8,6 @@ import GatsbyImage from "gatsby-image";
 
 const Wrapper = styled.section`
   border-top: 2px solid rgba(255, 255, 255, 0.8);
-  margin-bottom: 3vh;
 `;
 
 const StyledDiv = styled.div`
@@ -16,6 +15,7 @@ const StyledDiv = styled.div`
   align-content: center;
   justify-content: center;
   width: 80vw;
+  padding-bottom: 3vh;
 `;
 
 const Container = styled.div`

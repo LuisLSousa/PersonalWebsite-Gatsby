@@ -14,13 +14,23 @@ const Navbar = {
     right: 0;
     width: 100vw;
 
-    ${"" /* Blur the entire navbar on scroll */}
     .navigation.active {
-      -webkit-backdrop-filter: blur(10px);
-      backdrop-filter: blur(10px);
-      background-color: rgba(18, 18, 18, 0.3);
+      background-color: rgba(18, 18, 18, 0.9);
       width: 100vw;
       justify-content: flex-end;
+    }
+
+    /* if backdrop-filter support, blur the navbar*/
+    @supports (
+      (-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))
+    ) {
+      .navigation.active {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(18, 18, 18, 0.4);
+        width: 100vw;
+        justify-content: flex-end;
+      }
     }
 
     @media only screen and (max-width: 800px) {
@@ -43,15 +53,20 @@ const Navbar = {
       height: 100%;
       flex-direction: column;
       justify-content: flex-start !important;
-      -webkit-backdrop-filter: blur(10px);
-      backdrop-filter: blur(10px);
-      background-color: rgba(18, 18, 18, 0.3);
       border-left: 2px solid rgba(255, 255, 255, 0.8);
       padding: 0.5rem;
       padding-top: 3rem;
       transition: 0.2s ease-out;
-      transform: ${({ openMenu }) =>
-        openMenu ? `translateX(0)` : `translateX(100%)`};
+      transform: ${({ openMenu }) => openMenu ? `translateX(0)` : `translateX(100%)`};
+      background-color: rgba(18, 18, 18, 0.9);
+
+      @supports (
+        (-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))
+      ) {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(18, 18, 18, 0.3);
+      }
     }
   `,
   Item: styled.li`
@@ -62,8 +77,8 @@ const Navbar = {
     margin: 1em;
     text-transform: uppercase;
 
+    /* To highlight the current section */
     .selected {
-      /* border-bottom: 3px solid rgb(1, 164, 240); */
       color: white;
     }
 
@@ -207,6 +222,7 @@ const Navigation = () => {
           openMenu={openMenu}
           onClick={() => toggleMenu(!openMenu)}
           ref={buttonRef}
+          aria-label="Navigation"
         >
           <div />
           <div />

@@ -182,7 +182,7 @@ const Contact = () => {
         }),
       })
         .then(() => {
-          setButtonText("Done!");
+          setButtonText("Sent!");
           setName("");
           setEmail("");
           setMessage("");

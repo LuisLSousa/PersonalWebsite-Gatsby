@@ -14,7 +14,7 @@ const StyledSection = styled.section`
     width: 100vw;
     max-width: 100%;
   }
-  
+
   .home {
     display: flex;
     flex-direction: column;

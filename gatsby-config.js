@@ -5,6 +5,7 @@ module.exports = {
     title: `Luís Sousa's Personal Website`,
     description: `A place where you can get to know me.`,
     author: `Luís Sousa`,
+    siteUrl: `https://luis-srl-sousa.com`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -37,8 +38,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Luís Sousa's Personal Website`,
+        short_name: `Personal Website`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

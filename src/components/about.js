@@ -8,7 +8,9 @@ import GatsbyImage from "gatsby-image";
 // ###### CSS #########
 const Wrapper = styled.section`
   border-top: 2px solid rgba(255, 255, 255, 0.8);
+  padding-bottom: 2vh;
 `;
+
 const StyledDiv = styled.div`
   padding-top: 0;
   display: flex;
@@ -30,6 +32,7 @@ const StyledImage = styled(GatsbyImage)`
   box-shadow: 5px 5px rgba(255, 255, 255, 0.8);
   transform: translateY(-0.3em);
 
+
   @media (max-width: 562px) {
     margin-left: auto;
     margin-right: auto;
@@ -45,7 +48,6 @@ const StyledButtons = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 2vh;
 
   @media (max-width: 562px) {
     justify-content: space-evenly;
@@ -76,7 +78,7 @@ const About = () => {
   `);
 
   return (
-    <Wrapper id="about">
+    <Wrapper id="about" >
       <Heading title="About" />
       <StyledDiv>
         <StyledImage fluid={data.photo.childImageSharp.fluid} />

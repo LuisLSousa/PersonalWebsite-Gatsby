@@ -8,7 +8,6 @@ const StyledProject = styled.div`
   max-width: 300px;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
-  margin-bottom: 2vh;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   display: flex;
@@ -18,9 +17,6 @@ const StyledProject = styled.div`
   align-items: center;
   border-radius: 5%;
   border: 2px solid #121212;
-  /* background-color: rgba(50, 50, 50, 0.3); */
-  /* backdrop-filter: opacity(0.8) blur(1px);
-  background-color: rgba(47, 204, 165, 0.4); */
   background-color: #121212;
   text-align: justify;
   transition: 0.6s ease-in-out;
