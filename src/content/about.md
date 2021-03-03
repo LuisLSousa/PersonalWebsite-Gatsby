@@ -4,11 +4,11 @@ id: "about"
 
 Hey there! 
 
-I'm Luís Sousa, a Full Stack Developer from Portugal. \
+I am Luís Sousa, a Full Stack Developer from Portugal. \
 I am currently looking for a job that allows me to increase my knowledge and contribute with a new perspective, taking ownership of my work and making a personal impact in the work environment. 
 I consider myself a fast learner, and I am highly motivated to continue developing my skills. 
 
-My master's degree in Computer Science at Instituto Superior Técnico, the top engineering university in Portugal, culminated in a dissertation focused on indirect reciprocity, a cooperation mechanism. My investigations about this subject made me keenly aware of the importance of working in a collaborative environment as a member of a team.
+My master's degree in Computer Science at Instituto Superior Técnico, the top engineering university in Portugal, culminated in a dissertation focused on indirect reciprocity, a cooperation mechanism. My investigations about this subject made me keenly aware of the importance of working as a team member in a collaborative environment.
 
 While writing my dissertation, I also began learning web development as an extra layer of skills on top of the ones I developed during my studies. This little side-project quickly grew until it became my main occupation and, shortly thereafter, my passion.
 
