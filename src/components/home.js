@@ -58,7 +58,7 @@ const Home = () => {
             strings={[
               "Full Stack Developer",
               "Software Engineer",
-              "Exactly who you need",
+              "Exactly who you need!",
             ]}
             typeSpeed={60}
             backDelay={1000}

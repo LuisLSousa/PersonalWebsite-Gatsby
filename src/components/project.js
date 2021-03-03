@@ -8,6 +8,7 @@ const StyledProject = styled.div`
   max-width: 300px;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   display: flex;

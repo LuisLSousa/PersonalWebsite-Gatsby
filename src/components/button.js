@@ -107,7 +107,7 @@ const Button = ({ title, targetWebsite }) => {
                   className="bg-line"
                 />
                 <polyline
-                  points="179,1 179,59 1,59 1,1 179,1"
+                  points="159,1 159,59 1,59 1,1 159,1"
                   strokeWidth="3"
                   className="hl-line"
                 />

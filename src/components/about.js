@@ -30,8 +30,6 @@ const StyledImage = styled(GatsbyImage)`
   margin: 0;
   margin-bottom: 1rem;
   box-shadow: 5px 5px rgba(255, 255, 255, 0.8);
-  transform: translateY(-0.3em);
-
 
   @media (max-width: 562px) {
     margin-left: auto;
@@ -40,8 +38,6 @@ const StyledImage = styled(GatsbyImage)`
     width: 250px;
     min-width: 250px;
     margin-bottom: 5vh;
-    box-shadow: 5px 5px rgba(255, 255, 255, 0.8);
-    transform: translateY(-0.3em);
   }
 `;
 const StyledButtons = styled.div`
@@ -58,6 +54,12 @@ const StyledText = styled.div`
   width: 80vw;
   font-size: 1rem;
   text-align: justify;
+
+  @media (max-width: 562px) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+  }
 `;
 // ####################
 
@@ -78,7 +80,7 @@ const About = () => {
   `);
 
   return (
-    <Wrapper id="about" >
+    <Wrapper id="about">
       <Heading title="About" />
       <StyledDiv>
         <StyledImage fluid={data.photo.childImageSharp.fluid} />
