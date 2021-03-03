@@ -25,8 +25,8 @@ const StyledDiv = styled.div`
   }
 `;
 const StyledImage = styled(GatsbyImage)`
-  height: 400px;
-  width: 300px;
+  height: 450px;
+  width: 340px;
   margin: 0;
   margin-bottom: 1rem;
   box-shadow: 5px 5px rgba(255, 255, 255, 0.8);
@@ -52,7 +52,6 @@ const StyledButtons = styled.div`
 const StyledText = styled.div`
   padding-left: 5vw;
   width: 80vw;
-  font-size: 1rem;
   text-align: justify;
 
   @media (max-width: 562px) {
