@@ -2,7 +2,7 @@
     {
       "image": "../images/projects/faceRecognition.png",
       "title": "Face Recognition",
-      "description": "A web app that uses the Clarifai API to detect faces in an image. Features user-registration and sign-in.",
+      "description": "A web app that uses the Clarifai API to detect faces in an image. Features user registration and sign-in.",
       "technologies": "React, Hooks, Node.js, Express.js, PostgreSQL",
       "website": "https://proj-face-recognition.herokuapp.com/",
       "github": "https://github.com/LuisLSousa/faceRecognition"

@@ -53,6 +53,7 @@ const StyledText = styled.div`
   padding-left: 5vw;
   width: 80vw;
   text-align: justify;
+  margin-bottom: 1rem;
 
   @media (max-width: 562px) {
     margin-left: auto;
