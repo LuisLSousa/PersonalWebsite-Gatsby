@@ -66,7 +66,7 @@ const Content = styled.div`
   flex-direction: column;
   align-content: flex-start;
 
-  h6 {
+  h3 {
     margin: 5px;
     font-weight: normal;
   }
@@ -138,10 +138,10 @@ const Education = () => {
                       objectPosition: "left",
                     }}
                   />
-                  <h6 className="degree">{node.degree}</h6>
-                  <h6 className="university">{node.university}</h6>
-                  <h6 className="location">{node.location}</h6>
-                  <h6 className="period">({node.period})</h6>
+                  <h3 className="degree">{node.degree}</h3>
+                  <h3 className="university">{node.university}</h3>
+                  <h3 className="location">{node.location}</h3>
+                  <h3 className="period">({node.period})</h3>
                 </Content>
               </Entry>
             );

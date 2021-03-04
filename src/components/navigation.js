@@ -72,7 +72,7 @@ const Navbar = {
   Item: styled.li`
     font-size: 1em;
     font-weight: 550;
-    color: rgb(150, 150, 150);
+    color: rgb(180, 180, 180);
     padding: 0;
     margin: 1em;
     text-transform: uppercase;
