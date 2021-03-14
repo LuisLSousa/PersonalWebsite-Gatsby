@@ -20,6 +20,10 @@
         "title": "Node.js"
     },
     {
+        "icon": "../images/skills/jest.png",
+        "title": "Jest"
+    },
+    {
         "icon": "../images/skills/python.png",
         "title": "Python"
     },

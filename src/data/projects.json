@@ -10,7 +10,7 @@
     {
       "image": "../images/projects/robofriends.png",
       "title": "Robofriends",
-      "description": "React app that allows users to search from a grid of robots with live filtering. Using Robohash API.",
+      "description": "A react app that allows users to search from a grid of robots with live filtering. Using Robohash API.",
       "technologies": "React, Redux, Hooks",
       "website": "https://luislsousa.github.io/robofriends/",
       "github": "https://github.com/LuisLSousa/robofriends"

@@ -16,12 +16,12 @@ const SkillsDiv = styled.div`
   justify-content: center;
   flex-wrap: wrap;
 
-  @media (max-width: 900px) {
-    width: 300px;
+  @media (max-width: 1000px) {
+    width: 500px;
     margin-bottom: 2vh;
   }
 
-  @media (max-width: 380px) {
+  @media (max-width: 620px) {
     width: 260px;
   }
 `;
@@ -33,13 +33,13 @@ const StyledImage = styled(GatsbyImage)`
   :hover {
     transform: scale(1.2);
   }
-
-  @media (max-width: 900px) {
-    margin: 0.75rem;
+  
+  @media (max-width: 1000px) {
+    margin: 1rem 0.75rem;
   }
 
-  @media (max-width: 380px) {
-    margin: 0.5rem;
+  @media (max-width: 620px) {
+    margin: 1rem 1.5rem;
   }
 `;
 
