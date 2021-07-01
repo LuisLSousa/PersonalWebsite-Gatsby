@@ -88,6 +88,7 @@ const Project = ({
   github,
 }) => {
   return (
+    // TODO make image clickable so it redirects to the website (if one is given)
     <StyledProject>
       <StyledImage fluid={img} />
       <h1>{title}</h1>
@@ -112,6 +113,7 @@ const Project = ({
         )}
       </StyledButtons>
     </StyledProject>
+    
   );
 };
 

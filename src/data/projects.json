@@ -21,6 +21,13 @@
       "description": "An android app to play with friends when social gatherings become normal again.",
       "technologies": "Android Studio, Kotlin",
       "github": "https://github.com/LuisLSousa/ChallengeGame"
+    },
+    {
+      "image": "../images/projects/eurofisica.png",
+      "title": "Eurofisica",
+      "description": "The website of a physiotherapy clinic.",
+      "technologies": "HTML, CSS, Javascript",
+      "website": "https://eurofisica.pt"
     }
     
   ]

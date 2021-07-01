@@ -20,7 +20,7 @@ const SkillsDiv = styled.div`
     width: 500px;
     margin-bottom: 2vh;
   }
-
+  /* two columns for mobile */
   @media (max-width: 620px) {
     width: 260px;
   }

@@ -56,8 +56,8 @@ const Home = () => {
         <h3>
           <Typed
             strings={[
-              "Full Stack Developer",
               "Software Engineer",
+              "Full Stack Developer",
               "Exactly who you need!",
             ]}
             typeSpeed={60}
