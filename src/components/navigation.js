@@ -265,6 +265,20 @@ const Navigation = () => {
           <Link
             className="link"
             activeClass="selected"
+            to="experience"
+            spy={true}
+            smooth={true}
+            offset={-55}
+            duration={600}
+            isDynamic={true}
+          >
+            Experience
+          </Link>
+        </Navbar.Item>
+        <Navbar.Item>
+          <Link
+            className="link"
+            activeClass="selected"
             to="education"
             spy={true}
             smooth={true}

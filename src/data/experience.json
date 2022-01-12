@@ -1,0 +1,30 @@
+[
+    {
+        "icon": "../images/education/ist.png",
+        "company": "OLX Group",
+        "position": "Software Engineer",
+        "location": "Lisbon, Portugal",
+        "period": "Jan 2022 - Present"
+    },
+    {
+        "icon": "../images/education/ist.png",
+        "company": "OLX Group",
+        "position": "Software Engineer Trainee",
+        "location": "Lisbon, Portugal",
+        "period": "Jul 2021 - Jan 2022"
+    },
+    {
+        "icon": "../images/education/ist.png",
+        "company": "Blaua",
+        "position": "Software Engineer",
+        "location": "Lisbon, Portugal",
+        "period": "Mar 2021 - Apr 2021"
+    },
+    {
+        "icon": "../images/education/ist.png",
+        "company": "Deloitte",
+        "position": "Summer Intern",
+        "location": "Lisbon, Portugal",
+        "period": "Jun 2018 - Jul 2018"
+    }
+]
