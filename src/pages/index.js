@@ -8,14 +8,29 @@ import Projects from "../components/projects";
 import Skills from "../components/skills";
 import Contact from "../components/contact";
 import Footer from "../components/footer";
+import styled from "styled-components";
+
+const ExperienceEducation = styled.div`
+  display: grid;
+  row-gap: 0px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  @media (max-width: 562px) {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+  }
+`;
 
 const IndexPage = () => {
   return (
     <Layout>
       <Home />
       <About />
-      <Experience/>
-      <Education />
+      <ExperienceEducation>
+        <Experience />
+        <Education />
+      </ExperienceEducation>
       <Projects />
       <Skills />
       <Contact />

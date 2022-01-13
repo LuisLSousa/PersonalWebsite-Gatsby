@@ -14,7 +14,6 @@ const StyledDiv = styled.div`
   display: flex;
   align-content: center;
   justify-content: center;
-  width: 80vw;
   padding-bottom: 3vh;
 `;
 

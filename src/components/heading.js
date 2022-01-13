@@ -7,7 +7,7 @@ const StyledHeading = styled.div `
     text-transform: uppercase;
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-bottom: 2vh;
         font-weight: 600;
         font-family: 'Montserrat',sans-serif;
