@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Navigation from "./navigation";
 
-import SEO from "./seo";
+import Seo from "./seo";
 import "./layout.css";
 
 // Global CSS
@@ -22,16 +22,9 @@ const StyledTheme = styled.div`
 `;
 
 const Layout = ({ children }) => {
-  useEffect(() => {
-    if (typeof window !== `undefined`) {
-      const WOW = require("wowjs");
-      new WOW.WOW({ live: false, mobile: false }).init();
-    }
-  }, []);
-
   return (
     <StyledTheme>
-      <SEO />
+      <Seo />
       <Navigation />
       <StyledLayout>
         <main id="main-content">{children}</main>

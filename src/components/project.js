@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import GatsbyImage from "gatsby-image";
+// import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { FaGithub, FaLink } from "react-icons/fa";
 
 const StyledProject = styled.div`
@@ -89,31 +90,34 @@ const Project = ({
 }) => {
   return (
     // TODO make image clickable so it redirects to the website (if one is given)
+
     <StyledProject>
-      <StyledImage fluid={img} />
+      {/* <OutboundLink
+        href={website || github}
+        target="_blank"
+        rel="noopener noreferrer"
+      > */}
+        {/* <FaLink className="icon" title="Go to Website" size="20" /> */}
+        <StyledImage fluid={img} />
+      {/* </OutboundLink> */}
       <h1>{title}</h1>
       <h2>{description}</h2>
       <h3>{technologies}</h3>
       <StyledButtons>
-        {website /* Only display the button if a website is given */ ? (
+        {website && (
           <a href={website} target="_blank" rel="noreferrer">
             <FaLink className="icon" title="Go to Website" size="20" />
             <span>Go to Website</span>
           </a>
-        ) : (
-          <></>
         )}
-        {github /* Only display the button if a github is given */ ? (
+        {github && (
           <a href={github} target="_blank" rel="noreferrer">
             <FaGithub className="icon" title="Go to Github" size="20" />
             <span>Go to Github</span>
           </a>
-        ) : (
-          <></>
         )}
       </StyledButtons>
     </StyledProject>
-    
   );
 };
 

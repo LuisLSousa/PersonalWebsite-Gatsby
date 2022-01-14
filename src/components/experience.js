@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { graphql, useStaticQuery } from "gatsby";
 import Heading from "../components/heading";
@@ -94,6 +94,13 @@ const StyledImage = styled(GatsbyImage)`
 // ####################
 
 const Experience = () => {
+  useEffect(() => {
+    if (typeof window !== `undefined`) {
+      const WOW = require("wowjs");
+      new WOW.WOW({ live: false, mobile: false }).init();
+    }
+  }, []);
+
   const data = useStaticQuery(graphql`
     {
       allExperienceJson {
