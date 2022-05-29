@@ -1,27 +1,27 @@
 [
     {
-        "icon": "../images/education/ist.png",
-        "company": "Master's Degree in Information Systems and Computer Engineering",
-        "position": "Software Engineer",
+        "icon": "../images/experience/olxgroup_dark_bg.png",
+        "company": "OLX Group",
+        "position": "Backend Software Engineer",
         "location": "Lisbon, Portugal",
         "period": "Jan 2022 - Present"
     },
     {
-        "icon": "../images/education/ist.png",
+        "icon": "../images/experience/olxgroup_dark_bg.png",
         "company": "OLX Group",
         "position": "Software Engineer Trainee",
         "location": "Lisbon, Portugal",
         "period": "Jul 2021 - Jan 2022"
     },
     {
-        "icon": "../images/education/ist.png",
+        "icon": "../images/experience/blaua_ai.png",
         "company": "Blaua",
         "position": "Software Engineer",
         "location": "Lisbon, Portugal",
         "period": "Mar 2021 - Apr 2021"
     },
     {
-        "icon": "../images/education/ist.png",
+        "icon": "../images/experience/deloitte.png",
         "company": "Deloitte",
         "position": "Summer Intern",
         "location": "Lisbon, Portugal",

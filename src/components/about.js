@@ -81,7 +81,7 @@ const About = () => {
 
   return (
     <Wrapper id="about">
-      <Heading title="About" />
+      <Heading title="About Me" />
       <StyledDiv>
         <StyledImage fluid={data.photo.childImageSharp.fluid} />
         <StyledText

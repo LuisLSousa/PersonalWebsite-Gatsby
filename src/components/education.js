@@ -116,6 +116,7 @@ const Education = () => {
       }
     }
   `);
+
   return (
     <Wrapper id="education">
       <Heading title="Education" />

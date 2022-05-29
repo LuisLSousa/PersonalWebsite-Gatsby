@@ -8,7 +8,7 @@ import Particles from "react-tsparticles";
 const StyledSection = styled.section`
   .particles {
     z-index: 0;
-    position: absolute !important;
+    position: absolute;
     left: 0;
     height: 100vh;
     width: 100vw;
@@ -50,9 +50,7 @@ const StyledSection = styled.section`
 const Home = () => {
   return (
     <StyledSection>
-    <div>
-      <Particles className="particles" params={particlesParams} />
-    </div>
+      {/* <Particles className="particles" options={particlesParams} /> */}
       <section id="home" className="home">
         <h1 className="title">Luís Sousa</h1>
         <h3>
@@ -60,7 +58,6 @@ const Home = () => {
             strings={[
               "Software Engineer",
               "Full Stack Developer",
-              "Exactly who you need!",
             ]}
             typeSpeed={60}
             backDelay={1000}

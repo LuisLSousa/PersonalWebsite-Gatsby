@@ -258,7 +258,7 @@ const Navigation = () => {
             duration={600}
             isDynamic={true}
           >
-            About
+            About Me
           </Link>
         </Navbar.Item>
         <Navbar.Item>

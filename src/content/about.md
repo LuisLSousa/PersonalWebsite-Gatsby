@@ -2,7 +2,7 @@
 id: "about"
 ---
 
-Hey there! 
+Software Engineer experienced with Go, AWS, ... . \
 
-My name is Luís Sousa, and I am a Software Engineer at OLX Group. \
-Test
+Bla bla bla
+
