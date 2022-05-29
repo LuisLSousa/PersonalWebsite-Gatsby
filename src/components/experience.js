@@ -22,29 +22,39 @@ const Container = styled.div`
 `;
 
 const Bar = styled.div`
+  /* see https://jsfiddle.net/Kredit/55vex4ur/ */
   width: 0.25rem;
   min-width: 4px;
   background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 9999px;
-`;
 
-const Dot = styled.div`
-  margin-left: -1rem;
-  position: relative;
-  margin-top: 0.75rem;
-  height: 0.75rem;
-  width: 0.75rem;
-  min-width: 12px;
-  border-radius: 9999px;
-  z-index: 2;
-  background-color: rgba(255, 255, 255, 1);
+  list-style: none;
+
+  li {
+    left: -5px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 100px;
+    height: 15px;
+    width: 15px;
+    z-index: 2;
+    position: relative;
+  }
 `;
 
 const Entry = styled.div`
   display: flex;
   flex-direction: row;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  /* padding-top: 1rem;
+  padding-bottom: 1rem; */
+
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1rem;
+
+  :nth-child(odd) {
+    grid-column: 3;
+    border: 2px solid red;
+  }
+
   animation: fadeIn;
 
   @keyframes fadeIn {
@@ -60,7 +70,6 @@ const Entry = styled.div`
 `;
 
 const Content = styled.div`
-  margin-left: 2rem;
   display: flex;
   flex-direction: column;
   align-content: flex-start;
@@ -128,15 +137,15 @@ const Experience = () => {
     <Wrapper id="experience">
       <Heading title="Experience" />
       <StyledDiv>
-        <Bar />
         <Container className="wow">
           {data.allExperienceJson.edges.map(({ node }, index) => {
             return (
               <Entry
                 key={node.id}
-                style={{ animationDuration: `${index * 300 + 500}ms` }}
+                style={{
+                  animationDuration: `${index * 300 + 500}ms`,
+                }}
               >
-                <Dot />
                 <Content>
                   <StyledImage
                     fluid={node.icon.childImageSharp.fluid}
@@ -150,6 +159,11 @@ const Experience = () => {
                   <h3 className="location">{node.location}</h3>
                   <h3 className="period">({node.period})</h3>
                 </Content>
+                {/* <Dot /> */}
+                <Bar>
+                  <li />
+                </Bar>
+                <h1>boda</h1>
               </Entry>
             );
           })}
