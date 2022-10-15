@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
-import styled from "styled-components";
+import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import Heading from "../components/heading";
+import Heading from "../index";
 import GatsbyImage from "gatsby-image";
 
 // ###### CSS #########
@@ -101,14 +100,12 @@ const StyledImage = styled(GatsbyImage)`
 `;
 
 // ####################
+// TODO:
+//  - Make experience appear on each side of the bar alternating
+//  - Fix gatsby versions
+//  - Move styled components to css files
 
 const Experience = () => {
-  useEffect(() => {
-    if (typeof window !== `undefined`) {
-      const WOW = require("wowjs");
-      new WOW.WOW({ live: false, mobile: false }).init();
-    }
-  }, []);
 
   const data = useStaticQuery(graphql`
     {
@@ -137,7 +134,7 @@ const Experience = () => {
     <Wrapper id="experience">
       <Heading title="Experience" />
       <StyledDiv>
-        <Container className="wow">
+        <Container>
           {data.allExperienceJson.edges.map(({ node }, index) => {
             return (
               <Entry
@@ -159,7 +156,6 @@ const Experience = () => {
                   <h3 className="location">{node.location}</h3>
                   <h3 className="period">({node.period})</h3>
                 </Content>
-                {/* <Dot /> */}
                 <Bar>
                   <li />
                 </Bar>

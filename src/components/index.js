@@ -1,0 +1,12 @@
+export { About } from "./about/about";
+export { Button } from "./button/button"
+export { Contact } from "./contact/contact";
+export { Education } from "./education/education";
+export { Experience } from "./experience/experience";
+export { Footer } from "./footer/footer";
+export { Heading } from "./heading/heading";
+export { Home } from "./home/home";
+export { Layout } from "./layout/layout";
+export { Navigation } from "./navigation/navigation";
+export { Projects } from "./projects/projects";
+export { Skills } from "./skills/skills.jsx";

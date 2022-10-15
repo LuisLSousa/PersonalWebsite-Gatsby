@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Navigation from "./navigation";
+import Navigation from "../index";
 
 import Seo from "./seo";
 import "./layout.css";

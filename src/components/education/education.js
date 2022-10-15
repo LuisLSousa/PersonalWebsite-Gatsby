@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { graphql, useStaticQuery } from "gatsby";
-import Heading from "../components/heading";
+import Heading from "../index";
 import GatsbyImage from "gatsby-image";
 
 // ###### CSS #########
@@ -106,9 +106,7 @@ const Education = () => {
             period
             icon {
               childImageSharp {
-                fluid(maxHeight: 40, quality: 90) {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
+                gatsbyImageData(width: 40, height: 40, layout: FIXED)
               }
             }
           }

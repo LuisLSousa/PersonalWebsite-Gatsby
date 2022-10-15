@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { graphql, useStaticQuery } from "gatsby";
-import Heading from "../components/heading";
-import Button from "../components/button";
+import { Heading, Button } from "../index";
 import GatsbyImage from "gatsby-image";
 
 // ###### CSS #########
@@ -20,7 +19,7 @@ const StyledDiv = styled.div`
 
   @media (max-width: 562px) {
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: fleçx-start;
     margin-bottom: 0;
   }
 `;
