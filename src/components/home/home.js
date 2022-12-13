@@ -1,7 +1,7 @@
 import React from "react";
-import Typed from "react-typed";
+// import Typed from "react-typed";
 import styled from "styled-components";
-import particlesParams from "../components/particles";
+import particlesParams from "./particles/particles";
 import Particles from "react-tsparticles";
 
 // ###### CSS #########
@@ -54,7 +54,7 @@ const Home = () => {
       <section id="home" className="home">
         <h1 className="title">Luís Sousa</h1>
         <h3>
-          <Typed
+          {/* <Typed
             strings={[
               "Software Engineer",
               "Full Stack Developer",
@@ -63,7 +63,7 @@ const Home = () => {
             backDelay={1000}
             backSpeed={50}
             loop
-          />
+          /> */}
         </h3>
       </section>
     </StyledSection>

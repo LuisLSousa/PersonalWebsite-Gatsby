@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import GatsbyImage from "gatsby-image";
 import styled from "styled-components";
-import Heading from "../index";
+import Heading from "../heading/heading";
 
 // ###### CSS #########
 const Wrapper = styled.section`

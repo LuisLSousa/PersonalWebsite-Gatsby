@@ -10,6 +10,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -17,14 +18,6 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown`,
-        path: path.join(__dirname, `src`, `content`),
-      },
-    },
-    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

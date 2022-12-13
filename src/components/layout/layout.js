@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import Navigation from "../index";
+import Navigation from "../navigation/navigation";
 
-import Seo from "./seo";
+import Seo from "../seo";
 import "./layout.css";
 
 // Global CSS
@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
   return (
     <StyledTheme>
       <Seo />
-      <Navigation />
+      {/* <Navigation /> */}
       <StyledLayout>
         <main id="main-content">{children}</main>
       </StyledLayout>

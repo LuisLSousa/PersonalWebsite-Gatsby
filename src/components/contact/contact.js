@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
-import { Heading, Button } from "../index"
+import Heading from "../heading/heading";
+import Button from "../button/button"
 
 // ###### CSS #########
 const Wrapper = styled.section`
