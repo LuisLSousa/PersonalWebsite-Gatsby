@@ -73,7 +73,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="wrapper">
+    <section id="contact" className="contactWrapper">
       <Heading title="Contact" />
         <form
           method="post"
@@ -122,7 +122,7 @@ const Contact = () => {
           </label>
           <Button title={buttonText} />
         </form>
-    </div>
+    </section>
   );
 };
 

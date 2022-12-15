@@ -1,5 +1,4 @@
-.wrapper {
-    border-top: 2px solid rgba(255, 255, 255, 0.8);
+.contactWrapper {
     height: 90vh;
     min-height: 600px;
 }
@@ -87,7 +86,7 @@ label h2 {
         line-height: 1.5rem;
     }
 
-    h2 {
+    label h2 {
         margin-left: 0;
     }
 
@@ -110,14 +109,14 @@ label h2 {
 
 /* mobile */
 @media screen and (max-height: 900px) {
-    .wrapper {
+    .contactWrapper {
         height: 85vh;
     }
 }
 
 /* vertical ultrawide monitors */
 @media screen and (min-height: 1400px) {
-    .wrapper {
+    .contactWrapper {
         height: 95vh;
     }
 }

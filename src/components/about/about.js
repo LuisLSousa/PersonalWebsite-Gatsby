@@ -25,7 +25,7 @@ const About = () => {
   `);
 
   return (
-    <div id="about" className="wrapper">
+    <section id="about" className="aboutWrapper">
       <Heading title="About Me" />
       <div className="innerWrapper">
         <GatsbyImage className="profile" fluid={data.photo.childImageSharp.fluid} />
@@ -39,7 +39,7 @@ const About = () => {
         <Button title="LinkedIn" targetWebsite="https://www.linkedin.com/in/luis-srl-sousa/" />
         <Button title="Resume" targetWebsite="http://web.tecnico.ulisboa.pt/ist425417/Download/Luis_Sousa_CV.pdf" />
       </div>
-    </div>
+    </section>
   );
 };
 
