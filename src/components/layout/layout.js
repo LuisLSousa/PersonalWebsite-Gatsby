@@ -15,7 +15,7 @@ const StyledLayout = styled.div`
 `;
 
 const StyledTheme = styled.div`
-  background-color: #121212;
+  background-color: #010111;
   color: #effffa;
   width: 100vw;
   max-width: 100%;

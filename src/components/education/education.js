@@ -131,10 +131,6 @@ const Education = () => {
                 <Content>
                   <StyledImage
                     fluid={node.icon.childImageSharp.fluid}
-                    imgStyle={{
-                      objectFit: "contain",
-                      objectPosition: "left",
-                    }}
                   />
                   <h3 className="degree">{node.degree}</h3>
                   <h3 className="university">{node.university}</h3>
