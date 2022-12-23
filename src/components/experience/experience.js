@@ -2,7 +2,9 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Heading from "../heading/heading";
 import GatsbyImage from "gatsby-image";
-import { FiLink } from "react-icons/fi";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLink, faLinkSlash, faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
+
 
 import "./experience.css"
 
@@ -44,9 +46,12 @@ const Experience = () => {
                 <h3 className="position">{node.position}</h3>
                 <a className="company" href={node.website ? "" + node.website : null} target="_blank" rel="noreferrer">
                   {node.company}
-                  <FiLink className="hyperlinkIcon" />
+                  <FontAwesomeIcon className="faIcon" icon={node.website ? faLink : faLinkSlash} />
                 </a>
-                <h3 className="period">{node.period}</h3>
+                <h3 className="period">
+                  <FontAwesomeIcon className="faIcon" icon={faCalendarAlt} />
+                  {node.period}
+                </h3>
               </div>
               <div className="verticalBar">
                 <li />

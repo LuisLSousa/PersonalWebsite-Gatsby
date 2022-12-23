@@ -24,8 +24,8 @@ body {
 :root {
   --color-bg: #010111;
   --color-bg-variant: #4db5ff38;
-  --color-primary: rgba(255, 255, 255, 1); /*rgb(77, 181, 255);*/ 
-  --color-primary-faded:rgba(255, 255, 255, 0.4); /* rgb(77, 181, 255, 0.4);*/
+  --color-primary: rgb(77, 181, 255); /*rgba(255, 255, 255, 1);*/ 
+  --color-primary-faded:rgb(77, 181, 255, 0.5); /* rgba(255, 255, 255, 0.4);*/
   --color-primary-variant: rgba(77, 181, 244, 0.4);
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);

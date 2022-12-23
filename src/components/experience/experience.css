@@ -44,7 +44,6 @@
 
 .content h3 {
     margin: 5px;
-    font-weight: normal;
 }
 
 .content .position {
@@ -60,18 +59,19 @@
     text-decoration: none;
 }
 
-.hyperlinkIcon {
+.faIcon {
+    position: relative;
     font-size: 0.8rem;
-    margin-left: 0.5rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
 }
 
-.content .company {
+.content, .company, .period {
     font-size: 1rem;
 }
 
-.content .location,
 .period {
-    font-size: 0.875rem;
+    color: var(--color-light);
 }
 
 .verticalBar {
