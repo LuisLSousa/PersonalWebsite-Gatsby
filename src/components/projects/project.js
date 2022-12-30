@@ -95,7 +95,6 @@ const Project = ({
       {/* <OutboundLink
         href={website || github}
         target="_blank"
-        rel="noopener noreferrer"
       > */}
         {/* <FaLink className="icon" title="Go to Website" size="20" /> */}
         <StyledImage fluid={img} />

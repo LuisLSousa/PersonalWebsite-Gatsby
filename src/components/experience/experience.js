@@ -3,8 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import Heading from "../heading/heading";
 import GatsbyImage from "gatsby-image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLink, faLinkSlash, faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
-
+import { faLink, faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
 
 import "./experience.css"
 
@@ -21,6 +20,8 @@ const Experience = () => {
             position
             location
             period
+            responsabilities
+            stack
             icon {
               childImageSharp {
                 fluid(maxHeight: 40, quality: 100) {
@@ -33,7 +34,7 @@ const Experience = () => {
       }
     }
   `);
-
+    // TODO add responsabilities and tech stack/skills
   return (
     <section id="experience">
       <Heading title="Experience" />
@@ -44,10 +45,14 @@ const Experience = () => {
               <div className="content">
                 <GatsbyImage className="companyLogo" fluid={node.icon.childImageSharp.fluid} />
                 <h3 className="position">{node.position}</h3>
-                <a className="company" href={node.website ? "" + node.website : null} target="_blank" rel="noreferrer">
-                  {node.company}
-                  <FontAwesomeIcon className="faIcon" icon={node.website ? faLink : faLinkSlash} />
-                </a>
+                {node.website ?
+                  <a className="company" href={node.website} target="_blank" rel="noreferrer">
+                    {node.company}
+                    {console.log(node.website)}
+                    <FontAwesomeIcon className="faIcon" icon={faLink} />
+                  </a>
+                  :
+                  <></>}
                 <h3 className="period">
                   <FontAwesomeIcon className="faIcon" icon={faCalendarAlt} />
                   {node.period}

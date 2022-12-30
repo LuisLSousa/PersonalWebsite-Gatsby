@@ -5,7 +5,9 @@
         "website": "https://www.olxgroup.com/",
         "position": "Backend Software Engineer",
         "location": "Lisbon, Portugal",
-        "period": "01/2022 - Present"
+        "period": "01/2022 - Present",
+        "responsabilities": "",
+        "stack": ""
     },
     {
         "icon": "../images/experience/olxgroup_dark_bg.png",
@@ -13,14 +15,18 @@
         "website": "https://www.olxgroup.com/",
         "position": "Software Engineer Trainee",
         "location": "Lisbon, Portugal",
-        "period": " 06/2021 - 01/2022"
+        "period": " 06/2021 - 01/2022",
+        "responsabilities": "",
+        "stack": ""
     },
     {
         "icon": "../images/experience/blaua_ai.png",
         "company": "Blaua",
         "website": "",
         "position": "Software Engineer",
-        "period": "03/2021 - 04/2021"
+        "period": "03/2021 - 04/2021",
+        "responsabilities": "",
+        "stack": ""
     },
     {
         "icon": "../images/experience/deloitte.png",
@@ -28,6 +34,8 @@
         "website": "https://www2.deloitte.com/pt/pt.html",
         "position": "Summer Intern",
         "location": "Lisbon, Portugal",
-        "period": "06/2018 - 07/2018"
+        "period": "06/2018 - 07/2018",
+        "responsabilities": "",
+        "stack": ""
     }
 ]
