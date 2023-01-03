@@ -20,8 +20,8 @@ const Education = () => {
             period
             icon {
               childImageSharp {
-                fixed(height: 40, quality: 100) {
-                  ...GatsbyImageSharpFixed_withWebp
+                fixed(height:50, quality: 100) {
+                  ...GatsbyImageSharpFixed
                 }
               }
             }
@@ -38,8 +38,8 @@ const Education = () => {
         {data.allEducationJson.edges.map(({ node }) => {
           return (
             <div key={node.id} className="educationEntry">
-              <div className="content">
-                <GatsbyImage className="companyLogo" fluid={node.icon.childImageSharp.fluid} />
+              <div className="educationContent">
+                <GatsbyImage className="universityLogo" fixed={node.icon.childImageSharp.fixed} />
                 <h3 className="degree">{node.degree}</h3>
                 <h3 className="university">{node.university}</h3>
                 <h3 className="location">{node.location}</h3>

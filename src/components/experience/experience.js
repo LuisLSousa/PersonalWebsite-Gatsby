@@ -24,8 +24,8 @@ const Experience = () => {
             stack
             icon {
               childImageSharp {
-                fluid(maxHeight: 40, quality: 100) {
-                  ...GatsbyImageSharpFluid_withWebp
+                fixed(height:50, quality: 100) {
+                  ...GatsbyImageSharpFixed
                 }
               }
             }
@@ -34,7 +34,7 @@ const Experience = () => {
       }
     }
   `);
-    // TODO add responsabilities and tech stack/skills
+  // TODO add responsabilities and tech stack/skills
   return (
     <section id="experience">
       <Heading title="Experience" />
@@ -43,7 +43,7 @@ const Experience = () => {
           return (
             <div key={node.id} className="experienceEntry">
               <div className="content">
-                <GatsbyImage className="companyLogo" fluid={node.icon.childImageSharp.fluid} />
+                <GatsbyImage className="companyLogo" fixed={node.icon.childImageSharp.fixed} />
                 <h3 className="position">{node.position}</h3>
                 {node.website ?
                   <a className="company" href={node.website} target="_blank" rel="noreferrer">

@@ -1,5 +1,6 @@
 .experienceContainer {
     padding-bottom: 3vh;
+    padding-top: 3vh;
 }
 
 .experienceEntry {
@@ -33,9 +34,11 @@
 }
 
 .content {
+    top: -15px;
     display: flex;
     flex-direction: column;
     display: block;
+    position: relative;
 }
 
 .companyLogo {
@@ -47,7 +50,6 @@
 }
 
 .content .position {
-    margin-top: 0.75rem;
     font-weight: 600;
     font-size: 1.2rem;
 }
@@ -71,6 +73,7 @@
 }
 
 .period {
+    padding-top: 0.5rem;
     color: var(--color-light);
 }
 
