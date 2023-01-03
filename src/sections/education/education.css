@@ -1,60 +1,61 @@
-.experienceContainer {
+.educationContainer {
     padding-bottom: 3vh;
     padding-top: 3vh;
 }
 
-.experienceEntry {
+.educationEntry {
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     column-gap: 1.5rem;
 
 }
 
-.experienceEntry .verticalBar {
+.educationEntry .verticalBar {
     grid-area: 1/2;
 }
 
-.experienceEntry:nth-child(odd) .content {
+.educationEntry:nth-child(even) .educationContent {
     grid-area: 1/3;
     text-align: start;
 }
 
-.experienceEntry:nth-child(even) .content {
+.educationEntry:nth-child(odd) .educationContent {
     grid-area: 1/1;
     text-align: end;
 }
 
-.experienceEntry:nth-child(even) .companyLogo {
+.educationEntry:nth-child(even) .universityLogo {
     margin-right: 0;
     margin-left: auto;
 }
 
-.experienceEntry:last-child .verticalBar {
+.educationEntry:last-child .verticalBar {
     background-color: var(--color-bg);
 }
 
-.content {
+.educationContent {
     top: -15px;
+    position: relative;
     display: flex;
     flex-direction: column;
     display: block;
-    position: relative;
 }
 
-.companyLogo {
+.universityLogo {
     max-width: 10rem;
 }
 
-.content h3 {
+.educationContent h3 {
     margin: 5px;
 }
 
-.content .position {
+.educationContent .degree {
+    margin-top: 0.75rem;
     font-weight: 600;
     font-size: 1.2rem;
 }
 
-.content a {
+.educationContent a {
     margin: 0px 5px 0px 5px;
     font-weight: 600;
     color: var(--color-primary);
@@ -68,13 +69,13 @@
     margin-right: 0.2rem;
 }
 
-.content, .company, .period {
+.university, .location, .period {
     font-size: 1rem;
 }
 
-.period {
-    padding-top: 0.5rem;
+.educationContent .period {
     color: var(--color-light);
+    margin-top: 0.5rem;
 }
 
 .verticalBar {

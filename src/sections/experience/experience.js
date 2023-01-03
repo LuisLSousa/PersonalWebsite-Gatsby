@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import Heading from "../heading/heading";
+import Heading from "../../components/heading/heading";
 import GatsbyImage from "gatsby-image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink, faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
@@ -15,16 +15,16 @@ const Experience = () => {
         edges {
           node {
             id
-            company
+            institution
+            title
             website
-            position
             location
             period
             responsabilities
             stack
             icon {
               childImageSharp {
-                fixed(height:50, quality: 100) {
+                fixed(height:45, quality: 100) {
                   ...GatsbyImageSharpFixed
                 }
               }

@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
-import Heading from "../heading/heading";
-import Button from "../button/button"
+import Heading from "../../components/heading/heading";
+import Button from "../../components/button/button"
 import "./contact.css"
 
 function encode(data) {

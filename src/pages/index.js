@@ -1,13 +1,13 @@
 import React from "react";
-import About from "../components/about/about";
-import Contact from "../components/contact/contact";
-import Education from "../components/education/education";
-import Experience from "../components/experience/experience";
-import Footer from "../components/footer/footer";
-import Home from "../components/home/home";
+import About from "../sections/about/about";
+import Contact from "../sections/contact/contact";
+import Education from "../sections/education/education";
+import Experience from "../sections/experience/experience";
+import Footer from "../sections/footer/footer";
+import Home from "../sections/home/home";
 import Layout from "../components/layout/layout";
-import Projects from "../components/projects/projects";
-import Skills from "../components/skills/skills";
+import Projects from "../sections/projects/projects";
+import Skills from "../sections/skills/skills";
 
 // TODO 
 // - remove styled components for traditional css

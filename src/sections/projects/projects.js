@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { graphql, useStaticQuery } from "gatsby";
-import Heading from "../heading/heading";
+import Heading from "../../components/heading/heading";
 import Project from "./project";
 
 // ###### CSS #########

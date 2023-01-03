@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import Heading from "../heading/heading";
-import Button from "../button/button";
+import Heading from "../../components/heading/heading";
+import Button from "../../components/button/button";
 import "./about.css";
 
 import GatsbyImage from "gatsby-image";

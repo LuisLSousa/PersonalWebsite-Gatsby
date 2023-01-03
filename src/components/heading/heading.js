@@ -1,7 +1,7 @@
 import React from "react";
 import styled from 'styled-components';
 
-const StyledHeading = styled.div `
+const StyledHeading = styled.div`
     margin-top: 3vh;
     text-align: center;
     text-transform: uppercase;
@@ -20,7 +20,7 @@ const StyledHeading = styled.div `
   }
 `
 
-const Heading = ({title }) => {
+const Heading = ({ title }) => {
 
   return (
     <StyledHeading>

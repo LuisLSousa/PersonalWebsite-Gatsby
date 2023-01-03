@@ -22,10 +22,9 @@ const Wrapper = styled.section`
 
 const Footer = () => {
   return (
-    <Wrapper id="about">
+    <Wrapper id="footer">
       <p>© {new Date().getFullYear()} Luís Sousa</p>
-      <p>Built with GatsbyJS, GraphQL</p>
-      <p>and many hours of centering divs</p>
+      <p>Built with GatsbyJS, GraphQL, and many hours of centering divs</p>
     </Wrapper>
   );
 };

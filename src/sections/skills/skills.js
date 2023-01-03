@@ -2,7 +2,7 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import GatsbyImage from "gatsby-image";
 import styled from "styled-components";
-import Heading from "../heading/heading";
+import Heading from "../../components/heading/heading";
 
 // ###### CSS #########
 const Wrapper = styled.section`
@@ -55,7 +55,7 @@ const Skills = () => {
             title
             icon {
               childImageSharp {
-                fixed(width: 70, height: 70, quality: 100) {
+                fixed(width: 70, height: 70) {
                   ...GatsbyImageSharpFixed_withWebp
                 }
               }

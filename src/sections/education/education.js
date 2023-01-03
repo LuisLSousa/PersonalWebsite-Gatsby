@@ -1,9 +1,9 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import Heading from "../heading/heading";
+import Heading from "../../components/heading/heading";
 import GatsbyImage from "gatsby-image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
+import { faLink, faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
 
 import "./education.css"
 
@@ -16,6 +16,7 @@ const Education = () => {
             id
             degree
             university
+            website
             location
             period
             icon {
@@ -41,7 +42,13 @@ const Education = () => {
               <div className="educationContent">
                 <GatsbyImage className="universityLogo" fixed={node.icon.childImageSharp.fixed} />
                 <h3 className="degree">{node.degree}</h3>
-                <h3 className="university">{node.university}</h3>
+                {node.website ?
+                  <a className="university" href={node.website} target="_blank" rel="noreferrer">
+                    {node.university}
+                    <FontAwesomeIcon className="faIcon" icon={faLink} />
+                  </a>
+                  :
+                  <></>}
                 <h3 className="location">{node.location}</h3>
                 <h3 className="period">
                   <FontAwesomeIcon className="faIcon" icon={faCalendarAlt} />
