@@ -1,0 +1,130 @@
+.timelineContainer {
+    padding-bottom: 3vh;
+    padding-top: 3vh;
+}
+
+.timelineEntry {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.timelineEntry .verticalBar {
+    grid-area: 1/2;
+}
+
+.timelineEntry:nth-child(even) .content {
+    grid-area: 1/3;
+    text-align: start;
+}
+
+.timelineEntry:nth-child(odd) .content {
+    grid-area: 1/1;
+    text-align: end;
+}
+
+.timelineEntry:nth-child(even) .institutionLogo {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.timelineEntry:last-child .verticalBar {
+    background-color: var(--color-bg);
+}
+
+.content {
+    top: -15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    display: block;
+}
+
+.institutionLogo {
+    max-width: 10rem;
+}
+
+.content h3 {
+    margin: 5px;
+}
+
+.content a {
+    margin: 0px 5px 0px 5px;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.faIcon {
+    position: relative;
+    font-size: 0.8rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+
+.content .title {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.content .institution, .period {
+    font-size: 1rem;
+}
+
+.period {
+    margin-top: 0.5rem;
+    color: var(--color-light);
+}
+
+.verticalBar {
+    width: 0.25rem;
+    min-width: 4px;
+    background-color: var(--color-primary-faded);
+    list-style: none;
+}
+
+.verticalBar li {
+    left: -5px;
+    background-color: var(--color-primary);
+    border-radius: 100px;
+    height: 15px;
+    width: 15px;
+    z-index: 2;
+    position: relative;
+}
+
+@media screen and (max-width: 562px) { 
+    /* on smaller screens, reduce grid to 2 columns */
+    /* TODO reduce size of text*/
+
+    .timelineEntry {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+    }
+
+    .timelineEntry .verticalBar {
+        grid-area: 1/1;
+    }    
+
+    .timelineEntry:nth-child(odd) .content {
+        grid-area: 1/2;
+        text-align: start;
+      }
+      .timelineEntry:nth-child(even) .content {
+        grid-area: 1/2;
+        text-align: start;
+      }
+
+      .title {
+        font-size: 1rem;
+      }
+    
+      .institution {
+        font-size: 0.9rem;
+      }
+    
+      .period {
+        font-size: 0.75rem;
+        padding-bottom: 1.5rem;
+      }
+  }

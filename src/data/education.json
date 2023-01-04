@@ -1,24 +1,24 @@
 [
   {
     "icon": "../images/education/ist.png",
-    "degree": "MSc in Computer Science and Engineering",
-    "university": "Instituto Superior Técnico",
+    "title": "MSc in Computer Science and Engineering",
+    "institution": "Instituto Superior Técnico",
     "website": "https://tecnico.ulisboa.pt/en/",
     "location": "Lisbon, Portugal",
     "period": "Feb 2019 - Jan 2021"
   },
   {
     "icon": "../images/education/vilniustech.png",
-    "degree": "MSc in Computer Engineering (Erasmus)",
-    "university": "Vilnius Gediminas Technical University",
+    "title": "MSc in Computer Engineering (Erasmus)",
+    "institution": "Vilnius Gediminas Technical University",
     "website": "https://vilniustech.lt/index.php?lang=2",
     "location": "Vilnius, Lithuania",
     "period": "Sep 2018 - Jan 2019"
   },
   {
     "icon": "../images/education/ist.png",
-    "degree": "BSc in Electrical Systems and Computer Engineering",
-    "university": "Instituto Superior Técnico",
+    "title": "BSc in Electrical Systems and Computer Engineering",
+    "institution": "Instituto Superior Técnico",
     "website": "https://tecnico.ulisboa.pt/en/",
     "location": "Lisbon, Portugal",
     "period": "Sep 2015 - Jun 2018"

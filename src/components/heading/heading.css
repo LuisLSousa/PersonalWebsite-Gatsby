@@ -1,0 +1,19 @@
+.heading {
+    margin-top: 3vh;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading h1 {
+    font-size: 2rem;
+    margin-bottom: 2vh;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 562px) {
+    .heading h1 {
+        font-size: 1.6rem;
+
+    }
+}

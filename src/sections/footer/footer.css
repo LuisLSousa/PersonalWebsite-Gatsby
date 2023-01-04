@@ -1,0 +1,15 @@
+.footer {
+    display: table;
+    text-align: center;
+    font-size: 0.75rem;
+    margin: auto;
+    line-height: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    opacity: 0.25;
+
+    p {
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+}

@@ -1,31 +1,12 @@
 import React from "react";
-import styled from 'styled-components';
-
-const StyledHeading = styled.div`
-    margin-top: 3vh;
-    text-align: center;
-    text-transform: uppercase;
-
-    h1 {
-        font-size: 2rem;
-        margin-bottom: 2vh;
-        font-weight: 600;
-        font-family: 'Montserrat',sans-serif;
-    }
-    @media (max-width: 562px) {
-      h1 {
-        font-size: 1.6rem;
-
-      }
-  }
-`
+import "./heading.css"
 
 const Heading = ({ title }) => {
 
   return (
-    <StyledHeading>
+    <div className="heading">
       <h1 className="">{title}</h1>
-    </StyledHeading>
+    </div>
   );
 };
 
