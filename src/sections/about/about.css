@@ -22,6 +22,10 @@
 
 }
 
+.location {
+  font-size: 1em;
+}
+
 .descriptionWrapper {
   width: 40vw;
   display: flex;

@@ -1,0 +1,145 @@
+nav {
+    position: fixed;
+    z-index: 1;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    right: 0;
+    width: 100vw;
+}
+
+.navigation.active {
+    background-color: var(--color-bg);
+    width: 100vw;
+    justify-content: flex-end;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.navItem {
+    font-size: 1em;
+    font-weight: 550;
+    color: var(--color-white);
+    padding: 0;
+    margin: 1em;
+    text-transform: uppercase;
+}
+
+/* To highlight the current section */
+li.selected {
+    color: white;
+}
+
+li.link {
+    cursor: pointer;
+}
+
+.mobileMenu {
+    position: fixed;
+    z-index: 1;
+    display: none;
+    width: 100vw;
+    background-color: var(--color-bg);
+    border-bottom: 2px solid var(--color-border);
+}
+
+.logo {
+    padding-top: 0.5vh;
+    margin: 0.75rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.menuButton {
+    /* Hide the menu button on desktop */
+    display: none;
+    height: 2rem;
+    font-size: 12px;
+    margin: 0.75rem;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.menuButton:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .navigation.active {
+        width: auto;
+        justify-content: flex-start;
+    }
+
+    .navItem {
+        margin: 1rem;
+    }
+
+    ul {
+        position: fixed;
+        right: 0;
+        top: 0;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start !important;
+        border-left: 2px solid var(--color-border);
+        padding: 0.5rem;
+        padding-top: 3rem;
+        transition: 0.2s ease-out;
+        background-color: var(--color-bg);
+    }
+
+    .mobileMenu {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu {
+        transform: translateX(100%);
+    }
+
+    .menu.open {
+        transform: translateX(0);
+    }
+
+    .menuButton {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .menuLayer {
+        width: 2rem;
+        height: 0.25rem;
+        background: var(--color-white);
+        border-radius: 10px;
+        transition: all 0.3s linear;
+        position: relative;
+        transform-origin: 1px;
+        transform: rotate(0);
+        opacity: 1;
+    }
+
+    .menuLayer.open {
+        transform: rotate(45deg);
+    }
+
+    .menuLayer.open:nth-child(2) {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+
+    .menuLayer.open:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+}

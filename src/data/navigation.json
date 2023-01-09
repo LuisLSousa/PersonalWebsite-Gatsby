@@ -1,0 +1,38 @@
+[
+    {
+        "id": "about",
+        "sectionId": "#about",
+        "icon": "<AiOutlineUser />",
+        "name": "About"
+    },
+    {
+        "id": "experience",
+        "sectionId": "#experience",
+        "icon": "<AiOutlineUser />",
+        "name": "Experience"
+    },
+    {
+        "id": "education",
+        "sectionId": "#education",
+        "icon": "<AiOutlineUser />",
+        "name": "Education"
+    },
+    {
+        "id": "projects",
+        "sectionId": "#projects",
+        "icon": "<AiOutlineUser />",
+        "name": "Projects"
+    },
+    {
+        "id": "skills",
+        "sectionId": "#skills",
+        "icon": "<AiOutlineUser />",
+        "name": "Skills"
+    },
+    {
+        "id": "contact",
+        "sectionId": "#contact",
+        "icon": "<AiOutlineUser />",
+        "name": "Contact"
+    }
+]

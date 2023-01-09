@@ -23,7 +23,7 @@
     height: var(--height);
     cursor: pointer;
     background: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.8);
+    border: 2px solid var(--color-border);
     outline: none;
     transition: 0.7s ease-in-out;
 }
