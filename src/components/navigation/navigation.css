@@ -1,48 +1,45 @@
 nav {
     position: fixed;
-    z-index: 1;
-    display: inline-flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: flex-end;
+    z-index: 2;
     right: 0;
     width: 100vw;
-}
-
-.navigation.active {
     background-color: var(--color-bg);
-    width: 100vw;
-    justify-content: flex-end;
+    border-bottom: 2px solid var(--color-border);
 }
 
-ul {
+nav ul {
     display: flex;
     list-style: none;
     margin-left: 0;
     margin-bottom: 0;
 }
 
+.navItems {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navItems li {
+    padding: 0;
+    margin: 1em;
+}
+
 .navItem {
     font-size: 1em;
     font-weight: 550;
-    color: var(--color-white);
-    padding: 0;
-    margin: 1em;
+    color: var(--color-light);
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 /* To highlight the current section */
-li.selected {
-    color: white;
-}
-
-li.link {
-    cursor: pointer;
+.navItem.selected {
+    color: var(--color-white);
 }
 
 .mobileMenu {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     display: none;
     width: 100vw;
     background-color: var(--color-bg);
@@ -74,9 +71,11 @@ li.link {
 }
 
 @media only screen and (max-width: 800px) {
-    .navigation.active {
-        width: auto;
-        justify-content: flex-start;
+    nav {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: flex-end;
     }
 
     .navItem {
@@ -89,7 +88,7 @@ li.link {
         top: 0;
         height: 100%;
         flex-direction: column;
-        justify-content: flex-start !important;
+        justify-content: flex-start;
         border-left: 2px solid var(--color-border);
         padding: 0.5rem;
         padding-top: 3rem;
@@ -104,11 +103,12 @@ li.link {
         justify-content: space-between;
     }
 
-    .menu {
+    .navItems {
         transform: translateX(100%);
+        justify-content: flex-start;
     }
 
-    .menu.open {
+    .navItems.open {
         transform: translateX(0);
     }
 
