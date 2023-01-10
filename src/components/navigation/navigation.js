@@ -72,9 +72,11 @@ const Navigation = () => {
             </li>
           )
         })}
+        <div className='indicator'/>
       </ul>
     </nav>
   );
 };
 
+// TODO continue adding the indicator and the icon
 export default Navigation;

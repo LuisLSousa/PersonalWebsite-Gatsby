@@ -5,36 +5,7 @@ nav {
     width: 100vw;
     background-color: var(--color-bg);
     border-bottom: 2px solid var(--color-border);
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    margin-left: 0;
-    margin-bottom: 0;
-}
-
-.navItems {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.navItems li {
-    padding: 0;
-    margin: 1em;
-}
-
-.navItem {
-    font-size: 1em;
-    font-weight: 550;
-    color: var(--color-light);
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-/* To highlight the current section */
-.navItem.selected {
-    color: var(--color-white);
+    /*TODO delete*/
 }
 
 .mobileMenu {
@@ -68,6 +39,47 @@ nav ul {
 
 .menuButton:focus {
     outline: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+.navItems {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navItems li {
+    padding: 0;
+    margin: 1em;
+}
+
+.navItem {
+    font-size: 1em;
+    font-weight: 550;
+    color: var(--color-light);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* To highlight the current section */
+.navItem.selected {
+    color: var(--color-white);
+}
+
+.indicator {
+    position: absolute;
+    top: -50%;
+    background: var(--color-primary);
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 50%;
+    border: 6px solid var(--color-bg);
+    transition: 0.5s;
 }
 
 @media only screen and (max-width: 800px) {
