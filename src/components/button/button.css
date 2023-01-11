@@ -28,7 +28,7 @@
     transition: 0.7s ease-in-out;
 }
 
-svg {
+.border {
     position: absolute;
     width: var(--width);
     height: var(--height);

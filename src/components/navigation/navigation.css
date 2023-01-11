@@ -1,26 +1,21 @@
 nav {
     position: fixed;
-    z-index: 2;
-    right: 0;
-    width: 100vw;
-    background-color: var(--color-bg);
-    border-bottom: 2px solid var(--color-border);
-    /*TODO delete*/
+    z-index: var(--z-fixed);
+    width: max-content;
 }
 
-.mobileMenu {
-    position: fixed;
-    z-index: 2;
+.mobileTopBar {
     display: none;
+    position: fixed;
+    z-index: var(--z-fixed);
     width: 100vw;
-    background-color: var(--color-bg);
+    background: var(--color-bg);
     border-bottom: 2px solid var(--color-border);
 }
 
 .logo {
     padding-top: 0.5vh;
     margin: 0.75rem;
-    font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 2rem;
 }
@@ -37,49 +32,94 @@ nav {
     outline: none;
 }
 
-.menuButton:focus {
-    outline: none;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    margin-left: 0;
-    margin-bottom: 0;
-}
-
 .navItems {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    gap: 0.8em;
+    list-style: none;
 }
 
 .navItems li {
     padding: 0;
     margin: 1em;
+    width: 4rem;
 }
 
 .navItem {
-    font-size: 1em;
-    font-weight: 550;
     color: var(--color-light);
-    text-transform: uppercase;
     cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 /* To highlight the current section */
-.navItem.selected {
-    color: var(--color-white);
+.navItem.selected .sectionName {
+    opacity: 1;
+    transform: translateY(-0.7rem);
+}
+
+.navItem.selected .icon {
+    opacity: 1;
+    transform: translateY(0.7rem);
+}
+
+.navItem .icon {
+    position: relative;
+    display: block;
+    line-height: 0.6rem;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: 0.5s;
+    color: var(--color-primary);
+}
+
+.navItem .sectionName {
+    position: absolute;
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 0.7rem;
+    letter-spacing: 0.05rem;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.navItem:not(.selected):hover .icon {
+    transform: translateY(0.7rem);
+    z-index: var(--z-fixed);
+}
+
+.navItem:not(.selected):hover .sectionName {
+    opacity: 1;
+    transform: translateY(-0.7rem);
 }
 
 .indicator {
     position: absolute;
-    top: -50%;
     background: var(--color-primary);
-    width: 3.8rem;
-    height: 3.8rem;
+    top: 50%;
+    width: 3.7rem;
+    height: 3.7rem;
     border-radius: 50%;
     border: 6px solid var(--color-bg);
     transition: 0.5s;
+}
+
+/* only for desktop */
+@media only screen and (min-width: 800px) {
+    nav {
+        margin-top: 1em;
+        left: 50%;
+        transform: translate(-50%, 0);
+        padding: 0.2rem 0.8rem;
+        background-color: rgba(9, 58, 131, 0.4);
+        backdrop-filter: blur(15px);
+        border-radius: 1rem;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -88,13 +128,10 @@ nav ul {
         flex-wrap: nowrap;
         flex-direction: row;
         justify-content: flex-end;
+        width: 100vw;
     }
 
-    .navItem {
-        margin: 1rem;
-    }
-
-    ul {
+    .navItems {
         position: fixed;
         right: 0;
         top: 0;
@@ -103,25 +140,21 @@ nav ul {
         justify-content: flex-start;
         border-left: 2px solid var(--color-border);
         padding: 0.5rem;
-        padding-top: 3rem;
+        padding-top: 4rem;
         transition: 0.2s ease-out;
         background-color: var(--color-bg);
-    }
-
-    .mobileMenu {
-        display: inline-flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .navItems {
         transform: translateX(100%);
-        justify-content: flex-start;
     }
 
     .navItems.open {
         transform: translateX(0);
+    }
+
+    .mobileTopBar {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .menuButton {
@@ -153,5 +186,9 @@ nav ul {
 
     .menuLayer.open:nth-child(3) {
         transform: rotate(-45deg);
+    }
+
+    .indicator {
+        display: none;
     }
 }

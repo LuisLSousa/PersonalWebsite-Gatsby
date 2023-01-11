@@ -20,27 +20,9 @@ const Navigation = () => {
     return () => document.removeEventListener("mousedown", closeMenu);
   }, []);
 
-  // // change navbar background on scroll
-  // const changeBackground = () => {
-  //   if (window.scrollY > 50) {
-  //     setNavigation(true);
-  //   } else {
-  //     setNavigation(false);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   // initiate the event handler
-  //   window.addEventListener("scroll", changeBackground);
-  //   // this will clean up the event every time the component is re-rendered
-  //   return function cleanup() {
-  //     window.removeEventListener("scroll", changeBackground);
-  //   };
-  // });
-
   return (
     <nav ref={navRef}>
-      <div className="mobileMenu">
+      <div className="mobileTopBar">
         <Link
           className="logo"
           activeClass="selected"
@@ -66,8 +48,8 @@ const Navigation = () => {
           return (
             <li>
               <Link className="navItem" activeClass="selected" to={sectionId} spy={true} smooth={true} offset={-55} duration={600} isDynamic={true}>
-                <span className='icon'>{icon}</span>
-                <span className='text'>{name}</span>
+                <span className="sectionName">{name}</span>
+                <span className="icon">{icon}</span>
               </Link>
             </li>
           )
