@@ -20,6 +20,15 @@ const Navigation = () => {
     return () => document.removeEventListener("mousedown", closeMenu);
   }, []);
 
+  useEffect(() => {
+    // Initiate the event handler
+    window.addEventListener('scroll', console.log("boda"));
+    // Clean up the event every time the component is re-rendered
+    return () => {
+      window.removeEventListener('scroll', console.log("boda"));
+    };
+  }, []);
+
   return (
     <nav ref={navRef}>
       <div className="mobileTopBar">
@@ -46,15 +55,14 @@ const Navigation = () => {
       <ul className={openMenu ? "navItems open" : "navItems"}>
         {navList.map(({ sectionId, icon, name }) => {
           return (
-            <li>
-              <Link className="navItem" activeClass="selected" to={sectionId} spy={true} smooth={true} offset={-55} duration={600} isDynamic={true}>
-                <span className="sectionName">{name}</span>
-                <span className="icon">{icon}</span>
-              </Link>
-            </li>
+            <Link onClick={() => console.log("%s", sectionId)}
+              className="navItem" activeClass="active" to={sectionId} spy={true} smooth={true} offset={-55} duration={600} isDynamic={true}>
+              <span className="sectionName">{name}</span>
+              <span className="icon">{icon}</span>
+              <div className='indicator' />
+            </Link>
           )
         })}
-        <div className='indicator'/>
       </ul>
     </nav>
   );

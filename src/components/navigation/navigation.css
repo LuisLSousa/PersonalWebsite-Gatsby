@@ -35,14 +35,7 @@ nav {
 .navItems {
     display: flex;
     justify-content: flex-start;
-    gap: 0.8em;
     list-style: none;
-}
-
-.navItems li {
-    padding: 0;
-    margin: 1em;
-    width: 4rem;
 }
 
 .navItem {
@@ -54,17 +47,9 @@ nav {
     align-items: center;
     flex-direction: column;
     text-align: center;
-}
-
-/* To highlight the current section */
-.navItem.selected .sectionName {
-    opacity: 1;
-    transform: translateY(-0.7rem);
-}
-
-.navItem.selected .icon {
-    opacity: 1;
-    transform: translateY(0.7rem);
+    padding: 0;
+    margin: 1em;
+    width: 4rem;
 }
 
 .navItem .icon {
@@ -78,24 +63,9 @@ nav {
 }
 
 .navItem .sectionName {
-    position: absolute;
-    color: var(--color-primary);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 0.7rem;
     letter-spacing: 0.05rem;
-    transition: 0.5s;
-    opacity: 0;
-    transform: translateY(-20px);
-}
-
-.navItem:not(.selected):hover .icon {
-    transform: translateY(0.7rem);
-    z-index: var(--z-fixed);
-}
-
-.navItem:not(.selected):hover .sectionName {
-    opacity: 1;
-    transform: translateY(-0.7rem);
 }
 
 .indicator {
@@ -106,7 +76,12 @@ nav {
     height: 3.7rem;
     border-radius: 50%;
     border: 6px solid var(--color-bg);
-    transition: 0.5s;
+    visibility: hidden;
+    transition: 0.5s, visibility 0s;
+}
+
+.navItem.active .indicator {
+    visibility: visible;
 }
 
 /* only for desktop */
@@ -119,6 +94,41 @@ nav {
         background-color: rgba(9, 58, 131, 0.4);
         backdrop-filter: blur(15px);
         border-radius: 1rem;
+    }
+
+    /* To highlight the current section */
+    .navItem.active .sectionName {
+        opacity: 1;
+        transform: translateY(-0.7rem);
+    }
+
+    .navItem.active .icon {
+        opacity: 1;
+        transform: translateY(0.7rem);
+    }
+
+    .navItem .sectionName {
+        position: absolute;
+        color: var(--color-primary);
+        transition: 0.5s;
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    .navItem.active .icon {
+        transform: translateY(1.8rem);
+        color: var(--color-bg);
+        z-index: var(--z-fixed);
+    }
+
+    .navItem:not(.active):hover .icon {
+        transform: translateY(0.7rem);
+        z-index: var(--z-fixed);
+    }
+
+    .navItem:not(.active):hover .sectionName {
+        opacity: 1;
+        transform: translateY(-0.7rem);
     }
 }
 
@@ -148,6 +158,14 @@ nav {
 
     .navItems.open {
         transform: translateX(0);
+    }
+
+    .navItem.active .sectionName {
+        color: var(--color-white);
+    }
+
+    .navItem.active .icon {
+        color: var(--color-white);
     }
 
     .mobileTopBar {
