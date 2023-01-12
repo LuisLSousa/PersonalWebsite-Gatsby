@@ -4,6 +4,8 @@ import { navList } from '../../data/navigation';
 
 import "./navigation.css";
 
+// TODO switch react-scroll for Pedro's function
+
 const Navigation = () => {
   const [openMenu, toggleMenu] = useState(false);
   const navRef = useRef(null);
@@ -32,21 +34,10 @@ const Navigation = () => {
   return (
     <nav ref={navRef}>
       <div className="mobileTopBar">
-        <Link
-          className="logo"
-          activeClass="selected"
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={-55}
-          duration={600}
-          isDynamic={true}
-        >
+        <Link className="logo" activeClass="selected" to="home" spy={true} smooth={true} duration={600} isDynamic={true}>
           LL
         </Link>
-        <button onClick={() => toggleMenu(!openMenu)}
-          className="menuButton"
-          aria-label="Navigation">
+        <button onClick={() => toggleMenu(!openMenu)} className="menuButton" aria-label="Navigation">
           <div className={openMenu ? "menuLayer open" : "menuLayer"} />
           <div className={openMenu ? "menuLayer open" : "menuLayer"} />
           <div className={openMenu ? "menuLayer open" : "menuLayer"} />
@@ -55,11 +46,9 @@ const Navigation = () => {
       <ul className={openMenu ? "navItems open" : "navItems"}>
         {navList.map(({ sectionId, icon, name }) => {
           return (
-            <Link onClick={() => console.log("%s", sectionId)}
-              className="navItem" activeClass="active" to={sectionId} spy={true} smooth={true} offset={-55} duration={600} isDynamic={true}>
+            <Link className="navItem" activeClass="active" to={sectionId} spy={true} smooth={true} offset={-120} duration={600} isDynamic={true}>
               <span className="sectionName">{name}</span>
               <span className="icon">{icon}</span>
-              {/* <div className='indicator' /> */}
             </Link>
           )
         })}
@@ -69,5 +58,4 @@ const Navigation = () => {
   );
 };
 
-// TODO continue adding the indicator and the icon
 export default Navigation;
