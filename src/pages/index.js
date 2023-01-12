@@ -20,7 +20,7 @@ import Skills from "../sections/skills/skills";
 const IndexPage = () => {
   return (
     <Layout>
-      {/* <Home /> */}
+      <Home />
       <About />
       <Experience />
       <Education />

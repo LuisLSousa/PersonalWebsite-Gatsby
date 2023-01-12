@@ -7,11 +7,11 @@ import { MdWorkOutline } from 'react-icons/md';
 // export {default as PT_LOGO} from '../../assets/img/pt-logo.png';
 
 export const navList = [
-    // {
-    //     sectionId: 'home',
-    //     icon: <AiOutlineHome />,
-    //     name: 'Home',
-    // },
+    {
+        sectionId: 'home',
+        icon: <AiOutlineHome />,
+        name: 'Home',
+    },
     {
         sectionId: 'about',
         icon: <AiOutlineUser />,

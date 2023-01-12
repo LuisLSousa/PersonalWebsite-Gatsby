@@ -59,10 +59,11 @@ const Navigation = () => {
               className="navItem" activeClass="active" to={sectionId} spy={true} smooth={true} offset={-55} duration={600} isDynamic={true}>
               <span className="sectionName">{name}</span>
               <span className="icon">{icon}</span>
-              <div className='indicator' />
+              {/* <div className='indicator' /> */}
             </Link>
           )
         })}
+        <div className='indicator' />
       </ul>
     </nav>
   );
