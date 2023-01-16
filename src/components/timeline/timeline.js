@@ -18,7 +18,6 @@ const Timeline = ({ edges }) => {
                             <h3 className="title">{node.title}</h3>
                             <a className="institution" href={node.website} target="_blank" rel="noreferrer">
                                 {node.institution}
-                                {console.log(node.website)}
                                 <FontAwesomeIcon className="faIcon" icon={faLink} />
                             </a>
                             <h3 className="period">
