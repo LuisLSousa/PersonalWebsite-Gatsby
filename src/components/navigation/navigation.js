@@ -1,4 +1,3 @@
-import { faCropSimple } from "@fortawesome/free-solid-svg-icons";
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-scroll";
 import { navList } from '../../data/navigation';
