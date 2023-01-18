@@ -1,23 +1,8 @@
 import React from "react";
-import styled from "styled-components";
 import { graphql, useStaticQuery } from "gatsby";
 import Heading from "../../components/heading/heading";
 import Project from "./project";
 
-// ###### CSS #########
-const Wrapper = styled.section`
-  border-top: 2px solid rgba(255, 255, 255, 0.8);
-  padding-bottom: 2vh;
-`;
-
-const ProjectsDiv = styled.div`
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-`;
-
-// ####################
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
@@ -45,9 +30,9 @@ const Projects = () => {
   `);
 
   return (
-    <Wrapper id="projects">
+    <section id="projects">
       <Heading title="Projects" />
-      <ProjectsDiv>
+      <div className="projects">
         {data.allProjectsJson.edges.map(({ node }) => {
           return (
             <Project
@@ -61,8 +46,8 @@ const Projects = () => {
             />
           );
         })}
-      </ProjectsDiv>
-    </Wrapper>
+      </div>
+    </section>
   );
 };
 

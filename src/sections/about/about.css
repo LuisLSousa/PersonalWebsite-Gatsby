@@ -22,7 +22,7 @@
 
 }
 
-.location {
+.about .location {
   font-size: 1em;
 }
 
@@ -38,7 +38,7 @@
   padding: 0;
 }
 
-.description {
+.about .description {
   padding-left: 5vw;
   width: 80vw;
   text-align: justify;

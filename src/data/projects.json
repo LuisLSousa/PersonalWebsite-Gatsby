@@ -4,7 +4,6 @@
     "title": "Face Recognition",
     "description": "A web app that uses the Clarifai API to detect faces in an image. Features user registration and sign-in.",
     "technologies": "React, Hooks, Node.js, Express.js, PostgreSQL",
-    "website": "https://proj-face-recognition.herokuapp.com/",
     "github": "https://github.com/LuisLSousa/faceRecognition"
   },
   {
@@ -21,12 +20,5 @@
     "description": "An android app to play with friends when social gatherings become normal again.",
     "technologies": "Android Studio, Kotlin",
     "github": "https://github.com/LuisLSousa/ChallengeGame"
-  },
-  {
-    "image": "../images/projects/eurofisica.png",
-    "title": "Eurofisica",
-    "description": "The website of a physiotherapy clinic.",
-    "technologies": "HTML, CSS, Javascript",
-    "website": "https://eurofisica.pt"
   }
 ]

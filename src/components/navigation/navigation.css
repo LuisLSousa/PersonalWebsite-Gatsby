@@ -39,7 +39,6 @@ nav {
 }
 
 .navItem {
-    color: var(--color-light);
     cursor: pointer;
     position: relative;
     padding: 0;

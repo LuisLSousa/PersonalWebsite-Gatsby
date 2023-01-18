@@ -8,14 +8,17 @@ import "./navigation.css";
 export const sectionActive = () => {
   const scrollY = window.pageYOffset + 1;
   const sections = document.querySelectorAll("section");
-  
+
   sections.forEach(current => {
-    let paddingPxl = 128;
+    let paddingPxl = 55;
     let sectionHeight = current.offsetHeight,
       sectionTop = current.offsetTop,
       sectionId = current.getAttribute('id');
-      console.log((scrollY >= sectionTop - paddingPxl && scrollY < sectionTop + sectionHeight))
-    if (scrollY >= sectionTop - paddingPxl && scrollY < sectionTop + sectionHeight) {
+
+    if (scrollY > sectionTop - paddingPxl && scrollY < sectionTop + sectionHeight) {
+      console.log("current: ", current)
+      console.log("%d > %d && %d < %d", scrollY, sectionTop - paddingPxl, scrollY, sectionTop + sectionHeight)
+
       document.getElementById(`nav_${sectionId}`).classList.add('active');
       document.querySelector(`.navItems a[href*='#${sectionId}']`).classList.add('active');
     } else {
