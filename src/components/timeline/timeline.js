@@ -6,7 +6,6 @@ import { faLink, faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
 import "./timeline.css"
 
 const Timeline = ({ edges }) => {
-
     // TODO add responsabilities and tech stack/skills
     return (
         <div className="timelineContainer">

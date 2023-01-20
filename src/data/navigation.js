@@ -27,11 +27,11 @@ export const navList = [
         icon: <HiOutlineAcademicCap />,
         name: 'Education',
     },
-    {
-        sectionId: 'projects',
-        icon: <BiBook />,
-        name: 'Projects',
-    },
+    // {
+    //     sectionId: 'projects',
+    //     icon: <BiBook />,
+    //     name: 'Projects',
+    // },
     {
         sectionId: 'skills',
         icon: <BiCodeAlt />,
