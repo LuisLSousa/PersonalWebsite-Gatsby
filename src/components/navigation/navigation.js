@@ -16,9 +16,6 @@ export const sectionActive = () => {
       sectionId = current.getAttribute('id');
 
     if (scrollY > sectionTop - paddingPxl && scrollY < sectionTop + sectionHeight) {
-      console.log("current: ", current)
-      console.log("%d > %d && %d < %d", scrollY, sectionTop - paddingPxl, scrollY, sectionTop + sectionHeight)
-
       document.getElementById(`nav_${sectionId}`).classList.add('active');
       document.querySelector(`.navItems a[href*='#${sectionId}']`).classList.add('active');
     } else {
@@ -47,7 +44,7 @@ const Navigation = () => {
   useEffect(() => {
     // Initiate the event handler
     window.addEventListener('scroll', sectionActive);
-
+    sectionActive();
     // Clean up the event every time the component is re-rendered
     return () => {
       window.removeEventListener('scroll', sectionActive);
