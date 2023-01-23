@@ -11,25 +11,17 @@ const Skills = () => {
     allSkillsJson {
       edges {
         node {
-          Programming_Languages {
-            icon
+          id
+          domain
+          skills {
             title
-          }
-          Cloud_Infrastructure {
-            title
-            icon
-          }
-          DevOps {
-            icon
-            title
-          }
-          Databases {
-            icon
-            title
-          }
-          Protocols {
-            icon
-            title
+            icon {
+              childImageSharp {
+                fixed(height:20, quality: 100) {
+                  ...GatsbyImageSharpFixed_withWebp
+                }
+              }
+            }
           }
         }
       }
@@ -37,19 +29,25 @@ const Skills = () => {
   }
   `);
   return (
-    <section id="skills">
+    <section id="skills" className="skills">
       <Heading title="Skills" />
       <div className="skillsContainer">
-        {data.allSkillsJson.edges.map(node => {
-
-          return  (console.log(node))
-          // return (node.map(domain => {
-          //   console.log(domain)
-          // })
-            // <div className="skillGroup" key={node.id}>
-            //   <h1 className="skillGroupTitle">{node.title}</h1>
-            //   {/* <GatsbyImage className="skillIcon" key={node.id} title={node.title} fixed={node.icon.childImageSharp.fixed} /> */}
-            // </div>
+        {data.allSkillsJson.edges.map(edge => {
+          return (
+            <div className="skillGroup" key={edge.node.id}>
+              <h3 className="groupTitle">{edge.node.domain}</h3>
+              <div className="skillsList">
+                {edge.node.skills.map((skill, id) => {
+                  return (
+                    <div className="skill" key={id}>
+                      {skill.icon && (<GatsbyImage className="skillIcon" title={skill.title} fixed={skill.icon.childImageSharp.fixed} />)}
+                      {skill.title && (<p className="skillTitle">{skill.title}</p>)}
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+          )
         })}
       </div>
     </section>
@@ -57,13 +55,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
-
-/*
-Programming Languages: Go, Python, JavaScript
-Cloud Infrastructure: AWS, Kubernetes, Docker
-DevOps and Deployment: Terraform, Git
-Database: MySQL, PostgreSQL, MongoDB, DynamoDB
-Protocols: REST, gRPC
-Front-end: React, HTML5, CSS3
-*/ 

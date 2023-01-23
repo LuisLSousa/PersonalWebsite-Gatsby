@@ -1,6 +1,7 @@
 [
     {
-        "Programming Languages": [
+        "domain": "Programming Languages",
+        "skills": [
             {
                 "icon": "../images/skills/go.png",
                 "title": "Go"
@@ -16,7 +17,8 @@
         ]
     },
     {
-        "Cloud Infrastructure": [
+        "domain": "Cloud Infrastructure",
+        "skills": [
             {
                 "icon": "../images/skills/aws.png",
                 "title": "AWS"
@@ -28,7 +30,8 @@
         ]
     },
     {
-        "DevOps": [
+        "domain": "DevOps",
+        "skills": [
             {
                 "icon": "../images/skills/docker.png",
                 "title": "Docker"
@@ -44,7 +47,8 @@
         ]
     },
     {
-        "Databases": [
+        "domain": "Databases",
+        "skills": [
             {
                 "icon": "../images/skills/dynamodb.png",
                 "title": "DynamoDB"
@@ -64,7 +68,8 @@
         ]
     },
     {
-        "Web Development": [
+        "domain": "Web Development",
+        "skills": [
             {
                 "icon": "../images/skills/html.png",
                 "title": "HTML5"
@@ -74,24 +79,19 @@
                 "title": "CSS3"
             },
             {
-                "icon": "../images/skills/javascript.png",
-                "title": "JavaScript"
-            },
-            {
                 "icon": "../images/skills/react.png",
                 "title": "React"
             }
         ]
     },
     {
-        "Protocols": [
+        "domain": "Protocols",
+        "skills": [
             {
-                "icon": "../images/skills/grpc.png",
-                "title": "gRPC"
+                "icon": "../images/skills/rest.png"
             },
             {
-                "icon": "../images/skills/rest.png",
-                "title": "REST"
+                "icon": "../images/skills/grpc_light.png"
             }
         ]
     }
