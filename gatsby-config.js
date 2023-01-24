@@ -8,7 +8,6 @@ module.exports = {
     siteUrl: `https://luis-srl-sousa.com`,
   },
   plugins: [
-    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-json`,
     {

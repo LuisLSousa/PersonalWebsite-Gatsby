@@ -8,7 +8,6 @@
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "babel-plugin-styled-components": "^1.12.0",
     "gatsby": "^3.0.3",
     "gatsby-cli": "^3.0.0",
     "gatsby-image": "^3.0.0",
@@ -16,7 +15,6 @@
     "gatsby-plugin-offline": "^4.0.0",
     "gatsby-plugin-react-helmet": "^4.0.0",
     "gatsby-plugin-sharp": "^3.0.0",
-    "gatsby-plugin-styled-components": "^4.0.0",
     "gatsby-source-filesystem": "^3.0.0",
     "gatsby-transformer-json": "^3.0.0",
     "gatsby-transformer-remark": "^3.0.0",
@@ -28,8 +26,7 @@
     "react-icons": "^4.7.1",
     "react-scroll": "^1.8.2",
     "react-tsparticles": "^1.19.2",
-    "styled-components": "^5.2.1",
-    "typewriter-effect": "^2.18.2"
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "prettier": "2.2.1"

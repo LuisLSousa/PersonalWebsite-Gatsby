@@ -35,7 +35,7 @@
     left: 0;
     top: 0;
     fill: none;
-    stroke: #effffa;
+    stroke: var(--color-white);
     stroke-dasharray: 150 480;
     stroke-dashoffset: 150;
     transition: 0.6s ease-in-out;
@@ -46,16 +46,23 @@
 }
 
 .btn:hover {
-    box-shadow: 5px 5px rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 5px var(--color-border);
 }
 
 .btn:active {
     box-shadow: 3px 3px rgba(100, 100, 100, 0.8);
-    transition: 0.07s;
+    transition: 0.1s;
     transform: translateY(0.25em);
 }
 
 .btn span {
-    color: white;
+    color: var(--color-white);
     font-weight: 550;
+}
+
+@media screen and (max-width: 562px) {
+    .button {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
 }

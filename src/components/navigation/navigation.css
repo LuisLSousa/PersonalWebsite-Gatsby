@@ -184,6 +184,14 @@ nav {
         transform: translateX(0);
     }
 
+    .navItem .sectionName {
+        color: var(--color-faded);
+    }
+
+    .navItem .icon {
+        color: var(--color-faded);
+    }
+
     .navItem.active .sectionName {
         color: var(--color-white);
     }
