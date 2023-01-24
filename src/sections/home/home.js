@@ -3,6 +3,8 @@ import particlesParams from "./particles/particles";
 import Particles from "react-tsparticles";
 import Typewriter from 'typewriter-effect';
 import Button from "../../components/button/button";
+import { HiOutlineArrowNarrowDown } from 'react-icons/hi';
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import "./home.css"
 
@@ -25,10 +27,25 @@ const Home = () => {
           loop: true,
         }}
       />
-       <div className="buttons">
-        <Button title="LinkedIn" targetWebsite="https://www.linkedin.com/in/luis-srl-sousa/" />
-        <Button title="Resume" targetWebsite="http://web.tecnico.ulisboa.pt/ist425417/Download/Luis_Sousa_CV.pdf" />
+      <div className="buttons">
+        <a title="About Me" href="#about" >
+          <Button title="About Me" />
+        </a>
+        <Button title="Resume" target="http://web.tecnico.ulisboa.pt/ist425417/Download/Luis_Sousa_CV.pdf" />
       </div>
+      <div className="socials">
+        <a href="https://www.linkedin.com/in/luis-srl-sousa/" target="_blank" rel="noreferrer">
+          <FaLinkedin className="icon" title="Go to LinkedIn" size="40" />
+        </a>
+        <a href="https://github.com/LuisLSousa/" target="_blank" rel="noreferrer">
+          <FaGithub className="icon" title="Go to GitHub" size="40" />
+        </a>
+      </div>
+      <a className="scroll" href="#about">
+        <HiOutlineArrowNarrowDown className="arrow" />
+        <p>Scroll Down</p>
+        <HiOutlineArrowNarrowDown className="arrow" />
+      </a>
     </section>
   );
 };

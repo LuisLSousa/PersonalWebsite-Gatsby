@@ -1,9 +1,9 @@
 import React from "react";
 import "./button.css"
 
-const Button = ({ title, targetWebsite }) => {
+const Button = ({ title, target }) => {
   return (
-    <div className="button" onClick={() => openTargetWebsite(targetWebsite)} onKeyDown={() => openTargetWebsite(targetWebsite)} role='presentation'>
+    <a className="button" href={target} target="_blank" rel="noreferrer" >
       <div className="center">
         <button className="btn">
           <svg viewBox="0 0 160 60" className="border">
@@ -21,12 +21,8 @@ const Button = ({ title, targetWebsite }) => {
           <span>{title}</span>
         </button>
       </div>
-    </div>
+    </a>
   );
 };
 
 export default Button;
-
-function openTargetWebsite(targetWebsite) {
-   return targetWebsite ? window.open(targetWebsite, "_blank") : null
-}
