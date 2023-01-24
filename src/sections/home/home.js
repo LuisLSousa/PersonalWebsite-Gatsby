@@ -11,7 +11,7 @@ import "./home.css"
 const Home = () => {
   return (
     <section id="home" className="home">
-      {/* <Particles className="particles" options={particlesParams} /> */}
+      <Particles className="particles" options={particlesParams} />
       <h4 className="greeting">Hello, I'm</h4>
       <h1 className="title">Luís Sousa</h1>
       <Typewriter component={'h3'}

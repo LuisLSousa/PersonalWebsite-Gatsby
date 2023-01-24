@@ -1,9 +1,11 @@
 const particlesParams = {
+    fullScreen: {
+        enable: false,
+        zIndex: 0
+    },
     background: {
         color: {
-            value: "#121212",
-            // #121212
-            // #0d1117
+            value: "#010111",
         },
     },
     fpsLimit: 60,
@@ -11,8 +13,8 @@ const particlesParams = {
         detectsOn: "window",
         events: {
             onClick: {
-                enable: false,
-                mode: "push",
+                enable: true,
+                mode: "repulse",
             },
             onHover: {
                 enable: true,
@@ -33,12 +35,9 @@ const particlesParams = {
                     opacity: 0.8,
                 },
             },
-            push: {
-                quantity: 4,
-            },
             repulse: {
-                distance: 200,
-                duration: 0.4,
+                distance: 300,
+                duration: 0.6,
             },
         },
     },
@@ -59,9 +58,12 @@ const particlesParams = {
         move: {
             direction: "none",
             enable: true,
-            outMode: "bounce",
+            gravity: {
+                enable: false,
+            },
+            outMode: "destroy",
             random: false,
-            speed: 6,
+            speed: 4,
             straight: false,
         },
         number: {
