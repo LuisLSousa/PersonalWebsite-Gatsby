@@ -1,9 +1,9 @@
 import React from "react";
 import "./button.css"
 
-const Button = ({ title, target }) => {
+const Button = ({ title, href, newPage = true }) => {
   return (
-    <a className="button" href={target} target="_blank" rel="noreferrer" >
+    <a className="button" href={href} target={!newPage ? "_self" : "_blank"} rel="noreferrer" >
       <div className="center">
         <button className="btn">
           <svg viewBox="0 0 160 60" className="border">

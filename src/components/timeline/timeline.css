@@ -77,8 +77,8 @@
 }
 
 .verticalBar {
-    width: 0.25rem;
-    min-width: 4px;
+    width: 0.3rem;
+    min-width: 5px;
     background-color: var(--color-primary);
     list-style: none;
 }
@@ -95,7 +95,6 @@
 
 @media screen and (max-width: 562px) { 
     /* on smaller screens, reduce grid to 2 columns */
-    /* TODO reduce size of text*/
 
     .timelineEntry {
         display: grid;

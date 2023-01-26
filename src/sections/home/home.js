@@ -20,18 +20,15 @@ const Home = () => {
           deleteSpeed: 50,
           strings: [
             "Software Engineer",
-            "Full Stack Developer",
-            "Backend Wizard"
+            "Helping shape the future",
           ],
           autoStart: true,
           loop: true,
         }}
       />
       <div className="buttons">
-        <a title="About Me" href="#about" >
-          <Button title="About Me" />
-        </a>
-        <Button title="Resume" target="http://web.tecnico.ulisboa.pt/ist425417/Download/Luis_Sousa_CV.pdf" />
+        <Button title="About Me" href="#about" newPage={false}/>
+        <Button title="Resume" href="http://web.tecnico.ulisboa.pt/ist425417/Download/Luis_Sousa_CV.pdf" />
       </div>
       <div className="socials">
         <a href="https://www.linkedin.com/in/luis-srl-sousa/" target="_blank" rel="noreferrer">

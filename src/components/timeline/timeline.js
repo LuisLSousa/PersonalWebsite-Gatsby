@@ -6,7 +6,7 @@ import { faLink, faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
 import "./timeline.css"
 
 const Timeline = ({ edges }) => {
-    // TODO add responsabilities and tech stack/skills
+    // TODO add responsibilities and tech stack/skills
     return (
         <div className="timelineContainer">
             {edges && edges.map(({ node }) => {
@@ -19,6 +19,14 @@ const Timeline = ({ edges }) => {
                                 {node.institution}
                                 <FontAwesomeIcon className="faIcon" icon={faLink} />
                             </a>
+                            {console.log(node.responsibilities)}
+                            {node.responsibilities &&
+                                <div className="responsibilities">
+                                    <h4>Responsibilities:</h4>
+                                    <ul>
+                                        {node.responsibilities.map((responsibility) => <li key={responsibility}>{responsibility}</li>)}
+                                    </ul>
+                                </div>}
                             <h3 className="period">
                                 <FontAwesomeIcon className="faIcon" icon={faCalendarAlt} />
                                 {node.period}

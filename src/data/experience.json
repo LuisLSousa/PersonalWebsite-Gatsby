@@ -6,8 +6,11 @@
         "website": "https://www.olxgroup.com/",
         "location": "Lisbon, Portugal",
         "period": "01/2022 - Present",
-        "responsabilities": "",
-        "stack": ""
+        "responsibilities": [
+            "Design and implement RESTful microservices using Golang and AWS",
+            "Ensure high availability and scalability of the system",
+            "Participate in code reviews and improve code quality"
+        ]
     },
     {
         "icon": "../images/experience/olxgroup_dark_bg.png",
@@ -16,8 +19,9 @@
         "website": "https://www.olxgroup.com/",
         "location": "Lisbon, Portugal",
         "period": " 06/2021 - 01/2022",
-        "responsabilities": "",
-        "stack": ""
+        "responsibilities": [
+            "Boda"
+        ]
     },
     {
         "icon": "../images/experience/blaua_ai.png",
@@ -25,8 +29,9 @@
         "title": "Software Engineer",
         "website": "https://www.linkedin.com/company/blaua/",
         "period": "03/2021 - 04/2021",
-        "responsabilities": "",
-        "stack": ""
+        "responsibilities": [
+            "Boda"
+        ]
     },
     {
         "icon": "../images/experience/deloitte.png",
@@ -35,7 +40,8 @@
         "website": "https://www2.deloitte.com/pt/pt.html",
         "location": "Lisbon, Portugal",
         "period": "06/2018 - 07/2018",
-        "responsabilities": "",
-        "stack": ""
+        "responsibilities": [
+            "Boda"
+        ]
     }
 ]

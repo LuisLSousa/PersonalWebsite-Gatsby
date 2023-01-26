@@ -14,7 +14,7 @@ const particlesParams = {
         events: {
             onClick: {
                 enable: true,
-                mode: "repulse",
+                mode: "push",
             },
             onHover: {
                 enable: true,

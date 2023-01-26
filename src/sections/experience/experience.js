@@ -16,8 +16,7 @@ const Experience = () => {
             website
             location
             period
-            responsabilities
-            stack
+            responsibilities
             icon {
               childImageSharp {
                 fixed(height:45, quality: 100) {
