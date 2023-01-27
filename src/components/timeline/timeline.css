@@ -23,10 +23,18 @@
     text-align: end;
 }
 
-.timelineEntry:nth-child(even) .institutionLogo {
+.timelineEntry:nth-child(odd) .institutionLogo,
+.timelineEntry:nth-child(odd) .responsibilities {
     margin-right: 0;
     margin-left: auto;
 }
+
+.timelineEntry:nth-child(even) .institutionLogo,
+.timelineEntry:nth-child(even) .responsibilities {
+    margin-left: 0;
+    margin-right: auto;
+}
+
 
 .timelineEntry:last-child .verticalBar {
     background-color: var(--color-bg);
@@ -37,11 +45,11 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    display: block;
 }
 
 .institutionLogo {
     max-width: 10rem;
+    align-self: right;
 }
 
 .content h3 {
@@ -67,7 +75,8 @@
     font-size: 1.2rem;
 }
 
-.content .institution, .period {
+.content .institution,
+.period {
     font-size: 1rem;
 }
 
@@ -93,9 +102,30 @@
     position: relative;
 }
 
-@media screen and (max-width: 562px) { 
-    /* on smaller screens, reduce grid to 2 columns */
+.responsibilities {
+    display: block;
+    padding: 0.5em;
+    border: 2px solid var(--color-light);
+    border-radius: 10px;
+    font-size: 0.9em;
+}
 
+.responsibilities h4 {
+    color: var(--color-faded);
+    margin-bottom: 0.5em;
+    font-size: 1rem;
+}
+
+.responsibilities ul {
+    list-style: none;
+}
+
+.responsibilities ul li {
+    margin: 0;
+}
+
+@media screen and (max-width: 562px) {
+    /* on smaller screens, reduce grid to 2 columns -- 1 for the bar, another for the content */
     .timelineEntry {
         display: grid;
         grid-template-columns: max-content 1fr;
@@ -103,27 +133,42 @@
 
     .timelineEntry .verticalBar {
         grid-area: 1/1;
-    }    
+    }
 
     .timelineEntry:nth-child(odd) .content {
         grid-area: 1/2;
         text-align: start;
-      }
-      .timelineEntry:nth-child(even) .content {
+    }
+
+    .timelineEntry:nth-child(even) .content {
         grid-area: 1/2;
         text-align: start;
-      }
+    }
 
-      .content .title {
+    .timelineEntry:nth-child(odd) .institutionLogo,
+    .timelineEntry:nth-child(odd) .responsibilities {
+        margin-right: auto;
+        margin-left: 0;
+    }
+
+    .content .title {
         font-size: 1.1rem;
-      }
-    
-      .institution {
+    }
+
+    .institution {
         font-size: 0.9rem;
-      }
-    
-      .period {
+    }
+
+    .period {
         font-size: 0.9rem;
         padding-bottom: 1.5rem;
-      }
-  }
+    }
+
+    .responsibilities {
+        max-width: 100%;
+    }
+
+    .responsibilities h4 {
+        font-size: 0.9rem;
+    }
+}

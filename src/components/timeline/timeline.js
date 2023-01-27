@@ -7,6 +7,7 @@ import "./timeline.css"
 
 const Timeline = ({ edges }) => {
     // TODO add responsibilities and tech stack/skills
+    // TODO customize responsibilities
     return (
         <div className="timelineContainer">
             {edges && edges.map(({ node }) => {
@@ -19,7 +20,6 @@ const Timeline = ({ edges }) => {
                                 {node.institution}
                                 <FontAwesomeIcon className="faIcon" icon={faLink} />
                             </a>
-                            {console.log(node.responsibilities)}
                             {node.responsibilities &&
                                 <div className="responsibilities">
                                     <h4>Responsibilities:</h4>
