@@ -102,12 +102,15 @@
     position: relative;
 }
 
+/* TODO: review text alignment */
+
 .responsibilities {
     display: block;
     padding: 0.5em;
     border: 2px solid var(--color-light);
     border-radius: 10px;
     font-size: 0.9em;
+    /* text-align: left; */
 }
 
 .responsibilities h4 {
@@ -117,6 +120,7 @@
 }
 
 .responsibilities ul {
+    text-align: left;
     list-style: none;
 }
 

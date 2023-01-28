@@ -7,9 +7,10 @@
         "location": "Lisbon, Portugal",
         "period": "01/2022 - Present",
         "responsibilities": [
-            "- Design and implement RESTful microservices using Golang and AWS",
-            "- Ensure high availability and scalability of the system",
-            "- Participate in code reviews and improve code quality"
+            "- Design and implement RESTful microservices using Go and AWS to enable high volume listers to post their inventory on our platforms",
+            "- Maintain a legacy monolith in PHP",
+            "- Mentor less experienced teammates",
+            "- Assist in the transition and ongoing support of a project passed to another team"
         ]
     },
     {
@@ -20,9 +21,9 @@
         "location": "Lisbon, Portugal",
         "period": " 06/2021 - 01/2022",
         "responsibilities": [
-            "- Design and implement RESTful microservices using Golang and AWS",
-            "- Ensure high availability and scalability of the system",
-            "- Participate in code reviews and improve code quality"
+            "- Develop new features as well as unit and integration tests for a service handling monetization of parts sellers using Go and AWS",
+            "- Set up monitoring and alerts using New Relic",
+            "- Conduct performance tests on existing advert ingestion APIs"
         ]
     },
     {
@@ -32,9 +33,10 @@
         "website": "https://www.linkedin.com/company/blaua/",
         "period": "03/2021 - 04/2021",
         "responsibilities": [
-            "- Design and implement RESTful microservices using Golang and AWS",
-            "- Ensure high availability and scalability of the system",
-            "- Participate in code reviews and improve code quality"
+            "- Led the frontend development using React, and contributed to the backend development in Node.JS",
+            "- Improved the conversations page with filtering and export to CSV functionality",
+            "- Worked on a live chat feature for agents to monitor and intervene in real-time bot conversations",
+            "- Implemented a feature for businesses to upload their chatbot's profile picture which was stored on S3 buckets"
         ]
     },
     {
@@ -45,9 +47,7 @@
         "location": "Lisbon, Portugal",
         "period": "06/2018 - 07/2018",
         "responsibilities": [
-            "- Design and implement RESTful microservices using Golang and AWS",
-            "- Ensure high availability and scalability of the system",
-            "- Participate in code reviews and improve code quality"
+            "- Worked with SAS Data Integration Studio to improve processes for a bank client through efficient SQL querying"
         ]
     }
 ]

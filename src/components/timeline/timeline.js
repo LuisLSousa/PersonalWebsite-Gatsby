@@ -26,7 +26,8 @@ const Timeline = ({ edges }) => {
                                     <ul>
                                         {node.responsibilities.map((responsibility) => <li key={responsibility}>{responsibility}</li>)}
                                     </ul>
-                                </div>}
+                                </div>
+                            }
                             <h3 className="period">
                                 <FontAwesomeIcon className="faIcon" icon={faCalendarAlt} />
                                 {node.period}
