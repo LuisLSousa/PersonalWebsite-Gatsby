@@ -3,7 +3,7 @@ import About from "../sections/about/about";
 import Contact from "../sections/contact/contact";
 import Education from "../sections/education/education";
 import Experience from "../sections/experience/experience";
-import Footer from "../sections/footer/footer";
+import Footer from "../components/footer/footer";
 import Home from "../sections/home/home";
 import Layout from "../components/layout/layout";
 // import Projects from "../sections/projects/projects";

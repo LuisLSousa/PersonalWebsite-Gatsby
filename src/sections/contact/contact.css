@@ -12,8 +12,8 @@ form {
 .field {
     margin-left: 1rem;
     background: transparent;
-    color: var(--color-white);
-    border: 2px solid var(--color-faded);
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary-faded);
     margin-bottom: 1vh;
     padding: 0.5rem 1rem;
     font-size: 1.125rem;
@@ -23,7 +23,7 @@ form {
 }
 
 .field:focus {
-    border: 2px solid var(--color-white);
+    border: 2px solid var(--color-secondary);
     outline: 0;
 }
 

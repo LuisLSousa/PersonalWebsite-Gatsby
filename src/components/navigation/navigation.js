@@ -29,8 +29,8 @@ const Navigation = () => {
   const [openMenu, toggleMenu] = useState(false);
   const navRef = useRef(null);
 
+  // Close menu when user click outside of it
   useEffect(() => {
-    /* Close the menu when the user clicks outside of it */
     const closeMenu = (event) => {
       if (navRef.current && navRef.current.contains(event.target)) {
         return;
@@ -41,10 +41,12 @@ const Navigation = () => {
     return () => document.removeEventListener("mousedown", closeMenu);
   }, []);
 
+  // Add event listener for scroll
   useEffect(() => {
-    // Initiate the event handler
     window.addEventListener('scroll', sectionActive);
+
     sectionActive();
+
     // Clean up the event every time the component is re-rendered
     return () => {
       window.removeEventListener('scroll', sectionActive);

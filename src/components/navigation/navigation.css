@@ -87,7 +87,7 @@ nav {
         left: 50%;
         transform: translate(-50%, 0);
         padding: 0.2rem 0.8rem;
-        background-color: rgba(9, 58, 131, 0.4);
+        background-color: var(--color-primary-variant);
         backdrop-filter: blur(15px);
         border-radius: 1rem;
     }
@@ -185,19 +185,19 @@ nav {
     }
 
     .navItem .sectionName {
-        color: var(--color-faded);
+        color: var(--color-secondary-faded);
     }
 
     .navItem .icon {
-        color: var(--color-faded);
+        color: var(--color-secondary-faded);
     }
 
     .navItem.active .sectionName {
-        color: var(--color-white);
+        color: var(--color-secondary);
     }
 
     .navItem.active .icon {
-        color: var(--color-white);
+        color: var(--color-secondary);
     }
 
     .mobileTopBar {
@@ -216,7 +216,7 @@ nav {
     .menuLayer {
         width: 2rem;
         height: 0.25rem;
-        background: var(--color-white);
+        background: var(--color-secondary);
         border-radius: 10px;
         transition: all 0.3s linear;
         position: relative;

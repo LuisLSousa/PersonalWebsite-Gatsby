@@ -82,7 +82,7 @@
 
 .period {
     margin-top: 0.5rem;
-    color: var(--color-faded);
+    color: var(--color-secondary-faded);
 }
 
 .verticalBar {
@@ -107,14 +107,14 @@
 .responsibilities {
     display: block;
     padding: 0.5em;
-    border: 2px solid var(--color-light);
+    border: 2px solid var(--color-secondary-light);
     border-radius: 10px;
     font-size: 0.9em;
     /* text-align: left; */
 }
 
 .responsibilities h4 {
-    color: var(--color-faded);
+    color: var(--color-secondary-faded);
     margin-bottom: 0.5em;
     font-size: 1rem;
 }

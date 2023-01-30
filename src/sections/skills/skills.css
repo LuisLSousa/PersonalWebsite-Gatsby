@@ -8,32 +8,28 @@
 .skillGroup {
     display: flex;
     flex-direction: column;
-    border: 2px solid var(--color-faded);
+    border: 2px solid rgba(0,0,0, 0);
     transition: 0.4s ease-in-out;
     margin: 0.5em;
     width: auto;
     border-radius: 10px;
 }
 
-.skillGroup:hover .groupTitle {
-    color: var(--color-white);
+.skillGroup:hover {
+    border: 2px solid var(--color-secondary);
 }
 
 .skillGroup:hover .skillTitle {
-    color: var(--color-white);
-}
-
-.skillGroup:hover {
-    border: 2px solid var(--color-white);
+    color: var(--color-secondary);
 }
 
 .groupTitle {
-    font-size: 1em;
+    font-size: 1.1em;
     margin: 0.5rem;
     font-weight: 600;
     flex-wrap: wrap;
     transition: 0.4s ease-in-out;
-    color: var(--color-border);
+    color: var(--color-secondary);
 }
 
 
@@ -54,7 +50,7 @@
     margin: 0 0.5em 0.2em 0.3em;
     font-weight: 500;
     transition: 0.4s ease-in-out;
-    color: var(--color-faded);
+    color: var(--color-secondary-faded);
 }
 
 .skillIcon {
@@ -72,17 +68,12 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .skillGroup {
-        border-color: var(--color-white);
-    }
-
     .groupTitle, .skillTitle {
-        color: var(--color-white);
+        color: var(--color-secondary);
     }
 
     .skillTitle {
         font-size: 0.9em;
         margin-left: 0.5em;
     }
-
 }

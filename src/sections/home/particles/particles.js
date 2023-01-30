@@ -4,9 +4,7 @@ const particlesParams = {
         zIndex: 0
     },
     background: {
-        color: {
-            value: "#010111",
-        },
+        opacity: 0,
     },
     fpsLimit: 60,
     interactivity: {
@@ -43,10 +41,10 @@ const particlesParams = {
     },
     particles: {
         color: {
-            value: "#ffffff",
+            value: "#B7B7B7",
         },
         links: {
-            color: "#ffffff",
+            color: "#B7B7B7",
             distance: 150,
             enable: true,
             opacity: 0.3,

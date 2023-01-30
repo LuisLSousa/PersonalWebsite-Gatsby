@@ -26,20 +26,20 @@ body {
 }
 
 :root {
-  --color-bg: #010111;
-  --color-bg-variant: #4db5ff38;
+  --color-bg: #010120;
   --color-primary: rgb(77, 181, 255);
   --color-primary-faded:rgb(77, 181, 255, 0.5);
-  --color-white: #fff;
-  --color-light: rgba(255, 255, 255, 0.2);
-  --color-faded: rgba(255, 255, 255, 0.6);
+  --color-primary-variant: rgba(9, 58, 131, 0.4);
+  --color-secondary: #fff;
+  --color-secondary-light: rgba(255, 255, 255, 0.2);
+  --color-secondary-faded: rgba(255, 255, 255, 0.6);
   --color-border: rgba(255, 255, 255, 0.8);
 
   --z-fixed: 100;
 }
 
 .theme {
-  color: var(--color-white);
+  color: var(--color-secondary);
 }
 
 .layout {
