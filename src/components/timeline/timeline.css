@@ -52,10 +52,6 @@
     align-self: right;
 }
 
-.content h3 {
-    margin: 5px 0;
-}
-
 .content a {
     margin: 5px 0;
     font-weight: 600;
@@ -73,6 +69,7 @@
 .content .title {
     font-weight: 600;
     font-size: 1.2rem;
+    margin: 5px 0;
 }
 
 .content .institution,
@@ -81,7 +78,8 @@
 }
 
 .period {
-    margin-top: 0.5rem;
+    margin-top: 1em!important;
+    margin-top: 1em;
     color: var(--color-secondary-faded);
 }
 
@@ -105,12 +103,13 @@
 /* TODO: review text alignment */
 
 .responsibilities {
+    margin-top: 0.5em;
     display: block;
     padding: 0.5em;
-    border: 2px solid var(--color-secondary-light);
+    border-top: 1px solid var(--color-secondary-light);
+    border-bottom: 1px solid var(--color-secondary-light);
     border-radius: 10px;
-    font-size: 0.9em;
-    /* text-align: left; */
+    max-width: 30vw;
 }
 
 .responsibilities h4 {
@@ -120,15 +119,19 @@
 }
 
 .responsibilities ul {
-    text-align: left;
     list-style: none;
 }
 
 .responsibilities ul li {
     margin: 0;
+    margin-top: 0.9em;
+    font-size: 0.9em;
+    text-align: justify;
+    line-height: 1.3em;
 }
 
 @media screen and (max-width: 562px) {
+
     /* on smaller screens, reduce grid to 2 columns -- 1 for the bar, another for the content */
     .timelineEntry {
         display: grid;
@@ -169,6 +172,7 @@
     }
 
     .responsibilities {
+        margin-top: 0em;
         max-width: 100%;
     }
 

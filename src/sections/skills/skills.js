@@ -35,18 +35,18 @@ const Skills = () => {
         {data.allSkillsJson.edges.map(edge => {
           return (
             <div className="skillGroup" key={edge.node.id}>
-              <h3 className="groupTitle">{edge.node.domain}</h3>
-              <div className="skillsList">
-                {edge.node.skills.map((skill, id) => {
-                  return (
-                    <div className="skill" key={id}>
-                      {skill.icon && (<GatsbyImage className="skillIcon" title={skill.title} fixed={skill.icon.childImageSharp.fixed} />)}
-                      {skill.title && (<p className="skillTitle">{skill.title}</p>)}
-                    </div>
-                  )
-                })}
+                <h3 className="groupTitle">{edge.node.domain}</h3>
+                <div className="skillsList">
+                  {edge.node.skills.map((skill, id) => {
+                    return (
+                      <div className="skill" key={id}>
+                        {skill.icon && (<GatsbyImage className="skillIcon" title={skill.title} fixed={skill.icon.childImageSharp.fixed} />)}
+                        {skill.title && (<p className="skillTitle">{skill.title}</p>)}
+                      </div>
+                    )
+                  })}
+                </div>
               </div>
-            </div>
           )
         })}
       </div>

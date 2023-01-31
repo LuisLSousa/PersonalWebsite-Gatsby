@@ -8,18 +8,30 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import "./home.css"
 
+// TODO: import light and dark theme colors from a separate file
+
 const rootTheme = document.querySelector(':root');
 
 const changeThemeColor = (isLightTheme) => {
   if (isLightTheme) {
-    rootTheme.style.setProperty('--color-bg', '#fff');
-    rootTheme.style.setProperty('--color-primary', 'rgb(24, 193, 193)');
-    rootTheme.style.setProperty('--color-primary-faded', 'rgba(24, 193, 193, 0.5)');
-    rootTheme.style.setProperty('--color-primary-variant', 'rgba(69, 150, 100, 0.4)');
-    rootTheme.style.setProperty('--color-secondary', '#000');
-    rootTheme.style.setProperty('--color-secondary-faded', 'rgba(0, 0, 0, 0.6)');
-    rootTheme.style.setProperty('--color-secondary-light', 'rgba(0, 0, 0, 0.2)');
-    rootTheme.style.setProperty('--color-border', 'rgba(0, 0, 0, 0.8)');
+    rootTheme.style.setProperty('--color-bg', '#f7f3e6'); // beige
+    rootTheme.style.setProperty('--color-primary', 'rgb(0, 153, 153)'); // teal
+    rootTheme.style.setProperty('--color-primary-faded', 'rgba(57, 114, 255, 0.5)'); // light blue
+    rootTheme.style.setProperty('--color-primary-variant', 'rgba(102, 204, 255, 0.4)'); // light blue
+    rootTheme.style.setProperty('--color-secondary', '#555'); // dark gray
+    rootTheme.style.setProperty('--color-secondary-faded', 'rgba(0, 0, 0, 0.6)'); // TBD
+    rootTheme.style.setProperty('--color-secondary-light', 'rgba(0, 0, 0, 0.2)'); // TBD
+    rootTheme.style.setProperty('--color-border', 'rgba(0, 0, 0, 0.8)'); // TBD
+
+
+    // rootTheme.style.setProperty('--color-bg', '#f2f2f2'); // 
+    // rootTheme.style.setProperty('--color-primary', 'rgb(0, 157, 224)'); // IST Blue
+    // rootTheme.style.setProperty('--color-primary-faded', 'rgba(0, 157, 224, 0.5)'); // IST Blue
+    // rootTheme.style.setProperty('--color-primary-variant', 'rgba(102, 204, 255, 0.4)'); // light blue
+    // rootTheme.style.setProperty('--color-secondary', '#010120'); // dark blue
+    // rootTheme.style.setProperty('--color-secondary-faded', 'rgba(0, 0, 0, 0.6)'); // TBD
+    // rootTheme.style.setProperty('--color-secondary-light', 'rgba(0, 0, 0, 0.2)'); // TBD
+    // rootTheme.style.setProperty('--color-border', 'rgba(0, 0, 0, 0.8)'); // TBD
   }
   else {
     rootTheme.style.setProperty('--color-bg', '#010120');
