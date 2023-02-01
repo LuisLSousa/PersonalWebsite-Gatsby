@@ -17,7 +17,7 @@ const Skills = () => {
             title
             icon {
               childImageSharp {
-                fixed(height:20, quality: 100) {
+                fixed(height:20, quality: 99) {
                   ...GatsbyImageSharpFixed_withWebp
                 }
               }

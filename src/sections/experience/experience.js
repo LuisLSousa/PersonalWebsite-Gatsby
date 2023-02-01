@@ -19,7 +19,7 @@ const Experience = () => {
             responsibilities
             icon {
               childImageSharp {
-                fixed(height:45, quality: 100) {
+                fixed(height:45, quality: 99) {
                   ...GatsbyImageSharpFixed
                 }
               }

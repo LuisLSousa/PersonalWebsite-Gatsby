@@ -14,7 +14,7 @@ const About = () => {
       }
       photo: file(relativePath: { eq: "about/profile.png" }) {
         childImageSharp {
-          fluid(maxWidth: 512, quality: 100) {
+          fluid(maxWidth: 512, quality: 99) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }

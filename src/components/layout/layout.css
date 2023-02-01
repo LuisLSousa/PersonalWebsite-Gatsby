@@ -23,6 +23,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  color: var(--color-secondary);
 }
 
 :root {
@@ -36,10 +37,6 @@ body {
   --color-border: rgba(255, 255, 255, 0.8);
 
   --z-fixed: 100;
-}
-
-.theme {
-  color: var(--color-secondary);
 }
 
 .layout {

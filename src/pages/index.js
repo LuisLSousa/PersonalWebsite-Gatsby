@@ -14,16 +14,16 @@ import Skills from "../sections/skills/skills";
 
 const IndexPage = () => {
   return (
-    <Layout>
-      <Home />
-      <About />
-      <Experience />
-      <Education />
-      {/* <Projects /> */}
-      <Skills />
-      <Contact />
-      <Footer />
-    </Layout>
+      <Layout>
+        <Home />
+        <About />
+        <Experience />
+        <Education />
+        {/* <Projects /> */}
+        <Skills />
+        <Contact />
+        <Footer />
+      </Layout>
   );
 };
 
