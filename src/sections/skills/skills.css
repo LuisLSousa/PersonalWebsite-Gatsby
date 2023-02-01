@@ -1,18 +1,18 @@
 .skillsContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
 }
 
 .skillGroup {
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(0,0,0, 0);
+    border: 1px solid rgba(0, 0, 0, 0);
     transition: 0.4s ease-in-out;
     margin: 0.5em;
     border-radius: 10px;
-    max-width: 300px;
+    width: 300px;
     height: auto;
-    /* align-items: center; */
 }
 
 .skillGroup:hover {
@@ -32,7 +32,6 @@
     transition: 0.4s ease-in-out;
     color: var(--color-secondary);
 }
-
 
 .skillsList {
     display: flex;
@@ -70,7 +69,8 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .groupTitle, .skillTitle {
+    .groupTitle,
+    .skillTitle {
         color: var(--color-secondary);
     }
 

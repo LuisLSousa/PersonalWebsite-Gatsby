@@ -17,7 +17,7 @@ const changeThemeColor = (isLightTheme) => {
     rootTheme.style.setProperty('--color-bg', '#f7f3e6'); // beige
     rootTheme.style.setProperty('--color-primary', 'rgb(0, 153, 153)'); // teal
     rootTheme.style.setProperty('--color-primary-faded', 'rgba(57, 114, 255, 0.5)'); // light blue
-    rootTheme.style.setProperty('--color-primary-variant', 'rgba(102, 204, 255, 0.4)'); // light blue
+    rootTheme.style.setProperty('--color-primary-variant', 'rgba(51, 220, 220, 0.4)');
     rootTheme.style.setProperty('--color-secondary', '#555'); // dark gray
     rootTheme.style.setProperty('--color-secondary-faded', 'rgba(0, 0, 0, 0.6)'); // TBD
     rootTheme.style.setProperty('--color-secondary-light', 'rgba(0, 0, 0, 0.2)'); // TBD
