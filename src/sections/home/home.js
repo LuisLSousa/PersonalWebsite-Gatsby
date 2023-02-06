@@ -4,7 +4,7 @@ import particlesParams from "./particles/particles";
 import Particles from "react-tsparticles";
 import Typewriter from 'typewriter-effect';
 import Button from "../../components/button/button";
-import { HiOutlineArrowNarrowDown } from 'react-icons/hi';
+import { HiOutlineArrowNarrowDown, HiMoon, HiSun } from 'react-icons/hi';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import "./home.css"
@@ -14,6 +14,16 @@ const Home = () => {
 
   return (
     <section id="home" className="home">
+      <label className="themeSwitch" aria-label="toggle theme">
+        <input type="checkbox" onClick={() => { toggleTheme(); }} />
+        <span className="slider"></span>
+        <div className="themeOptions">
+          <HiMoon className="moon" />
+          <HiSun className="sun" />
+        </div>
+
+      </label>
+
       <Particles className="particles" options={particlesParams} />
       <h4 className="greeting">Hello, I'm</h4>
       <h1 className="title">Luís Sousa</h1>
@@ -29,7 +39,6 @@ const Home = () => {
           loop: true,
         }}
       />
-      <button className="themeButton" onClick={() => { toggleTheme(); }} aria-label="Theme" />
       <div className="buttons">
         <Button title="About Me" href="#about" newPage={false} />
         <Button title="Resume" href="http://web.tecnico.ulisboa.pt/ist425417/Download/Luis_Sousa_CV.pdf" />
