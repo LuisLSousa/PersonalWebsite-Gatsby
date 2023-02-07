@@ -20,8 +20,8 @@ const ThemeSwitch = () => {
             <input type="checkbox" onClick={() => { toggleTheme(); }} />
             <span className="slider"></span>
             <div className="themeOptions">
-                <HiSun className="sun" />
                 <HiMoon className="moon" />
+                <HiSun className="sun" />
             </div>
         </label>);
 }
