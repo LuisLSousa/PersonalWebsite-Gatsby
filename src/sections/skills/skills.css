@@ -65,6 +65,7 @@
 
 @media only screen and (max-width: 800px) {
     .skillsContainer {
+        width: auto;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(1, 1fr);

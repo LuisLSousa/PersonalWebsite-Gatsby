@@ -22,45 +22,6 @@
   position: absolute;
   top: 0;
   right: 0;
-  margin: 1em;
-  width: 75px;
-  height: 40px;
-  display: flex;
-  border-radius:50px;
-  align-items: center;
-  justify-content: space-between;
-  padding: 5px;
-  cursor: pointer;
-  transition: 0.4s;
-  border: 1px solid var(--color-border);
-  background-color: var(--color-bg);
-
-}
-
-.themeSwitch input {
-  display: none;
-}
-
-.themeSwitch input:checked ~ .slider {
-  transform: translateX(35px);
-}
-
-.themeSwitch .slider {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: var(--color-primary);
-  transition: 0.4s;
-  z-index: 1;
-}
-
-.themeOptions {
-  position: absolute;
-  width: 60px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  color: var(--color-secondary);
 }
 
 .home .greeting {
@@ -143,6 +104,11 @@
 }
 
 @media (max-width: 800px) {
+
+  .home .themeSwitch {
+    display: none;
+  }
+
   .home h1 {
     font-size: 3em;
   }

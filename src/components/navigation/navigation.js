@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-scroll";
 import { navList } from '../../data/navigation';
+import ThemeSwitch from "../themeSwitch/themeSwitch";
 
 import "./navigation.css";
 
@@ -56,9 +56,7 @@ const Navigation = () => {
   return (
     <nav ref={navRef}>
       <div className="mobileTopBar">
-        <Link className="logo" activeClass="selected" to="home" spy={true} smooth={true} duration={600} isDynamic={true}>
-          LL
-        </Link>
+        <ThemeSwitch className="themeSwitch"/>
         <button onClick={() => toggleMenu(!openMenu)} className="menuButton" aria-label="Navigation">
           <div className={openMenu ? "menuLayer open" : "menuLayer"} />
           <div className={openMenu ? "menuLayer open" : "menuLayer"} />

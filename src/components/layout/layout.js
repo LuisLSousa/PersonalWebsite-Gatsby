@@ -16,10 +16,10 @@ const changeThemeColor = (theme) => {
     rootTheme.style.setProperty('--color-primary', 'rgb(0, 153, 153)'); // teal
     rootTheme.style.setProperty('--color-primary-faded', 'rgba(57, 114, 255, 0.5)'); // light blue
     rootTheme.style.setProperty('--color-primary-variant', 'rgba(51, 220, 220, 0.4)');
-    rootTheme.style.setProperty('--color-secondary', '#555'); // dark gray
-    rootTheme.style.setProperty('--color-secondary-faded', 'rgba(0, 0, 0, 0.6)'); // TBD  
-    rootTheme.style.setProperty('--color-secondary-light', 'rgba(0, 0, 0, 0.2)'); // TBD
-    rootTheme.style.setProperty('--color-border', 'rgba(0, 0, 0, 0.8)'); // TBD
+    rootTheme.style.setProperty('--color-secondary', 'rgba(85, 85, 85, 1)'); // dark gray
+    rootTheme.style.setProperty('--color-secondary-faded', 'rgba(85, 85, 85, 0.6)'); // dark gray
+    rootTheme.style.setProperty('--color-secondary-light', 'rgba(85, 85, 85, 0.2)'); // dark gray
+    rootTheme.style.setProperty('--color-border', 'rgba(85, 85, 85, 0.8)'); // TBD
 
 
     // rootTheme.style.setProperty('--color-bg', '#f2f2f2'); // 
@@ -48,7 +48,6 @@ const Layout = ({ children }) => {
 
   // Change theme
   useEffect(() => {
-    console.log("Layout: useEffect: getTheme: ", theme);
     changeThemeColor(theme);
   }, [theme]);
 

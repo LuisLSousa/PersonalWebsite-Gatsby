@@ -13,13 +13,6 @@ nav {
     border-bottom: 2px solid var(--color-border);
 }
 
-.logo {
-    padding-top: 0.5vh;
-    margin: 0.75rem;
-    font-weight: 600;
-    font-size: 2rem;
-}
-
 .menuButton {
     /* Hide the menu button on desktop */
     display: none;
@@ -152,6 +145,17 @@ nav {
 }
 
 @media only screen and (max-width: 800px) {
+    .mobileTopBar {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mobileTopBar .themeSwitch {
+        margin: 0.5em;
+    }
+
     nav {
         display: inline-flex;
         flex-wrap: nowrap;
@@ -198,13 +202,6 @@ nav {
 
     .navItem.active .icon {
         color: var(--color-secondary);
-    }
-
-    .mobileTopBar {
-        display: inline-flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: space-between;
     }
 
     .menuButton {
