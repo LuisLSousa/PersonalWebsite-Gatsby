@@ -39,6 +39,18 @@ body {
   --z-fixed: 100;
 }
 
+[theme="light"] {
+  --color-bg: #f7f3e6; 
+  --color-primary: rgb(0, 153, 153);
+  --color-primary-faded: rgba(57, 114, 255, 0.5); 
+  --color-primary-variant: rgba(51, 220, 220, 0.4);
+  --color-secondary: rgba(85, 85, 85, 1);
+  --color-secondary-faded: rgba(85, 85, 85, 0.6);
+  --color-secondary-light: rgba(85, 85, 85, 0.2);
+  --color-border: rgba(85, 85, 85, 0.8);
+}
+
+
 .layout {
   margin: 0 auto;
   max-width: 80vw;
