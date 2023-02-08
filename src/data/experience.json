@@ -1,6 +1,7 @@
 [
     {
-        "icon": "../images/experience/olxgroup_dark_bg.png",
+        "icon_dark": "../images/experience/olx_dark.png",
+        "icon_light": "../images/experience/olx_light.png",
         "institution": "OLX Group",
         "title": "Backend Software Engineer",
         "website": "https://www.olxgroup.com/",
@@ -14,7 +15,8 @@
         ]
     },
     {
-        "icon": "../images/experience/olxgroup_dark_bg.png",
+        "icon_dark": "../images/experience/olx_dark.png",
+        "icon_light": "../images/experience/olx_light.png",
         "institution": "OLX Group",
         "title": "Software Engineer Trainee",
         "website": "https://www.olxgroup.com/",
@@ -27,7 +29,8 @@
         ]
     },
     {
-        "icon": "../images/experience/blaua_ai.png",
+        "icon_dark": "../images/experience/blaua_ai.png",
+        "icon_light": "../images/experience/blaua_ai.png",
         "institution": "Blaua",
         "title": "Software Engineer",
         "website": "https://www.linkedin.com/company/blaua/",
@@ -40,7 +43,8 @@
         ]
     },
     {
-        "icon": "../images/experience/deloitte.png",
+        "icon_dark": "../images/experience/deloitte_dark.png",
+        "icon_light": "../images/experience/deloitte_light.png",
         "institution": "Deloitte",
         "title": "Summer Intern",
         "website": "https://www2.deloitte.com/pt/pt.html",

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext, DARK_THEME, LIGHT_THEME } from "../../context/theme";
 import GatsbyImage from "gatsby-image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink, faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
@@ -6,14 +7,17 @@ import { faLink, faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
 import "./timeline.css"
 
 const Timeline = ({ edges }) => {
-    // TODO change icon image when theme is changed
+    const { theme } = useContext(ThemeContext)
     return (
         <div className="timelineContainer">
             {edges && edges.map(({ node }) => {
                 return (
                     <div key={node.id} className="timelineEntry">
                         <div className="content">
-                            <GatsbyImage className="institutionLogo" fixed={node.icon.childImageSharp.fixed} />
+                            <GatsbyImage
+                                className="institutionLogo"
+                                fixed={theme === DARK_THEME ? node.icon_light.childImageSharp.fixed : node.icon_dark.childImageSharp.fixed}
+                            />
                             <h3 className="title">{node.title}</h3>
                             <a className="institution" href={node.website} target="_blank" rel="noreferrer">
                                 {node.institution}

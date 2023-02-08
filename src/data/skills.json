@@ -89,9 +89,11 @@
         "skills": [
             {
                 "icon": "../images/skills/rest.png"
+
             },
             {
-                "icon": "../images/skills/grpc_light.png"
+                "icon": "../images/skills/grpc_light.png",
+                "icon_dark": "../images/skills/grpc_dark.png"
             }
         ]
     }

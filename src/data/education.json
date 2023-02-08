@@ -1,6 +1,7 @@
 [
   {
-    "icon": "../images/education/ist_dark.png",
+    "icon_dark": "../images/education/ist_dark.png",
+    "icon_light": "../images/education/ist_light.png",
     "title": "MSc in Computer Science and Engineering",
     "institution": "Instituto Superior Técnico",
     "website": "https://tecnico.ulisboa.pt/en/",
@@ -8,7 +9,8 @@
     "period": "Feb 2019 - Jan 2021"
   },
   {
-    "icon": "../images/education/vilniustech.png",
+    "icon_dark": "../images/education/vilniustech.png",
+    "icon_light": "../images/education/vilniustech.png",
     "title": "MSc in Computer Engineering (Erasmus)",
     "institution": "Vilnius Gediminas Technical University",
     "website": "https://vilniustech.lt/index.php?lang=2",
@@ -16,7 +18,8 @@
     "period": "Sep 2018 - Jan 2019"
   },
   {
-    "icon": "../images/education/ist_dark.png",
+    "icon_dark": "../images/education/ist_dark.png",
+    "icon_light": "../images/education/ist_light.png",
     "title": "BSc in Electrical Systems and Computer Engineering",
     "institution": "Instituto Superior Técnico",
     "website": "https://tecnico.ulisboa.pt/en/",

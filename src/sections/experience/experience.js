@@ -17,9 +17,16 @@ const Experience = () => {
             location
             period
             responsibilities
-            icon {
+            icon_dark {
               childImageSharp {
-                fixed(height:45, quality: 99) {
+                fixed(height:50, quality: 99) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+            icon_light {
+              childImageSharp {
+                fixed(height:50, quality: 99) {
                   ...GatsbyImageSharpFixed
                 }
               }

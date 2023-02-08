@@ -5,7 +5,6 @@ import Timeline from "../../components/timeline/timeline";
 
 const Education = () => {
   // TODO add light and dark theme
-  // allEducationJson(filter: {theme: {eq: "dark"}}) {
 
   const data = useStaticQuery(graphql`
     {
@@ -18,9 +17,16 @@ const Education = () => {
             website
             location
             period
-            icon {
+            icon_dark {
               childImageSharp {
-                fixed(height:50, quality: 100) {
+                fixed(height:50, quality: 99) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+            icon_light {
+              childImageSharp {
+                fixed(height:50, quality: 99) {
                   ...GatsbyImageSharpFixed
                 }
               }
