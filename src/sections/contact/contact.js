@@ -74,7 +74,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contacts">
+    <section id="contact" className="contact">
       <Heading title="Contact" />
       <form
         method="post"

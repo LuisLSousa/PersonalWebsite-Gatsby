@@ -4,23 +4,30 @@ import ThemeSwitch from "../themeSwitch/themeSwitch";
 
 import "./navigation.css";
 
+
 // Change active menu select on nav bar on user scroll
 export const sectionActive = () => {
-  const scrollY = window.pageYOffset + 1;
+  const viewportHeight = window.innerHeight;
   const sections = document.querySelectorAll("section");
 
   sections.forEach(current => {
-    let paddingPxl = 55;
-    let sectionHeight = current.offsetHeight,
-      sectionTop = current.offsetTop,
-      sectionId = current.getAttribute('id');
+    let sectionId = current.getAttribute('id');
+    let navItem = document.querySelector(`.navItems a[href*='#${sectionId}']`);
 
-    if (scrollY > sectionTop - paddingPxl && scrollY < sectionTop + sectionHeight) {
+    // to account for the top padding of the section
+    let topPaddingPxl = viewportHeight * 0.04;
+
+    // size of the current section and its position relative to the viewport
+    let rect = current.getBoundingClientRect();
+
+    if (0 > rect.top - topPaddingPxl && 0 < rect.top + rect.height) {
       document.getElementById(`nav_${sectionId}`).classList.add('active');
-      document.querySelector(`.navItems a[href*='#${sectionId}']`).classList.add('active');
+      navItem.classList.add('active');
     } else {
       document.getElementById(`nav_${sectionId}`).classList.remove('active');
-      document.querySelector(`.navItem a[href*='#${sectionId}']`).classList.remove('active');
+      if (navItem) {
+        navItem.classList.remove('active');
+      }
     }
   });
 };
@@ -56,7 +63,7 @@ const Navigation = () => {
   return (
     <nav ref={navRef}>
       <div className="mobileTopBar">
-        <ThemeSwitch className="themeSwitch"/>
+        <ThemeSwitch className="themeSwitch" />
         <button onClick={() => toggleMenu(!openMenu)} className="menuButton" aria-label="Navigation">
           <div className={openMenu ? "menuLayer open" : "menuLayer"} />
           <div className={openMenu ? "menuLayer open" : "menuLayer"} />
