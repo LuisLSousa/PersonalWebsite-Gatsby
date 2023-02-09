@@ -4,7 +4,6 @@ import ThemeSwitch from "../themeSwitch/themeSwitch";
 
 import "./navigation.css";
 
-
 // Change active menu select on nav bar on user scroll
 export const sectionActive = () => {
   const viewportHeight = window.innerHeight;
@@ -25,9 +24,9 @@ export const sectionActive = () => {
       navItem.classList.add('active');
     } else {
       document.getElementById(`nav_${sectionId}`).classList.remove('active');
-      if (navItem) {
-        navItem.classList.remove('active');
-      }
+        if (navItem) {
+          navItem.classList.remove('active');
+        }
     }
   });
 };
@@ -48,12 +47,13 @@ const Navigation = () => {
     return () => document.removeEventListener("mousedown", closeMenu);
   }, []);
 
-  // Add event listener for scroll
   useEffect(() => {
+    // Add event listener for scroll
     window.addEventListener('scroll', sectionActive);
 
+    // Call the function to set the active section on initial page load
     sectionActive();
-
+    
     // Clean up the event every time the component is re-rendered
     return () => {
       window.removeEventListener('scroll', sectionActive);
