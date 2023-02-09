@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import Heading from "../../components/heading/heading";
 import Button from "../../components/button/button"
+import Socials from "../../components/socials/socials";
 import "./contact.css"
 
 function encode(data) {
@@ -73,55 +74,58 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contactWrapper">
+    <section id="contact" className="contacts">
       <Heading title="Contact" />
-        <form
-          method="post"
-          name="contact"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          onSubmit={onSubmit}
-        >
-          <input type="hidden" name="bot-field" />
-          <input type="hidden" name="form-name" value="contact" />
-          <label>
-            <h2>Name</h2>
-            <input
-              className="name field"
-              type="text"
-              name="name"
-              placeholder="Michael Scott"
-              id="name"
-              ref={nameRef}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </label>
-          <label>
-            <h2>Email Address</h2>
-            <input
-              className="email field"
-              type="email"
-              name="email"
-              placeholder="michael.scott@example.com"
-              id="email"
-              ref={emailRef}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </label>
-          <label>
-            <h2>Message</h2>
-            <textarea
-              className="message field"
-              name="message"
-              id="message"
-              placeholder="Type your message..."
-              rows="5"
-              ref={messageRef}
-              onChange={(e) => setMessage(e.target.value)}
-            />
-          </label>
+      <form
+        method="post"
+        name="contact"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        onSubmit={onSubmit}
+      >
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
+        <label>
+          <h2 className="fieldName">Name</h2>
+          <input
+            className="name field"
+            type="text"
+            name="name"
+            placeholder="Michael Scott"
+            id="name"
+            ref={nameRef}
+            onChange={(e) => setName(e.target.value)}
+          />
+        </label>
+        <label>
+          <h2 className="fieldName">Email Address</h2>
+          <input
+            className="email field"
+            type="email"
+            name="email"
+            placeholder="michael.scott@example.com"
+            id="email"
+            ref={emailRef}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </label>
+        <label>
+          <h2 className="fieldName">Message</h2>
+          <textarea
+            className="message field"
+            name="message"
+            id="message"
+            placeholder="Type your message..."
+            rows="5"
+            ref={messageRef}
+            onChange={(e) => setMessage(e.target.value)}
+          />
+        </label>
+        <div className="contactFooter">
           <Button title={buttonText} />
-        </form>
+          <Socials className="socials" />
+        </div>
+      </form>
     </section>
   );
 };

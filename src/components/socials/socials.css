@@ -1,0 +1,15 @@
+.socials {
+    display: flex;
+    flex-direction: row;
+}
+
+.socials .icon {
+    margin: 0 0.5em;
+    color: var(--color-primary);
+    font-size: 1.5em;
+    transition: 0.4s ease-in-out;
+}
+
+.socials .icon:hover {
+    color: var(--color-secondary);
+}

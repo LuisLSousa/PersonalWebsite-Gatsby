@@ -20,14 +20,14 @@ const Skills = () => {
             title
             icon {
               childImageSharp {
-                fixed(height:20, quality: 99) {
+                fixed(height:20, quality: 50) {
                   ...GatsbyImageSharpFixed_withWebp
                 }
               }
             }
             icon_dark {
               childImageSharp {
-                fixed(height:20, quality: 99) {
+                fixed(height:20, quality: 50) {
                   ...GatsbyImageSharpFixed_withWebp
                 }
               }

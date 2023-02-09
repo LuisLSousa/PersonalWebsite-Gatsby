@@ -20,7 +20,8 @@
         "domain": "Cloud Infrastructure",
         "skills": [
             {
-                "icon": "../images/skills/aws.png",
+                "icon": "../images/skills/aws_light.png",
+                "icon_dark": "../images/skills/aws.png",
                 "title": "AWS"
             },
             {

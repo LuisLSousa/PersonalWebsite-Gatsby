@@ -1,4 +1,4 @@
-.contactWrapper {
+.contact {
     height: 90vh;
     min-height: 600px;
 }
@@ -7,10 +7,12 @@ form {
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
+    --name-width: 20vw;
+    --email-width: 25vw;
+    --message-width: 35vw;
 }
 
 .field {
-    margin-left: 1rem;
     background: transparent;
     color: var(--color-secondary);
     border: 2px solid var(--color-secondary-faded);
@@ -20,6 +22,7 @@ form {
     line-height: 1.75rem;
     transition: 0.4s ease-in-out;
     margin-bottom: 3vh;
+    border-radius: 5px;
 }
 
 .field:focus {
@@ -29,23 +32,30 @@ form {
 
 .name {
     min-width: 240px;
-    width: 20vw;
+    width: var(--name-width)
 }
 
 .email {
     min-width: 300px;
-    width: 25vw;
+    width: var(--email-width);
 }
 
 .message {
     min-width: 420px;
-    width: 35vw;
+    width: var(--message-width);
 }
 
-label h2 {
+.contactFooter {
+    width: var(--message-width);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fieldName {
     font-size: 1.25rem;
     font-weight: 400;
-    margin-left: 1rem;
     margin-bottom: 1vh;
 }
 
@@ -79,29 +89,31 @@ label h2 {
 }
 
 @media screen and (max-width: 562px) {
+    form {
+        --name-width: 60vw;
+        --email-width: 70vw;
+        --message-width: 80vw;
+    }
+
     .field {
-        margin-left: 0;
         font-size: 1rem;
         line-height: 1.5rem;
     }
 
-    label h2 {
+    .fieldName {
         margin-left: 0;
     }
 
     .name {
         min-width: 180px;
-        width: 60vw;
     }
 
     .email {
         min-width: 240px;
-        width: 70vw;
     }
 
     .message {
         min-width: 240px;
-        width: 80vw;
     }
 
     form .button {
@@ -111,14 +123,14 @@ label h2 {
 
 /* mobile */
 @media screen and (max-height: 900px) {
-    .contactWrapper {
+    .contact {
         height: 85vh;
     }
 }
 
 /* vertical ultrawide monitors */
 @media screen and (min-height: 1400px) {
-    .contactWrapper {
+    .contact {
         height: 95vh;
     }
 }
