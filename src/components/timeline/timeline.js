@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ThemeContext, DARK_THEME, LIGHT_THEME } from "../../context/theme";
+import { ThemeContext, DARK_THEME } from "../../context/theme";
 import GatsbyImage from "gatsby-image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink, faCalendarAlt } from '@fortawesome/free-solid-svg-icons'

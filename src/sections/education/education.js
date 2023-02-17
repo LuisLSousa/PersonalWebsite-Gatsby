@@ -4,8 +4,6 @@ import Heading from "../../components/heading/heading";
 import Timeline from "../../components/timeline/timeline";
 
 const Education = () => {
-  // TODO add light and dark theme
-
   const data = useStaticQuery(graphql`
     {
       allEducationJson {

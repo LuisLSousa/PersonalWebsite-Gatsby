@@ -6,7 +6,7 @@ import "./socials.css"
 const Socials = () => {
     return (
         <div className="socials">
-            <a href="https://www.linkedin.com/in/luis-srl-sousa/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/luislampreia/" target="_blank" rel="noreferrer">
                 <FaLinkedin className="icon" title="Go to LinkedIn" size="40" />
             </a>
             <a href="https://github.com/LuisLSousa/" target="_blank" rel="noreferrer">

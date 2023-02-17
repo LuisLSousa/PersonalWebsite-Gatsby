@@ -5,7 +5,7 @@ import ThemeSwitch from "../themeSwitch/themeSwitch";
 import "./navigation.css";
 
 // Change active menu select on nav bar on user scroll
-export const sectionActive = () => {
+const setActiveSection = () => {
   const viewportHeight = window.innerHeight;
   const sections = document.querySelectorAll("section");
 
@@ -19,14 +19,13 @@ export const sectionActive = () => {
     // size of the current section and its position relative to the viewport
     let rect = current.getBoundingClientRect();
 
+    // add "active" to the class of the section currently in the viewport
     if (0 > rect.top - topPaddingPxl && 0 < rect.top + rect.height) {
       document.getElementById(`nav_${sectionId}`).classList.add('active');
       navItem.classList.add('active');
     } else {
       document.getElementById(`nav_${sectionId}`).classList.remove('active');
-        if (navItem) {
-          navItem.classList.remove('active');
-        }
+      navItem.classList.remove('active');
     }
   });
 };
@@ -44,20 +43,20 @@ const Navigation = () => {
       toggleMenu(false);
     };
     document.addEventListener("mousedown", closeMenu);
+
+    // Clean up the event every time the component is re-rendered
     return () => document.removeEventListener("mousedown", closeMenu);
   }, []);
 
   useEffect(() => {
     // Add event listener for scroll
-    window.addEventListener('scroll', sectionActive);
+    window.addEventListener('scroll', setActiveSection);
 
     // Call the function to set the active section on initial page load
-    sectionActive();
-    
+    setActiveSection();
+
     // Clean up the event every time the component is re-rendered
-    return () => {
-      window.removeEventListener('scroll', sectionActive);
-    };
+    return () => window.removeEventListener('scroll', setActiveSection);
   }, []);
 
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import ThemeSwitch from "../../components/themeSwitch/themeSwitch";
-import particlesParams from "./particles/particles";
 import Particles from "react-tsparticles";
+import particlesParams from "./particles/particlesParams";
 import Typewriter from 'typewriter-effect';
 import Button from "../../components/button/button";
 import Socials from "../../components/socials/socials";
@@ -15,7 +15,7 @@ const Home = () => {
       <ThemeSwitch className="themeSwitch" />
       <Particles className="particles" options={particlesParams} />
       <h4 className="greeting">Hello, I'm</h4>
-      <h1 className="title">Luís Sousa</h1>
+      <h1 className="title">Luís Lampreia</h1>
       <Typewriter component={'h3'}
         options={{
           delay: 50,
@@ -32,7 +32,7 @@ const Home = () => {
         <Button title="About Me" href="#about" newPage={false} />
         <Button title="Resume" href="http://web.tecnico.ulisboa.pt/ist425417/Download/Luis_Sousa_CV.pdf" />
       </div>
-      <Socials className="socials"/>
+      <Socials className="socials" />
       <a className="scroll" href="#about">
         <HiOutlineArrowNarrowDown className="arrow" />
         <p>Scroll Down</p>

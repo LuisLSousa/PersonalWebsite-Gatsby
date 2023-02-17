@@ -4,7 +4,7 @@ This is the open source repository of my personal website, built with [GatsbyJS]
 Feel free to edit the code to make your own version of the website.
 
 ## See the site live at:
-### https://luis-srl-sousa.com/
+### https://www.luislampreia.com/
 
 ## Build
 Since this project was built with Gatsby, the first thing you'll need is the Gatsby client.

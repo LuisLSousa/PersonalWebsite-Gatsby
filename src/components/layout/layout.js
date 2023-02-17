@@ -6,8 +6,6 @@ import Seo from "../seo";
 
 import "./layout.css";
 
-// TODO read the colors from a colors.js file
-
 const changeThemeColor = (theme) => {
   document.documentElement.setAttribute("theme", theme);
 }
