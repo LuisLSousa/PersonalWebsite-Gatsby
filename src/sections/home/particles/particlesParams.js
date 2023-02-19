@@ -1,3 +1,4 @@
+import { LIGHT_THEME, DARK_THEME } from "../../../context/theme"
 // ############################################
 // BASIC
 // const particlesParams = {
@@ -112,17 +113,6 @@ const particlesParams = {
         sync: true
       }
     },
-    shape: {
-      type: "circle",
-      stroke: {
-        width: 0,
-        color: "rgb(0, 153, 153)"
-      },
-      polygon: {
-        nb_sides: 5
-      },
-
-    },
     opacity: {
       value: 0.5,
       random: false,
@@ -188,12 +178,53 @@ const particlesParams = {
       },
     }
   },
+  themes: [
+    {
+      name: LIGHT_THEME,
+      default: {
+        value: true,
+        mode: "light"
+      },
+      options: {
+        particles: {
+          color: {
+            value: "rgb(0, 153, 153)"
+          },
+          line_linked: {
+            triangles: {
+              color: "rgb(0, 153, 153)",
+            }
+          }
+        }
+      }
+    },
+    {
+      name: DARK_THEME,
+      default: {
+        value: true,
+        mode: "dark"
+      },
+      options: {
+        particles: {
+          color: {
+            value: "#fff"
+          },
+          line_linked: {
+            triangles: {
+              color: "#fff",
+            }
+          }
+        }
+      }
+    }
+  ],
   retina_detect: true,
 };
+
 // ############################################
 
 // ############################################
-// SVG
+// SVG Polygon
 // const particlesParams = {
 //   fullScreen: {
 //     enable: false,
@@ -205,7 +236,7 @@ const particlesParams = {
 //     detectsOn: "window",
 //     events: {
 //       onHover: {
-//         enable: false,
+//         enable: true,
 //         mode: "grab" // or "bubble"
 //       },
 //       resize: true
@@ -220,7 +251,7 @@ const particlesParams = {
 //         speed: 3
 //       },
 //       grab: {
-//         distance: 600,
+//         distance: 300,
 //         line_linked: {
 //           opacity: 0.5,
 //         },
@@ -286,16 +317,16 @@ const particlesParams = {
 //       radius: 3
 //     },
 //     inlineArrangement: "equidistant",
-//     scale: 0.8,
+//     scale: 1,
 //     type: "inline",
 //     position: {
-//       x: 15,
-//       y: 30
+//       x: 20,
+//       y: 80
 //     },
 //     data: {
 //       path:
-//         "M 0 0 L 40 0 L 40 180 L 130 180 L 130 220 L 0 220 z M 210 0 L 210 180 L 270 180 L 270 0 L 310 0 L 310 220 L 170 220 L 170 0 z M 350 0 L 350 220 L 390 220 L 390 0 z M 361 -24 L 376 -51 L 402 -51 L 387 -24 z M 430 0 L 560 0 L 560 40 L 470 40 L 470 90 L 560 90 L 560 220 L 430 220 L 430 180 L 520 180 L 520 130 L 430 130 L 430 0 z",
-//       // "M 0 0 L 45 0 L 45 185 L 135 185 L 135 220 L 0 220 z M 225 0 L 225 185 L 315 185 L 315 0 L 360 0 L 360 220 L 180 220 L 180 0 z M 405 0 L 405 220 z",
+//         // "M 0 0 L 40 0 L 40 180 L 130 180 L 130 220 L 0 220 z M 210 0 L 210 180 L 270 180 L 270 0 L 310 0 L 310 220 L 170 220 L 170 0 z M 350 0 L 350 220 L 390 220 L 390 0 z M 361 -24 L 376 -51 L 402 -51 L 387 -24 z M 430 0 L 560 0 L 560 40 L 470 40 L 470 90 L 560 90 L 560 220 L 430 220 L 430 180 L 520 180 L 520 130 L 430 130 L 430 0 z",
+//       "M 0 0 L 40 0 L 40 180 L 130 180 L 130 220 L 0 220 z M 210 0 L 210 180 L 315 180 L 315 220 L 170 220 L 170 0 z",
 //       size: {
 //         width: 162.7,
 //         height: 323.3

@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import ThemeSwitch from "../../components/themeSwitch/themeSwitch";
-import Particles from "react-tsparticles";
-import particlesParams from "./particles/particlesParams";
+import ParticlesComponent from "./particles/particles";
 import Typewriter from 'typewriter-effect';
 import Button from "../../components/button/button";
 import Socials from "../../components/socials/socials";
@@ -13,7 +12,7 @@ const Home = () => {
   return (
     <section id="home" className="home">
       <ThemeSwitch className="themeSwitch" />
-      <Particles className="particles" options={particlesParams} />
+      <ParticlesComponent />
       <h4 className="greeting">Hello, I'm</h4>
       <h1 className="title">Luís Lampreia</h1>
       <Typewriter component={'h3'}

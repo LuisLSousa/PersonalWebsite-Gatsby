@@ -1,0 +1,8 @@
+.particles {
+    position: absolute;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    z-index: -1;
+  }

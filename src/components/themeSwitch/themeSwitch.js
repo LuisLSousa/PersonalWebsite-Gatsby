@@ -6,14 +6,13 @@ import './themeSwitch.css';
 
 
 const ThemeSwitch = () => {
-    const { toggleTheme } = useContext(ThemeContext);
+    const { theme, toggleTheme } = useContext(ThemeContext);
 
     useEffect(() => {
-        const theme = localStorage.getItem('theme');
         if (theme === DARK_THEME) {
             document.body.classList.add(DARK_THEME);
         }
-    }, []);
+    }, [theme]);
 
     return (
         <label className="themeSwitch" aria-label="toggle theme">
