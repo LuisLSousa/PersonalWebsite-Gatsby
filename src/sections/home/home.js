@@ -32,7 +32,7 @@ const Home = () => {
         <Button title="Resume" href="/assets/Luis_Sousa_CV.pdf" />
       </div>
       <Socials className="socials" />
-      <a className="scroll" href="#about">
+      <a className="scrollDown" href="#about">
         <HiOutlineArrowNarrowDown className="arrow" />
         <p>Scroll Down</p>
         <HiOutlineArrowNarrowDown className="arrow" />

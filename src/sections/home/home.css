@@ -45,7 +45,7 @@
   margin-top: 4em;
 }
 
-.scroll {
+.scrollDown {
   position: absolute;
   bottom: 0;
   margin-bottom: 1em;
@@ -60,15 +60,15 @@
   transition: 0.4s ease-in-out;
 }
 
-.scroll:hover {
+.scrollDown:hover {
   color: var(--color-secondary);
 }
 
-.scroll p {
+.scrollDown p {
   margin-bottom: 0;
 }
 
-.scroll .arrow {
+.scrollDown .arrow {
   animation: arrow-down ease 2s infinite;
 }
 
@@ -96,6 +96,10 @@
 
   .home h3 {
     font-size: 1.5em;
+  }
+
+  .scrollDown {
+    margin-bottom: 2em;
   }
 
 }
