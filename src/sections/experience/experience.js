@@ -26,7 +26,7 @@ const Experience = () => {
             }
             icon_light {
               childImageSharp {
-                fixed(height:50, quality: 99) {
+                fixed(height:50, quality: 100) {
                   ...GatsbyImageSharpFixed
                 }
               }
