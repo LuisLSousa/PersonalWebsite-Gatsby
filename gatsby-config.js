@@ -3,7 +3,7 @@ const { features } = require("process");
 
 module.exports = {
   siteMetadata: {
-    title: `Luís Sousa's Personal Website`,
+    title: `Luís Lampreia`,
     description: `A place where you can get to know me.`,
     author: `Luís Sousa`,
     siteUrl: `https://www.luislampreia.com`,
@@ -18,12 +18,6 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: process.env.GA_TRACKING_ID,
-    //   },
-    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -40,10 +34,10 @@ module.exports = {
         name: `Luís Sousa's Personal Website`,
         short_name: `Personal Website`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#010120`,
+        theme_color: `#010120`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`,
       },
     },
   ],

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React from "react";
 import ThemeSwitch from "../../components/themeSwitch/themeSwitch";
 import ParticlesComponent from "./particles/particles";
 import Typewriter from 'typewriter-effect';
@@ -21,7 +21,7 @@ const Home = () => {
           deleteSpeed: 50,
           strings: [
             "Software Engineer",
-            "Helping shape the future",
+            "Backend Developer",
           ],
           autoStart: true,
           loop: true,
@@ -29,7 +29,7 @@ const Home = () => {
       />
       <div className="buttons">
         <Button title="About Me" href="#about" newPage={false} />
-        <Button title="Resume" href="http://web.tecnico.ulisboa.pt/ist425417/Download/Luis_Sousa_CV.pdf" />
+        <Button title="Resume" href="/assets/Luis_Sousa_CV.pdf" />
       </div>
       <Socials className="socials" />
       <a className="scroll" href="#about">

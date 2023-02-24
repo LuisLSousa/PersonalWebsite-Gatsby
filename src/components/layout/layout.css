@@ -29,7 +29,6 @@ body {
 :root {
   --color-bg: #010120;
   --color-primary: rgb(77, 181, 255);
-  --color-primary-faded:rgb(77, 181, 255, 0.5);
   --color-primary-variant: rgba(9, 58, 131, 0.4);
   --color-secondary: #fff;
   --color-secondary-light: rgba(255, 255, 255, 0.2);
@@ -42,7 +41,6 @@ body {
 [theme="light"] {
   --color-bg: #f7f3e6; 
   --color-primary: rgb(0, 153, 153);
-  --color-primary-faded: rgba(57, 114, 255, 0.5); 
   --color-primary-variant: rgba(51, 220, 220, 0.4);
   --color-secondary: rgba(85, 85, 85, 1);
   --color-secondary-faded: rgba(85, 85, 85, 0.6);

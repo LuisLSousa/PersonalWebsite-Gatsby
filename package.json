@@ -25,8 +25,6 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.7.1",
     "react-tsparticles": "^1.19.2",
-    "tsparticles-interaction-light": "^2.9.3",
-    "tsparticles-path-polygon": "^2.9.3",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
