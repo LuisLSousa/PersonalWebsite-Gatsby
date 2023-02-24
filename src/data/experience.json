@@ -8,10 +8,10 @@
         "location": "Lisbon, Portugal",
         "period": "01/2022 - Present",
         "responsibilities": [
-            "Design and implement RESTful microservices using Go and AWS to enable high volume listers to post their inventory on our platforms.",
-            "Deploy and manage microservices on AWS using Docker, Kubernetes, and Terraform.",
-            "Maintain a legacy monolith in PHP.",
-            "Mentor trainee team members and help them get up to speed with the team's projects and processes."
+            "Designed and implemented RESTful microservices using Go and AWS to enable high volume listers to post their inventory on our platforms.",
+            "Deployed and managed microservices on AWS using Docker, Kubernetes, and Terraform.",
+            "Maintained a legacy monolith in PHP.",
+            "Mentored trainee team members and helped them get up to speed with the team's projects and processes."
         ]
     },
     {
@@ -51,7 +51,7 @@
         "location": "Lisbon, Portugal",
         "period": "06/2018 - 07/2018",
         "responsibilities": [
-            "Joined a team in the Risk Advisory sector, where I worked with SAS Data Integration Studio to optimized processes for a banking client by using efficient SQL queries.",
+            "Joined a team in the Risk Advisory sector, where I worked with SAS Data Integration Studio to optimize processes for a banking client by using efficient SQL queries.",
             "Was recognized by Deloitte partners for making the best presentation on a challenge between all interns, receiving a Deloitte Certificate of Achievement."
         ]
     }
