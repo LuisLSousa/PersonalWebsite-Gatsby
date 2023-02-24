@@ -1,34 +1,24 @@
 [
-    {
-      "image": "../images/projects/faceRecognition.png",
-      "title": "Face Recognition",
-      "description": "A web app that uses the Clarifai API to detect faces in an image. Features user registration and sign-in.",
-      "technologies": "React, Hooks, Node.js, Express.js, PostgreSQL",
-      "website": "https://proj-face-recognition.herokuapp.com/",
-      "github": "https://github.com/LuisLSousa/faceRecognition"
-    },
-    {
-      "image": "../images/projects/robofriends.png",
-      "title": "Robofriends",
-      "description": "A react app that allows users to search from a grid of robots with live filtering. Using Robohash API.",
-      "technologies": "React, Redux, Hooks",
-      "website": "https://luislsousa.github.io/robofriends/",
-      "github": "https://github.com/LuisLSousa/robofriends"
-    },
-    {
-      "image": "../images/projects/challengeGame.png",
-      "title": "Challenge Game",
-      "description": "An android app to play with friends when social gatherings become normal again.",
-      "technologies": "Android Studio, Kotlin",
-      "github": "https://github.com/LuisLSousa/ChallengeGame"
-    },
-    {
-      "image": "../images/projects/eurofisica.png",
-      "title": "Eurofisica",
-      "description": "The website of a physiotherapy clinic.",
-      "technologies": "HTML, CSS, Javascript",
-      "website": "https://eurofisica.pt"
-    }
-    
-  ]
-
+  {
+    "image": "../images/projects/faceRecognition.png",
+    "title": "Face Recognition",
+    "description": "A web app that uses the Clarifai API to detect faces in an image. Features user registration and sign-in.",
+    "technologies": "React, Hooks, Node.js, Express.js, PostgreSQL",
+    "github": "https://github.com/LuisLSousa/faceRecognition"
+  },
+  {
+    "image": "../images/projects/robofriends.png",
+    "title": "Robofriends",
+    "description": "A react app that allows users to search from a grid of robots with live filtering. Using Robohash API.",
+    "technologies": "React, Redux, Hooks",
+    "website": "https://luislsousa.github.io/robofriends/",
+    "github": "https://github.com/LuisLSousa/robofriends"
+  },
+  {
+    "image": "../images/projects/challengeGame.png",
+    "title": "Challenge Game",
+    "description": "An android app to play with friends when social gatherings become normal again.",
+    "technologies": "Android Studio, Kotlin",
+    "github": "https://github.com/LuisLSousa/ChallengeGame"
+  }
+]

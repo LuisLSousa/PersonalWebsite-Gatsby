@@ -1,10 +1,10 @@
 ## PersonalWebsite-Gatsby
-This is the open source repository of my personal website, built with [GatsbyJS](https://www.gatsbyjs.org/), [GraphQL](https://graphql.org/), and [Styled Components](https://styled-components.com/), and hosted on [Netlify](https://www.netlify.com/).
+This is the open source repository of my personal website, built with [GatsbyJS](https://www.gatsbyjs.org/) and [GraphQL](https://graphql.org/), and hosted on [Netlify](https://www.netlify.com/).
 
 Feel free to edit the code to make your own version of the website.
 
 ## See the site live at:
-### https://luis-srl-sousa.com/
+### https://www.luislampreia.com/
 
 ## Build
 Since this project was built with Gatsby, the first thing you'll need is the Gatsby client.

@@ -1,0 +1,17 @@
+.heading {
+    margin-top: 3vh;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.heading h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    font-weight: 700;
+}
+
+@media (max-width: 562px) {
+    .heading h1 {
+        font-size: 2rem;
+    }
+}

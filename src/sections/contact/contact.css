@@ -1,0 +1,128 @@
+.contact {
+    height: 90vh;
+    min-height: 600px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    --name-width: 20vw;
+    --email-width: 25vw;
+    --message-width: 35vw;
+}
+
+.field {
+    background: transparent;
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary-faded);
+    margin-bottom: 1vh;
+    padding: 0.5rem 1rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    transition: 0.4s ease-in-out;
+    margin-bottom: 3vh;
+    border-radius: 5px;
+}
+
+.field:focus {
+    border: 2px solid var(--color-secondary);
+    outline: 0;
+}
+
+.name {
+    min-width: 240px;
+    width: var(--name-width)
+}
+
+.email {
+    min-width: 300px;
+    width: var(--email-width);
+}
+
+.message {
+    min-width: 420px;
+    width: var(--message-width);
+}
+
+.contactFooter {
+    width: var(--message-width);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fieldName {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 1vh;
+}
+
+.error {
+    border-color: rgb(239, 68, 68);
+    animation: shake 1s;
+}
+
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+@media screen and (max-width: 562px) {
+    form {
+        --name-width: 60vw;
+        --email-width: 70vw;
+        --message-width: 80vw;
+    }
+
+    .field {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .fieldName {
+        margin-left: 0;
+    }
+
+    .name {
+        min-width: 180px;
+    }
+
+    .email {
+        min-width: 240px;
+    }
+
+    .message {
+        min-width: 240px;
+    }
+
+    form .button {
+        margin-left: 0;
+    }
+}
+
+/* vertical ultrawide monitors */
+@media screen and (min-height: 1400px) {
+    .contact {
+        height: 95vh;
+    }
+}

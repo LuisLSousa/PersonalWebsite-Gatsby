@@ -1,42 +1,101 @@
 [
     {
-        "icon": "../images/skills/html.png",
-        "title": "HTML5"
+        "domain": "Programming Languages",
+        "skills": [
+            {
+                "icon": "../images/skills/go.png",
+                "title": "Go"
+            },
+            {
+                "icon": "../images/skills/python.png",
+                "title": "Python"
+            },
+            {
+                "icon": "../images/skills/javascript.png",
+                "title": "JavaScript"
+            }
+        ]
     },
     {
-        "icon": "../images/skills/css.png",
-        "title": "CSS3"
+        "domain": "Cloud Infrastructure",
+        "skills": [
+            {
+                "icon": "../images/skills/aws_light.png",
+                "icon_dark": "../images/skills/aws.png",
+                "title": "AWS"
+            },
+            {
+                "icon": "../images/skills/kubernetes.png",
+                "title": "Kubernetes"
+            }
+        ]
     },
     {
-        "icon": "../images/skills/javascript.png",
-        "title": "JavaScript"
+        "domain": "DevOps",
+        "skills": [
+            {
+                "icon": "../images/skills/docker.png",
+                "title": "Docker"
+            },
+            {
+                "icon": "../images/skills/git.png",
+                "title": "Git"
+            },
+            {
+                "icon": "../images/skills/terraform.png",
+                "title": "Terraform"
+            }
+        ]
     },
     {
-        "icon": "../images/skills/react.png",
-        "title": "React"
+        "domain": "Databases",
+        "skills": [
+            {
+                "icon": "../images/skills/dynamodb.png",
+                "title": "DynamoDB"
+            },
+            {
+                "icon": "../images/skills/mysql.png",
+                "title": "MySQL"
+            },
+            {
+                "icon": "../images/skills/postgresql.png",
+                "title": "PostgreSQL"
+            },
+            {
+                "icon": "../images/skills/mongodb.png",
+                "title": "MongoDB"
+            }
+        ]
     },
     {
-        "icon": "../images/skills/nodejs.png",
-        "title": "Node.js"
+        "domain": "Web Development",
+        "skills": [
+            {
+                "icon": "../images/skills/html.png",
+                "title": "HTML5"
+            },
+            {
+                "icon": "../images/skills/css.png",
+                "title": "CSS3"
+            },
+            {
+                "icon": "../images/skills/react.png",
+                "title": "React"
+            }
+        ]
     },
     {
-        "icon": "../images/skills/jest.png",
-        "title": "Jest"
-    },
-    {
-        "icon": "../images/skills/python.png",
-        "title": "Python"
-    },
-    {
-        "icon": "../images/skills/postgresql.png",
-        "title": "PostgreSQL"
-    },
-    {
-        "icon": "../images/skills/kotlin.png",
-        "title": "Kotlin"
-    },
-    {
-        "icon": "../images/skills/mongodb.png",
-        "title": "MongoDB"
+        "domain": "Protocols",
+        "skills": [
+            {
+                "icon": "../images/skills/rest.png"
+
+            },
+            {
+                "icon": "../images/skills/grpc_light.png",
+                "icon_dark": "../images/skills/grpc_dark.png"
+            }
+        ]
     }
 ]

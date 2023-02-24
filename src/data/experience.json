@@ -1,0 +1,58 @@
+[
+    {
+        "icon_dark": "../images/experience/olx_dark.png",
+        "icon_light": "../images/experience/olx_light.png",
+        "institution": "OLX Group",
+        "title": "Backend Software Engineer",
+        "website": "https://www.olxgroup.com/",
+        "location": "Lisbon, Portugal",
+        "period": "01/2022 - Present",
+        "responsibilities": [
+            "Design and implement RESTful microservices using Go and AWS to enable high volume listers to post their inventory on our platforms.",
+            "Deploy and manage microservices on AWS using Docker, Kubernetes, and Terraform.",
+            "Maintain a legacy monolith in PHP.",
+            "Mentor trainee team members and help them get up to speed with the team's projects and processes."
+        ]
+    },
+    {
+        "icon_dark": "../images/experience/olx_dark.png",
+        "icon_light": "../images/experience/olx_light.png",
+        "institution": "OLX Group",
+        "title": "Software Engineer Trainee",
+        "website": "https://www.olxgroup.com/",
+        "location": "Lisbon, Portugal",
+        "period": "06/2021 - 01/2022",
+        "responsibilities": [
+            "Developed new features as well as unit and integration tests for a service handling monetization of high volume listers using Go and AWS.",
+            "Implemented monitoring and alerts using New Relic, and set up logs using Kibana.",
+            "Conducted performance tests on existing advert ingestion APIs."
+        ]
+    },
+    {
+        "icon_dark": "../images/experience/blaua_ai.png",
+        "icon_light": "../images/experience/blaua_ai.png",
+        "institution": "Blaua",
+        "title": "Software Engineer",
+        "website": "https://www.linkedin.com/company/blaua/",
+        "period": "03/2021 - 04/2021",
+        "responsibilities": [
+            "Led the frontend development using React and contributed to the backend in Node.js.",
+            "Optimized the conversations page by reducing its load time from over 10 seconds to less than 1 second through efficient SQL querying.",
+            "Implemented filtering and export to CSV functionality, as well as a live chat feature for agents.",
+            "Used AWS S3 buckets to store chatbot profile pictures uploaded by businesses."
+        ]
+    },
+    {
+        "icon_dark": "../images/experience/deloitte_dark.png",
+        "icon_light": "../images/experience/deloitte_light.png",
+        "institution": "Deloitte",
+        "title": "Summer Intern",
+        "website": "https://www2.deloitte.com/pt/pt.html",
+        "location": "Lisbon, Portugal",
+        "period": "06/2018 - 07/2018",
+        "responsibilities": [
+            "Joined a team in the Risk Advisory sector, where I worked with SAS Data Integration Studio to optimized processes for a banking client by using efficient SQL queries.",
+            "Was recognized by Deloitte partners for making the best presentation on a challenge between all interns, receiving a Deloitte Certificate of Achievement."
+        ]
+    }
+]

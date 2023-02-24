@@ -1,22 +1,28 @@
 [
   {
-    "icon": "../images/education/ist.png",
-    "degree": "Master's Degree in Information Systems and Computer Engineering",
-    "university": "Instituto Superior Técnico",
+    "icon_dark": "../images/education/ist_dark.png",
+    "icon_light": "../images/education/ist_light.png",
+    "title": "MSc in Computer Science and Engineering",
+    "institution": "Instituto Superior Técnico",
+    "website": "https://tecnico.ulisboa.pt/en/",
     "location": "Lisbon, Portugal",
     "period": "Feb 2019 - Jan 2021"
   },
   {
-    "icon": "../images/education/vgtu.png",
-    "degree": "Exchange Semester - Erasmus Programme",
-    "university": "Vilnius Gediminas Technical University",
+    "icon_dark": "../images/education/vilniustech.png",
+    "icon_light": "../images/education/vilniustech.png",
+    "title": "MSc in Computer Engineering (Erasmus)",
+    "institution": "Vilnius Gediminas Technical University",
+    "website": "https://vilniustech.lt/index.php?lang=2",
     "location": "Vilnius, Lithuania",
     "period": "Sep 2018 - Jan 2019"
   },
   {
-    "icon": "../images/education/ist.png",
-    "degree": "Bachelor's Degree in Electrical Systems and Computer Engineering",
-    "university": "Instituto Superior Técnico",
+    "icon_dark": "../images/education/ist_dark.png",
+    "icon_light": "../images/education/ist_light.png",
+    "title": "BSc in Electrical Systems and Computer Engineering",
+    "institution": "Instituto Superior Técnico",
+    "website": "https://tecnico.ulisboa.pt/en/",
     "location": "Lisbon, Portugal",
     "period": "Sep 2015 - Jun 2018"
   }

@@ -1,24 +1,26 @@
 import React from "react";
-import Layout from "../components/layout";
-import Home from "../components/home";
-import About from "../components/about";
-import Education from "../components/education";
-import Projects from "../components/projects";
-import Skills from "../components/skills";
-import Contact from "../components/contact";
-import Footer from "../components/footer";
+import About from "../sections/about/about";
+import Contact from "../sections/contact/contact";
+import Education from "../sections/education/education";
+import Experience from "../sections/experience/experience";
+import Footer from "../components/footer/footer";
+import Home from "../sections/home/home";
+import Layout from "../components/layout/layout";
+// import Projects from "../sections/projects/projects";
+import Skills from "../sections/skills/skills";
 
 const IndexPage = () => {
   return (
-    <Layout>
-      <Home />
-      <About />
-      <Education />
-      <Projects />
-      <Skills />
-      <Contact />
-      <Footer />
-    </Layout>
+      <Layout>
+        <Home />
+        <About />
+        <Experience />
+        <Education />
+        {/* <Projects /> */}
+        <Skills />
+        <Contact />
+        <Footer />
+      </Layout>
   );
 };
 
