@@ -9,9 +9,6 @@ import Layout from "../components/layout/layout";
 // import Projects from "../sections/projects/projects";
 import Skills from "../sections/skills/skills";
 
-// TODO
-// https://app.netlify.com/sites/friendly-allen-30a866/settings/deploys#build-image-selection
-
 const IndexPage = () => {
   return (
       <Layout>

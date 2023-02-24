@@ -1,17 +1,13 @@
 import React from "react";
 import GatsbyImage from "gatsby-image";
-// import { OutboundLink } from "gatsby-plugin-google-analytics";
 import { FaGithub, FaLink } from "react-icons/fa";
 
 import "./projects.css"
 
 const Project = ({ img, title, description, technologies, website, github }) => {
   return (
-    // TODO make image clickable so it redirects to the website (if one is given)
     <div className="projectCard">
-      {/* <OutboundLink href={website || github} target="_blank" > */}
-        <GatsbyImage className="projectImage" fluid={img} />
-      {/* </OutboundLink> */}
+      <GatsbyImage className="projectImage" fluid={img} />
       <h1 className="title">{title}</h1>
       <h2 className="description">{description}</h2>
       <h3 className="technologies">{technologies}</h3>
