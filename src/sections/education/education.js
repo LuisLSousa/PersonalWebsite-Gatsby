@@ -17,14 +17,14 @@ const Education = () => {
             period
             icon_dark {
               childImageSharp {
-                fixed(height:50, quality: 99) {
+                fixed(height:50, quality: 100) {
                   ...GatsbyImageSharpFixed
                 }
               }
             }
             icon_light {
               childImageSharp {
-                fixed(height:50, quality: 99) {
+                fixed(height:50, quality: 100) {
                   ...GatsbyImageSharpFixed
                 }
               }

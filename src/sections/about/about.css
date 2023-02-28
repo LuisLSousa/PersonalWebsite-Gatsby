@@ -1,13 +1,14 @@
 .aboutWrapper {
   padding-top: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; 
   place-items: center;
   width: 80vw;
-  gap: 1.5rem;
 }
 
 .profile {
+  margin-right: 5em;
+  margin-left: auto;
   width: 18rem;
   height: 18rem;
   border-radius: 50%;
@@ -15,7 +16,7 @@
 }
 
 .descriptionWrapper {
-  width: 40vw;
+  width: 35vw;
   display: flex;
   flex-direction: column;
 }
@@ -46,16 +47,20 @@
 @media screen and (max-width: 1150px) {
 
   .aboutWrapper {
+    display: grid;
     grid-template-columns: 1fr;
     gap: 0;
   }
 
   .profile {
+    margin-left: auto;
+    margin-right: auto;
     width: 18rem;
     height: 18rem;
   }
 
   .descriptionWrapper {
+    width: 45vw;
     margin-top: 2.5rem;
   }
 
@@ -66,8 +71,6 @@
 
 @media screen and (max-width: 562px) {
   .profile {
-    margin-left: auto;
-    margin-right: auto;
     width: 13rem;
     height: 13rem;
   }
