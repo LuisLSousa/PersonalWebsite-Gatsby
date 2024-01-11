@@ -3,14 +3,14 @@
         "icon_dark": "../images/experience/road_dark.png",
         "icon_light": "../images/experience/road_dark.png",
         "institution": "Road",
-        "title": "Backend Software Engineer",
+        "title": "Software Engineer",
         "website": "https://www.road.io/",
         "location": "Amsterdam, Netherlands",
         "period": "01/2024 - Present",
         "responsibilities": [
-            "Designed and implemented microservices using Go and GCP to make EV charging effortless for everyone.",
-            "Helped scale the platform into a distributed, domain-driven, event-sourced system.",
-            "Maintained a legacy codebase in Node."
+            "Design and implement services using Go, Typescript and GCP to make EV charging effortless for everyone.",
+            "Help scale the platform into a distributed, domain-driven, event-sourced system.",
+            "Maintain a legacy codebase in Node."
         ]
     },
     {
