@@ -1,12 +1,26 @@
 [
     {
+        "icon_dark": "../images/experience/road_dark.png",
+        "icon_light": "../images/experience/road_dark.png",
+        "institution": "Road",
+        "title": "Software Engineer",
+        "website": "https://www.road.io/",
+        "location": "Amsterdam, Netherlands",
+        "period": "01/2024 - Present",
+        "responsibilities": [
+            "Design and implement services using Go, Typescript and GCP to make EV charging effortless for everyone.",
+            "Help scale the platform into a distributed, domain-driven, event-sourced system.",
+            "Maintain a legacy codebase in Node."
+        ]
+    },
+    {
         "icon_dark": "../images/experience/olx_dark.png",
         "icon_light": "../images/experience/olx_light.png",
-        "institution": "OLX Group",
+        "institution": "OLX",
         "title": "Backend Software Engineer",
         "website": "https://www.olxgroup.com/",
         "location": "Lisbon, Portugal",
-        "period": "01/2022 - Present",
+        "period": "01/2022 - 12/2023",
         "responsibilities": [
             "Designed and implemented RESTful microservices using Go and AWS to enable high volume listers to post their inventory on our platforms.",
             "Deployed and managed microservices on AWS using Docker, Kubernetes, and Terraform.",
@@ -17,7 +31,7 @@
     {
         "icon_dark": "../images/experience/olx_dark.png",
         "icon_light": "../images/experience/olx_light.png",
-        "institution": "OLX Group",
+        "institution": "OLX",
         "title": "Software Engineer Trainee",
         "website": "https://www.olxgroup.com/",
         "location": "Lisbon, Portugal",

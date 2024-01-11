@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { navList } from '../../data/navigation';
+import { navList } from './navItemsList';
 import ThemeSwitch from "../themeSwitch/themeSwitch";
 
 import "./navigation.css";
@@ -34,7 +34,7 @@ const Navigation = () => {
   const [openMenu, toggleMenu] = useState(false);
   const navRef = useRef(null);
 
-  // Close menu when user click outside of it
+  // Close menu when user clicks outside of it
   useEffect(() => {
     const closeMenu = (event) => {
       if (navRef.current && navRef.current.contains(event.target)) {
